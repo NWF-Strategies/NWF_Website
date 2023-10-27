@@ -4,7 +4,7 @@ import {Navbar, Footer} from '../components';
 import styles from '../style';
 const Solutions = () => {
   return (
-    <div key="solutions">
+    <div className='bg-black-gradient'>
         <Navbar/>
         <div className='h-[100hv]'>
             <div>
@@ -20,6 +20,7 @@ const Solutions = () => {
                 ))}
             </ul>
         </div>
+        <Footer />
     </div>
   )
 }

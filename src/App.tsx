@@ -1,20 +1,21 @@
-import { Footer, Navbar } from "./components";
-import styles from "./style";
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import {Solutions, About, Careers, ContactUs, Home  } from './pages/';
+// ... import other pages as well
 
-const App = () => (
-  <div className='bg-grey w-full overflow-hidden '>
-    <div className={`${styles.paddingX} ${styles.flexCenter}`}>
-      <div className={`${styles.boxWidth}`}>
-        <Navbar />
-      </div>
-    </div>
+function App() {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/solutions" element={<Solutions />} />
+        {/* Add routes for other pages similarly */}
+        <Route path="/about" element={<About />} />
+        <Route path="/careers" element={<Careers />} />
+        <Route path="/contactus" element={<ContactUs />} />
+        {/* Default route, typically Home */}
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </Router>
+  );
+}
 
-    <div className={`bg-grey ${styles.paddingX} ${styles.flexStart}`}>
-      <div className={`${styles.boxWidth}`}>
-        <Footer />
-      </div>
-    </div>
-  </div>
-);
-//
 export default App;

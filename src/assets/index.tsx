@@ -7,8 +7,15 @@ import linkedin from "./linkedin.svg";
 import twitter from "./twitter.svg";
 import facebook from "./facebook.svg";
 import polygon from "./Polygon.svg";
-
+import person from "./person.svg";
+import research from "./research.svg";
+import vibration from "./Vibration.svg";
+import sms_Fill from "./sms_Fill.svg";
 export {
+  person,
+  research,
+  vibration,
+  sms_Fill,
   logo,
   menu,
   close,

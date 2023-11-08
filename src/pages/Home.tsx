@@ -1,13 +1,11 @@
-import React from 'react'
-import {Navbar, Footer} from '../components';
+import React from "react";
 
 const Home = () => {
   return (
-    <div className='bg-black-gradient'>
-        <Navbar />
-        <Footer />
+    <div>
+      <h1>Home</h1>
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

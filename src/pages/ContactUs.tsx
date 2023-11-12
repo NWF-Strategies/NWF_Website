@@ -1,13 +1,11 @@
-import React from 'react'
-import {Navbar, Footer} from '../components';
+import React from "react";
 
 const ContactUs = () => {
   return (
-    <div className='bg-black-gradient'>
-        <Navbar />
-        <Footer />
+    <div>
+      <h1>ContactUs</h1>
     </div>
-  )
-}
+  );
+};
 
-export default ContactUs
+export default ContactUs;

@@ -1,4 +1,13 @@
-import { facebook, instagram, linkedin, twitter, person, research, sms_Fill, vibration } from "../assets";
+import {
+  facebook,
+  instagram,
+  linkedin,
+  twitter,
+  person,
+  research,
+  sms_Fill,
+  vibration,
+} from "../assets";
 
 export const navLinks = [
   {
@@ -93,21 +102,20 @@ export const socialMedia = [
 export const solutions_tags = [
   {
     img: sms_Fill,
-    title: "Strategy & Consulting"
+    title: "Strategy & Consulting",
   },
   {
-    img : person,
-    title : "Research & Development",
+    img: person,
+    title: "Research & Development",
   },
   {
     img: vibration,
-    title: "Software & Data"
+    title: "Software & Data",
   },
   {
-    img : research,
-    title: "Operations & Deployment"
-  }
-]
+    img: research,
+    title: "Operations & Deployment",
+  },
+];
 
 export const clients = [{}];
-

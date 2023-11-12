@@ -1,13 +1,11 @@
-import React from 'react'
-import {Navbar, Footer} from '../components';
+import React from "react";
 
 const Careers = () => {
   return (
-    <div className='bg-black-gradient'>
-        <Navbar />
-        <Footer />
+    <div>
+      <h1>Careers</h1>
     </div>
-  )
-}
+  );
+};
 
-export default Careers
+export default Careers;

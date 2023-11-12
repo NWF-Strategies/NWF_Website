@@ -32,7 +32,7 @@ const Solutions = () => {
             <Footer />  
         </div>
     </div>
-  )
-}
+  );
+};
 
-export default Solutions
+export default Solutions;

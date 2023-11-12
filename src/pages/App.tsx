@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import {Solutions, About, Careers, ContactUs, Home  } from './pages/';
+import {Solutions, About, Careers, ContactUs, Home  } from '.';
 // ... import other pages as well
 
 function App() {

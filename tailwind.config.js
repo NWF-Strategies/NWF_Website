@@ -3,6 +3,9 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      backgroundImage: {
+        'custom-gradient': "radial-gradient(61.92% 26.97% at 17.85% 37.54%, rgba(67, 188, 205, 0.10) 0%, rgba(0, 0, 0, 0.00) 100%), #19191A",
+      },
       colors: {
         primary: "#000000",
         secondary: "#00f6ff",

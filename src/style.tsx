@@ -2,10 +2,11 @@ const styles = {
   boxWidth: "xl:max-w-[1280px] w-full",
 
   heading2:
-    "font-poppins font-semibold xs:text-[48px] text-[40px] text-white xs:leading-[76.8px] leading-[66.8px] w-full",
+    "text-secondary font-poppins font-semibold xs:text-[48px] text-[40px] xs:leading-[76.8px] leading-[66.8px] w-full",
   paragraph:
-    "font-poppins font-normal text-dimWhite text-[18px] leading-[30.8px]",
-
+    "font-poppins font-normal text-primary text-[18px] leading-[30.8px]",
+  button: "bg-secondaryButton rounded-2xl py-2 px-4",
+  form: "bg-black-gradient appearance-none border-2 border-secondary rounded w-full py-2 px-4 text-white leading-tight focus:outline-none focus:bg-white",
   flexCenter: "flex justify-center items-center",
   flexStart: "flex justify-center items-start",
 

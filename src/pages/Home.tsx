@@ -1,14 +1,13 @@
-import React from 'react'
-import { Navbar, Footer, Careers } from '../components';
-import styles from '../style';
+import React from "react";
+import { Navbar, Footer, Careers } from "../components";
+import styles from "../style";
 // import {  } from '../components/Careers';
 
 const Home = () => {
   return (
-    <div className='bg-black-gradient'>
-        <Navbar />
-        <Careers />
-        {/* <div className='h-[100hv]'>
+    <div className=''>
+      <Careers />
+      {/* <div className='h-[100hv]'>
           <div>
             <h1 className={`text-white`}>Solutions</h1>
             <p className={`text-white`}>We combine traditional outreach strategy with innovative technology.</p>
@@ -22,9 +21,8 @@ const Home = () => {
             ))}
           </ul>
         </div> */}
-        <Footer />
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

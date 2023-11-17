@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { close, logo, polygon, menu } from "../assets";
 import { navLinks } from "../constants";
 
@@ -8,11 +9,11 @@ const Navbar = () => {
 
   return (
     <nav className='w-full flex py-6 justify-between items-center navbar'>
-      <Link to={"/home"}>
+      <Link to={"/"}>
         <img src={polygon} alt='nwf' className='w-[124px] h-[32px]' />
       </Link>
 
-      <Link to={"/home"}>
+      <Link to={"/"}>
         <img src={logo} alt='nwf' className='w-[124px] h-[32px]' />
       </Link>
 
@@ -49,7 +50,7 @@ const Navbar = () => {
                   font-normal cursor-pointer text-[16px] ${index === navLinks.length - 1 ? "mr-0" : "mb-4"
                   } text-white`}
               >
-                <a href={`#${nav.id}`}>{nav.title}</a>
+                <a href={`${nav.id}`}>{nav.title}</a>
               </li>
             ))}
           </ul>

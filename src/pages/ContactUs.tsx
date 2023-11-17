@@ -1,13 +1,25 @@
-import React from 'react'
-import {Navbar, Footer} from '../components';
+import React from "react";
+import styles, { layout } from "../style";
+import Button from "../components/Button";
+import Form from "../components/Form";
 
 const ContactUs = () => {
   return (
-    <div className='bg-black-gradient'>
-        <Navbar />
-        <Footer />
-    </div>
-  )
-}
+    <section id='features' className={layout.section}>
+      <div className={layout.sectionInfo}>
+        <h2 className={`${styles.heading2}`}> Contact Us</h2>
+        <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
+          Send us any questions or inquiries via the contact form, or email us
+          at info@nwfstrategies.com.
+        </p>
+      </div>
 
-export default ContactUs
+      <div className={`${layout.sectionImg} flex-col`}>
+        <Form />
+        <Button />
+      </div>
+    </section>
+  );
+};
+
+export default ContactUs;

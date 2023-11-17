@@ -11,7 +11,9 @@ import person from "./person.svg";
 import research from "./research.svg";
 import vibration from "./Vibration.svg";
 import sms_Fill from "./sms_Fill.svg";
+import gear from "./gear.svg";
 export {
+  gear,
   person,
   research,
   vibration,

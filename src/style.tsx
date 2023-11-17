@@ -5,7 +5,7 @@ const styles = {
     "text-secondary font-poppins font-semibold xs:text-[48px] text-[40px] xs:leading-[76.8px] leading-[66.8px] w-full",
   paragraph:
     "font-poppins font-normal text-primary text-[18px] leading-[30.8px]",
-  button: "bg-secondaryButton rounded-2xl py-2 px-4",
+  button: "bg-none hover:bg-secondaryButton border border-secondaryButton text-secondary hover:text-white w-fit rounded-2xl py-2 px-4 font-poppins font-light",
   form: "bg-black-gradient appearance-none border-2 border-secondary rounded w-full py-2 px-4 text-white leading-tight focus:outline-none focus:bg-white",
 
   heading3:

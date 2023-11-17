@@ -1,7 +1,7 @@
-import styles from "../style";
+import styles from "../../style";
 import React from "react";
-import TwoPieceFormat from "./TwoPieceFormat";
-import coverPhoto from "../assets/images/home_careers.png";
+import TwoPieceFormat from "../TwoPieceFormat";
+import coverPhoto from "../../assets/images/home_careers.png";
 
 const Careers = () => {
   const content = (

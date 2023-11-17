@@ -9,6 +9,8 @@ import {
   vibration,
 } from "../assets";
 
+
+
 export const navLinks = [
   {
     id: "solutions",
@@ -117,5 +119,6 @@ export const solutions_tags = [
     title: "Operations & Deployment",
   },
 ];
+
 
 export const clients = [{}];

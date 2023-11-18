@@ -7,6 +7,15 @@ import {
   research,
   sms_Fill,
   vibration,
+  research_dev,
+  operation,
+  software_data,
+  software_data_bg,
+  strategy,
+  sms_colored,
+  research_colored,
+  person_colored,
+  vibration_colored,
 } from "../assets";
 
 
@@ -122,3 +131,31 @@ export const solutions_tags = [
 
 
 export const clients = [{}];
+
+
+export const solutions_notes = [
+  {
+    img: strategy,
+    icon: sms_colored,
+    title: "Strategy & Consulting",
+    description: "Great campaigns begin at the drawing board. We provide end-to-end support to formulate efficient, effective strategies and timelines to support campaigns from launch to election."
+  },
+  {
+    img: research_dev,
+    icon: person_colored,
+    title: "Research & Development",
+    description: "Research hones effective campaign messaging and widespread voter outreach. From donor and opposition research to targeted voter universes, compile rigorous documentation to inform your campaigning decisions."
+  },
+  {
+    img: software_data,
+    icon: vibration_colored,
+    title: "Software & Data",
+    description : "Deploy cutting-edge machine learning models to predict voter behavior and leverage comprehensive dashboards to manage day-to-day campaign operations."
+  },
+  {
+    img: operation,
+    icon: research_colored,
+    title: "Operations & Deployment",
+    description : "Mobilize hundreds of volunteers to canvass and contact millions of voters. Execute and deploy voter contact strategies effortlessly."
+  },
+]

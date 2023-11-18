@@ -143,5 +143,5 @@
 }
 
 .teal__black__gradient {
-  background: radial-gradient(61.92% 80.97% at 17.85% 37.54%, #185767 0%, rgba(0, 0, 0, 0.00) 100%), #000000;
+  background: radial-gradient(61.92% 80.97% at 17.85% 37.54%, rgb(7, 51, 65) 0%, rgba(0, 0, 0, 0.00) 100%), #000000;
 }

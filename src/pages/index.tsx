@@ -9,5 +9,5 @@ export {
     About,
     Careers,
     Home,
-    ContactUs
+    ContactUs,
 }

@@ -16,19 +16,19 @@ function App() {
   return (
     <div className='bg-black-gradient'>
       <Router>
-        <DefaultPadding><Navbar /></DefaultPadding>
+        <Navbar />
 
         <Routes>
-            <Route path='/solutions' element={<DefaultPadding><Solutions /></DefaultPadding>} />
-            <Route path='/about' element={<DefaultPadding><About /></DefaultPadding>} />
-            <Route path='/careers' element={<DefaultPadding><Careers /></DefaultPadding>} />
-            <Route path='/contactus' element={<DefaultPadding><ContactUs /></DefaultPadding>} />
+            <Route path='/solutions' element={<Solutions />} />
+            <Route path='/about' element={<About />} />
+            <Route path='/careers' element={<Careers />} />
+            <Route path='/contactus' element={<ContactUs />} />
             
             {/* Default route, typically Home */}
             <Route path='/' element={<Home />} />
         </Routes>
 
-        <DefaultPadding><Footer /></DefaultPadding>
+        <Footer />
       </Router>
     </div>
   );

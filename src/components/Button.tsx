@@ -1,9 +1,13 @@
 import React from "react";
 import styles from "../style";
 
-const Button = () => (
+interface ButtonProps {
+  label: string;
+}
+
+const Button: React.FC<ButtonProps> =( {label} ) => (
   <div className={` ${styles.button}`}>
-    <button type='button'>Get Started</button>
+    <button type='button'> {label} </button>
   </div>
 );
 

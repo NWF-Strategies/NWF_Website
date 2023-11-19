@@ -6,13 +6,13 @@ import { gear } from "../assets";
 const Solutions = () => {
   return (
     <div className=''>
-      <div className='relative lg:h-[100vh] h-fit py-[100px] blue__black__gradient flex flex-col items-center z-10'>
+      <div className='relative h-fit py-[100px] blue__black__gradient flex flex-col items-center z-10'>
         <img
           src={gear}
           alt='gear'
           className='absolute left-0 overflow-hidden -z-10 lg:w-100 md:w-50 md:top-0 sm:top-0'
         />
-        <div className='w-[100%] flex flex-col justify-center items-left lg:ml-[30%] md:ml-[30%] sm:ml-[30%] ml-[30%] z-10 lg:top-[150px] md:top-[150px] sm:top-[150px]'>
+        <div className='w-[100%] flex flex-col justify-center items-left lg:pl-[20%] md:pl-[20%] sm:pl-[20%] pl-[20%] z-10'>
           <div>
             <h1
               className={`text-[#43BCCD] font-poppins lg:text-[100px] md:text-[50px] sm:text-[40px] font-bold leading-normal text-left `}

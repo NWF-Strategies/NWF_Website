@@ -159,3 +159,26 @@ export const solutions_notes = [
     description : "Mobilize hundreds of volunteers to canvass and contact millions of voters. Execute and deploy voter contact strategies effortlessly."
   },
 ]
+
+export const mission_tags = [
+  {
+    date : "August 2020",
+    description: "Inception and Incorporation",
+  },
+  {
+    date : "April 2021",
+    description : "Development and testing",
+  },
+  {
+    date : "Jan. 2022",
+    description : "Wide-scale deployment of solutions",
+  },
+  {
+    date : "July 2022",
+    description : "NWF clientele post a ~75% election rate"
+  },
+  {
+    date : "August 2022",
+    description : "Begin R&D for AI-powered campaigning tools"
+  }
+]

@@ -4,16 +4,26 @@ const styles = {
   paragraph:
     "font-poppins font-normal text-primary text-[12px] leading-[25px] xs:text-[18px] xs:leading-[30.8px]",
 
+  paragraph2:
+    "`text-white font-poppins lg:text-[25px] md:text-[20px] sm:text-[15px] font-normal leading-normal",
+
   heading2:
-    "text-secondary font-poppins font-semibold xs:text-[48px] text-[40px] xs:leading-[76.8px] leading-[66.8px] w-full",
+    "text-secondary font-poppins font-bold xs:text-[48px] text-[40px] xs:leading-[76.8px] leading-[66.8px] w-full",
+
+  heading1: `text-[#43BCCD] font-poppins lg:text-[100px] md:text-[50px] sm:text-[40px] font-bold leading-normal text-left `,
+
   heading3:
     "font-poppins font-normal text-[35px] md:text-[47px] text-white xs:leading-[76.8px] leading-[66.8px] w-full",
+
   heading4:
     "font-poppins font-semibold	xs:text-20px text-[#43BCCD] tracking-[0.15px]",
+
   heading5:
     "font-poppins tracking-tighter font-[1000] bold text-[#43BCCD] text-[55px] leading-[50px]",
 
-  button: "bg-none hover:bg-secondaryButton border border-secondaryButton text-secondary hover:text-white w-fit rounded-2xl py-2 px-4 font-poppins font-light",
+  button:
+    "bg-none hover:bg-secondaryButton border border-secondaryButton text-secondary hover:text-white w-fit rounded-2xl py-2 px-4 font-poppins font-light",
+
   form: "bg-black-gradient appearance-none border-2 border-secondary rounded w-full py-2 px-4 text-white leading-tight focus:outline-none focus:bg-white",
 
   flexCenter: "flex justify-center items-center",

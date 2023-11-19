@@ -23,8 +23,8 @@ const CandidateStudies = () => {
     ]
     return (
         <>
-            <div className="h-fit min-h-[300px]">
-            <GenericCarousel slides={candidates} width={900} height={300}/>
+            <div className="h-fit min-h-[300px] invisible sm:visible">
+                <GenericCarousel slides={candidates} width={900} height={250}/>
             </div>
         </>
     );

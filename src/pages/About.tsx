@@ -1,10 +1,11 @@
 import React from "react";
-import { Navbar, Footer, Careers } from "../components";
+import { Navbar, Footer } from "../components";
+import JoinUs from "../components/JoinUs";
 
 const About = () => {
   return (
     <div>
-      <Careers />
+      <JoinUs />
     </div>
   );
 };

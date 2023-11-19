@@ -1,9 +1,9 @@
-import styles from "../../style";
+import styles from "../style";
 import React from "react";
-import TwoPieceFormat from "../TwoPieceFormat";
-import coverPhoto from "../../assets/home_careers.png";
+import TwoPieceFormat from "./TwoPieceFormat";
+import coverPhoto from "../assets/home_careers.png";
 
-const Careers = () => {
+const JoinUs = () => {
   const content = (
     <>
       <p className={styles.heading4}>CAREER</p>
@@ -17,12 +17,14 @@ const Careers = () => {
   );
 
   return (
-    <TwoPieceFormat
-      imageSrc={coverPhoto}
-      imageAlt='Careers image'
-      content={content}
-    />
+    <div className="m-10">
+      <TwoPieceFormat
+        imageSrc={coverPhoto}
+        imageAlt='Join us image'
+        content={content}
+      />
+    </div>
   );
 };
 
-export default Careers;
+export default JoinUs;

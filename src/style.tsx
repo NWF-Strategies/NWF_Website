@@ -2,12 +2,12 @@ const styles = {
   boxWidth: "xl:max-w-[1280px] w-full",
 
   paragraph:
-    "font-poppins font-normal text-primary text-[12px] leading-[25px] xs:text-[18px] xs:leading-[30.8px]",
+    "font-poppins font-normal text-primary lg:text-[23px] md:text-[15px] sm:text-[13px] leading-[25px] xs:leading-[30.8px]",
 
   heading2:
     "text-secondary font-poppins font-semibold xs:text-[48px] text-[40px] xs:leading-[76.8px] leading-[66.8px] w-full",
   heading3:
-    "font-poppins font-normal text-[35px] md:text-[47px] text-white xs:leading-[76.8px] leading-[66.8px] w-full",
+    "font-poppins font-normal lg:text-[45px] md:text-[30px] sm:text-[20px] text-white xs:leading-[76.8px] leading-[66.8px] w-full",
   heading4:
     "font-poppins font-semibold	xs:text-20px text-[#43BCCD] tracking-[0.15px]",
   heading5:

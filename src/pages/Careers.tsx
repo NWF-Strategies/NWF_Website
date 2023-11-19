@@ -5,64 +5,28 @@ import careers_img from "../assets/careers_img.png";
 
 import TwoPieceFormat from "../components/TwoPieceFormat";
 import Button from "../components/Button";
-import careers_role01 from "../assets/careers_role01.png"
-import careers_role02 from "../assets/careers_role02.png"
-import careers_role03 from "../assets/careers_role03.png"
-import careers_role04 from "../assets/careers_role04.png"
+
+import {roles} from "../constants/div_constants";
+
+import careers_category01 from "../assets/careers_category01.png"
+import careers_category02 from "../assets/careers_category02.png"
+import careers_category03 from "../assets/careers_category03.png"
 
 const Career = () => {
-  const strategyContent = (
-    <>
-      <p className={styles.heading4}>STRATEGY</p>
-      <p className={styles.heading3}>Strategic Consultants</p>
-      <ol className={styles.paragraph}>
-        <li>Interface 1-on-1 with clientele to support day-to-day operations</li>
-        <li>Lead clientele acquisition efforts</li>
-      </ol>
-    </>
-  );
-
-  const researchContent = (
-    <>
-      <p className={styles.heading4}>RESEARCH</p>
-      <p className={styles.heading3}>Research Consultants</p>
-      <ol className={styles.paragraph}>
-        <li>Analyze and interpret key internal insights to deliver actionable strategies</li>
-        <li>Coordinate with Strategic Consultants to support clientele</li>
-      </ol>
-    </>
-  );
-
-  const softwareContent = (
-    <>
-      <p className={styles.heading4}>SOFTWARE</p>
-      <p className={styles.heading3}>Software Engineers</p>
-      <ol className={styles.paragraph}>
-        <li>Design, develop, and deploy application software to support internal and external operations</li>
-        <li>Test and drive iterations by interfacing with stakeholders</li>
-      </ol>
-    </>
-  );
-
-  const dataContent = (
-    <>
-      <p className={styles.heading4}>DATA</p>
-      <p className={styles.heading3}>Data Scientists</p>
-      <ol className={styles.paragraph}>
-        <li>Research and develop pioneering implementations of algorithms and tools in campaigns, from Logistic Regression all the way to Large Language Models.</li>
-        <li>Document and present findings</li>
-      </ol>
-    </>
-  );
-
-  const roles = [
-    { content: strategyContent, imageSrc: careers_role01, imageAlt: 'Strategy image' },
-    { content: researchContent, imageSrc: careers_role02, imageAlt: 'Marketing image' },
-    { content: softwareContent, imageSrc: careers_role03, imageAlt: 'Development image' },
-    { content: dataContent, imageSrc: careers_role04, imageAlt: 'Operations image' }
+  const career_categories = [
+    { 
+      imgSrc: careers_category01,
+      title: "Operations",
+    },
+    { 
+      imgSrc: careers_category02,
+      title: "Research",
+    },
+    { 
+      imgSrc: careers_category03,
+      title: "Data",
+    },
   ];
-
-
   return (
     <div>
       <div className='relative lg:h-[100vh] h-[450px] py-[100px] blue__black__gradient flex flex-col items-center z-10'>
@@ -89,7 +53,6 @@ const Career = () => {
           <br></br><br></br>
           Please attach your resume and any relevant links in your email to info@nwfstrategies.com. 
         </p>
-        <br></br>
         <Button label="Apply via Email" />
       </div>
       <div className='teal__black__gradient pb-10 justify-center'>
@@ -103,7 +66,7 @@ const Career = () => {
                 content={role.content}
               />
             ))}
-            <div className="w-fit">
+            <div className="flex justify-center">
             <Button label="See More Job Listings" />
             </div>
           </div>
@@ -123,12 +86,23 @@ const Career = () => {
               <li>Passionate and willing to work with multiple deadlines and teams</li>
               <li>Can commit to working 10-15 hours per week</li>
             </ul>
-          <p><br></br>
-          Although this internship is unpaid, New Way Forward Strategies has a strong performance-based bonus program. Eligibility for the bonuses is based on high standards and requires outstanding work.
-          <br></br></p>
-          <p></p>
+            <p className="mb-5"><br></br>
+          Although this internship is unpaid, New Way Forward Strategies has a strong performance-based bonus program. Eligibility for the bonuses is based on high standards and requires outstanding work.</p>
+          </div>
+          <div className="flex justify-center">
             <Button label="Interested? Visit us on Indeed" />
           </div>
+        </div>
+        <div className="flex flex-col sm:flex-row items-center">
+          {career_categories.map((content, index) => (
+            <div className='items-center text-center py-10 mx-10'>
+              <img src={content.imgSrc}/>
+              <p className={`${styles.heading3}`}>{content.title}</p>
+          <div className="flex justify-center">
+              <Button label="Apply Now" />
+              </div>
+            </div>
+          ))}
         </div>
         <Newsletter />
       </div>

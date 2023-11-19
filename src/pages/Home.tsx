@@ -14,7 +14,7 @@ const Home = () => {
     <>
       {/* <div className="border border-blue-300"></div> */}
       <LandingCarousel />
-      <div className='h-fit border border-white text-white'>
+      <div className='h-fit text-white'>
         <ul className='lg:ml-[100px] md:ml-[50px] sm:ml-[40px] mt-10'>
           {solutions_tags.map((item) => (
             <li className='flex flex-row justify-start items-center w-full'>
@@ -29,9 +29,9 @@ const Home = () => {
         </ul>
       </div>
       <FirmStatistics />
-      <div className='h-[150px] border border-white text-white'>
+      {/* <div className='h-[150px] border border-white text-white'>
         TESTING
-      </div>
+      </div> */}
       <CandidateStudies />
       <JoinUs />
       <Newsletter />

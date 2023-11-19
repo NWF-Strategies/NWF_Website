@@ -145,3 +145,89 @@
 .teal__black__gradient {
   background: radial-gradient(61.92% 80.97% at 17.85% 37.54%, rgb(7, 51, 65) 0%, rgba(0, 0, 0, 0.00) 100%), #000000;
 }
+.timeline-section {
+  background: linear-gradient(246deg, rgba(47, 119, 129, 0.53) -19.14%, rgba(47, 119, 129, 0.00) 51.3%);
+}
+
+.timeline-container {
+  width: 100%;
+  position: relative;
+  padding: 20px;
+}
+
+/* The line down the center or side of the timeline */
+.timeline-container::after {
+  content: '';
+  position: absolute;
+  width: 4px;
+  background-color: #43BCCD;
+  top: 0;
+  bottom: 0;
+  left: 0%;
+  transform: translateX(-50%);
+}
+
+.timeline-event::before {
+  content: '';
+  position: absolute;
+  height: 30px; /* Circle size */
+  width: 30px; /* Circle size */
+  background-color: #43BCCD; /* Circle color */
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -35px; /* Half of the width to align it properly on the line */
+  z-index: 1;
+}
+
+/* Styles for each event on the timeline */
+.timeline-event {
+  padding: 15px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+/* Styles for the title of each event */
+.timeline-event h3 {
+  margin-top: 0;
+}
+
+/* Styles for the date of the event */
+.date {
+  color: #888;
+  font-size: 0.85em;
+}
+
+/* Adjustments for smaller screens */
+@media screen and (max-width: 600px) {
+  .timeline-event {
+    width: 100%;
+    left: 0 !important;
+  }
+
+  .timeline-container::after {
+    left: 10px;
+  }
+}
+
+.card-container {
+  position: relative;
+}
+
+.mission-card {
+  position: relative;
+  z-index: 10; /* Higher z-index to ensure it's above the pseudo-element */
+}
+
+.mission-card::before {
+  content: '';
+  position: absolute;
+  top: -20px; /* Adjust for desired effect */
+  right: -20px; /* Adjust for desired effect */
+  background-color: #42506B40; /* Match the background of the mission-card */
+  width: calc(100%); /* Adjust width to account for padding */
+  height: calc(100%); /* Adjust height to account for padding */
+  border-radius: inherit; /* Match the border-radius of the mission-card */
+  z-index: -1; /* Behind the mission-card */
+}

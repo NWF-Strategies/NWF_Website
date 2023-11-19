@@ -22,7 +22,9 @@ import person_colored from "./person_colored.svg";
 import vibration_colored from "./vibration_colored.svg";
 import research_colored from "./research_colored.svg";
 import map from "./map.png";
+import mission from "./mission.svg";
 export {
+  mission,
   map,
   sms_colored,
   person_colored,

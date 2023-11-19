@@ -1,5 +1,5 @@
 import candidate_img from "../../assets/home_peltola.png";
-import {peltola_text} from "../../constants/home_constants";
+import {peltola_text} from "../../constants/div_constants";
 import CandidateSlide from "./CandidateSlide";
 import GenericCarousel from "./GenericCarousel";
 

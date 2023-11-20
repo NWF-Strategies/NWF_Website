@@ -1,5 +1,5 @@
 import candidate_img from "../../assets/home_peltola.png";
-import {peltola_text} from "../../constants/home_constants";
+import {peltola_text} from "../../constants/div_constants";
 import CandidateSlide from "./CandidateSlide";
 import GenericCarousel from "./GenericCarousel";
 
@@ -23,8 +23,8 @@ const CandidateStudies = () => {
     ]
     return (
         <>
-            <div className="h-fit min-h-[300px]">
-            <GenericCarousel slides={candidates} width={900} height={300}/>
+            <div className="h-fit min-h-[300px] invisible sm:visible">
+                <GenericCarousel slides={candidates} width={900} height={250}/>
             </div>
         </>
     );

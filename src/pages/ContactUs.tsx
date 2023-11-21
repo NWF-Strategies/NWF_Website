@@ -5,7 +5,10 @@ import Form from "../components/Form";
 
 const ContactUs = () => {
   return (
-    <section id='features' className={`${layout.section} ${styles.padding}`}>
+    <section
+      id='features'
+      className={`${layout.section} ${styles.paddingX} ${styles.paddingY}`}
+    >
       <div className={layout.sectionInfo}>
         <h2 className={`${styles.heading2}`}> Contact Us</h2>
         <p className={`${styles.paragraph2} text-white max-w-[470px] mt-5`}>
@@ -16,7 +19,7 @@ const ContactUs = () => {
 
       <div className={`${layout.sectionImg} flex-col`}>
         <Form />
-        <Button label='Get Started' />
+        <Button label='Submit' />
       </div>
     </section>
   );

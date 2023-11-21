@@ -1,10 +1,10 @@
 import styles from "../style";
-import { logo, polygon } from "../assets";
+import { logo, polygon, mail } from "../assets";
 import { footerLinks, socialMedia } from "../constants";
 
 const Footer = () => (
   <section
-    className={`${styles.flexCenter}  flex-col px-10 border-t-2 border-white py-4`}
+    className={`${styles.flexCenter}  flex-col px-10 border-t-2 border-white bg-lightGrey py-4`}
   >
     <div className={`${styles.flexStart} md:flex-row flex-col mb-8 w-full`}>
       <div className='flex-[1] flex flex-row justify-start mr-10'>
@@ -42,11 +42,14 @@ const Footer = () => (
         STAY INFORMED
       </p>
       <form className='w-85 max-w-md  pb-6'>
-        <div className='flex h-10'>
+        <div className='flex h-10 relative'>
+          <div className='absolute inset-y-0 start-0 flex items-center ps-2 pointer-events-none'>
+            <img src={mail}></img>
+          </div>
           <input
-            className='bg-black-gradient appearance-none border border-secondary rounded-s w-full  text-white focus:outline-none focus:bg-white text-center'
+            className='bg-black-gradient appearance-none border border-secondary rounded-s w-full  text-white focus:outline-none focus:bg-white  pl-12'
             type='email'
-            placeholder='Sign Up for our latest opportunities. '
+            placeholder='Sign Up For Our Latest Opportunities '
           ></input>
 
           <button
@@ -57,6 +60,7 @@ const Footer = () => (
           </button>
         </div>
       </form>
+
       <p className='font-poppins font-normal text-left text-[14px] leading-[27px] text-white'>
         Ⓒ 2023 New Way Forward. All Rights Reserved.
       </p>

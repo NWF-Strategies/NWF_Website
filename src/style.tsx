@@ -2,18 +2,21 @@ const styles = {
   boxWidth: "xl:max-w-[1280px] w-full",
 
   paragraph:
-    "font-poppins font-normal text-primary lg:text-[23px] md:text-[15px] sm:text-[13px] leading-[25px] xs:leading-[30.8px]",
+    "font-poppins font-normal text-primary md:text-[15px] sm:text-[13px] leading-[25px] xs:leading-[30.8px]",
 
   heading2:
     "text-secondary font-poppins font-semibold xs:text-[48px] text-[40px] xs:leading-[76.8px] leading-[66.8px] w-full",
   heading3:
-    "font-poppins font-normal lg:text-[45px] md:text-[30px] sm:text-[20px] text-white xs:leading-[76.8px] leading-[66.8px] w-full",
+    "font-poppins font-normal md:text-[30px] sm:text-[20px] text-white xs:leading-[76.8px] leading-[66.8px] w-full",
   heading4:
     "font-poppins font-semibold	xs:text-20px text-[#43BCCD] tracking-[0.15px]",
   heading5:
     "font-poppins tracking-tighter font-[1000] bold text-[#43BCCD] text-[55px] leading-[50px]",
 
-  button: "bg-none hover:bg-secondaryButton border border-secondaryButton text-secondary hover:text-white w-fit rounded-2xl py-2 px-4 font-poppins font-light",
+  callout:
+    "font-poppins bg-[#185767] h-fit rounded-2xl p-10 m-5",
+  
+    button: "bg-none hover:bg-secondaryButton border border-secondaryButton text-secondary hover:text-white w-fit rounded-2xl py-1 px-4 font-poppins font-light mt-5",
   form: "bg-black-gradient appearance-none border-2 border-secondary rounded w-full py-2 px-4 text-white leading-tight focus:outline-none focus:bg-white",
 
   flexCenter: "flex justify-center items-center",

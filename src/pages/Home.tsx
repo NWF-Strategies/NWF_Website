@@ -9,11 +9,10 @@ import whoweare from "../assets/whoweare.png";
 const Home = () => {
   return (
     <>
-      {/* <div className="border border-blue-300"></div> */}
       <GenericCarousel slides={landing_thumbnails} />
+      
+      {/* Text Section 1 */}
       <div className='h-fit grid grid-cols-2 gap-x-5 text-white items-center relative my-20'>
-        {/* make this div show up as a rectangle beneath the next div's contents */}
-        <div className="bg-gray-200 h-[500px] mt-10 ml-10 absolute z-0"></div>
         <div className="mx-5 z-10">
           <div className={`${styles.callout} ${styles.paragraph}`}>
             At New Way Forward Strategies, we believe that Democracy starts with accessibility. From local elections to nationwide races, campaigns begin with the individual. We started the New Way Forward to deploy frontiering technologies and strategies, providing change-makers the tools to operate cutting-edge, winning campaigns.
@@ -32,6 +31,7 @@ const Home = () => {
           <Button label="About Us" />
         </div>
       </div>
+
       {/* Firm Statistics Section */}
       <div className='flex flex-col justify-center items-center my-8'>
         <div className="flex flex-col sm:flex-row items-center">
@@ -50,6 +50,7 @@ const Home = () => {
           ))}
         </div>
       </div>
+
       {/* Text Section 2 */}
       <div className='h-fit flex flex-row text-white justify-center items-center mx-auto my-20'>
         <ul className='lg:mx-[80px] md:mx-[30px] sm:mx-[20px] w-fit'>

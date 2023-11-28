@@ -5,7 +5,7 @@ interface ButtonProps {
   label: string;
 }
 
-const Button: React.FC<ButtonProps> =( {label} ) => (
+const Button: React.FC<ButtonProps> = ({ label }) => (
   <div className={` ${styles.button}`}>
     <button type='button'> {label} </button>
   </div>

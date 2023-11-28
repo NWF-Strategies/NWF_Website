@@ -16,9 +16,8 @@ import {
   research_colored,
   person_colored,
   vibration_colored,
+  mail,
 } from "../assets";
-
-
 
 export const navLinks = [
   {
@@ -38,12 +37,6 @@ export const navLinks = [
     title: "Contact Us",
   },
 ];
-
-export const features = [];
-
-export const feedback = [{}];
-
-export const stats = [];
 
 export const footerLinks = [
   {
@@ -129,36 +122,38 @@ export const solutions_tags = [
   },
 ];
 
-
 export const clients = [{}];
-
 
 export const solutions_notes = [
   {
     img: strategy,
     icon: sms_colored,
     title: "Strategy & Consulting",
-    description: "Great campaigns begin at the drawing board. We provide end-to-end support to formulate efficient, effective strategies and timelines to support campaigns from launch to election."
+    description:
+      "Great campaigns begin at the drawing board. We provide end-to-end support to formulate efficient, effective strategies and timelines to support campaigns from launch to election.",
   },
   {
     img: research_dev,
     icon: person_colored,
     title: "Research & Development",
-    description: "Research hones effective campaign messaging and widespread voter outreach. From donor and opposition research to targeted voter universes, compile rigorous documentation to inform your campaigning decisions."
+    description:
+      "Research hones effective campaign messaging and widespread voter outreach. From donor and opposition research to targeted voter universes, compile rigorous documentation to inform your campaigning decisions.",
   },
   {
     img: software_data,
     icon: vibration_colored,
     title: "Software & Data",
-    description: "Deploy cutting-edge machine learning models to predict voter behavior and leverage comprehensive dashboards to manage day-to-day campaign operations."
+    description:
+      "Deploy cutting-edge machine learning models to predict voter behavior and leverage comprehensive dashboards to manage day-to-day campaign operations.",
   },
   {
     img: operation,
     icon: research_colored,
     title: "Operations & Deployment",
-    description: "Mobilize hundreds of volunteers to canvass and contact millions of voters. Execute and deploy voter contact strategies effortlessly."
+    description:
+      "Mobilize hundreds of volunteers to canvass and contact millions of voters. Execute and deploy voter contact strategies effortlessly.",
   },
-]
+];
 
 export const mission_tags = [
   {
@@ -175,10 +170,10 @@ export const mission_tags = [
   },
   {
     date: "July 2022",
-    description: "NWF clientele post a ~75% election rate"
+    description: "NWF clientele post a ~75% election rate",
   },
   {
     date: "August 2022",
-    description: "Begin R&D for AI-powered campaigning tools"
-  }
-]
+    description: "Begin R&D for AI-powered campaigning tools",
+  },
+];

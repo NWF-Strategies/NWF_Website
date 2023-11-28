@@ -23,7 +23,9 @@ import vibration_colored from "./vibration_colored.svg";
 import research_colored from "./research_colored.svg";
 import map from "./map.png";
 import mission from "./mission.svg";
+import mail from "./mail.svg";
 export {
+  mail,
   mission,
   map,
   sms_colored,

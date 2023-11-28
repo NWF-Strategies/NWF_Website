@@ -4,15 +4,42 @@ import home_carousel01 from "../assets/home_carousel01.png";
 import home_carousel02 from "../assets/home_carousel02.png";
 import home_carousel03 from "../assets/home_carousel03.png";
 
-import peltola_logo from "../assets/home_peltola-logo.png";
+import ventura_logo from "../assets/logo_ventura.png";
+import mcduffie_logo from "../assets/logo_mcduffie.png";
+import akdems_logo from "../assets/logo_akdems.png";
+import peltola_logo from "../assets/logo_peltola.png";
+import kumar_logo from "../assets/logo_kumar.png";
+
+import peltola from "../assets/home_peltola.png";
+import ventura from "../assets/home_ventura.png";
+import kumar from "../assets/home_kumar.png";
 
 import careers_role01 from "../assets/careers_role01.png"
 import careers_role02 from "../assets/careers_role02.png"
 import careers_role03 from "../assets/careers_role03.png"
 import careers_role04 from "../assets/careers_role04.png"
 
-export const landing_carousel = [
-    home_carousel01, home_carousel02,home_carousel03,
+import thumbnailImg1 from "../assets/home_carousel01.png";
+import thumbnailImg2 from "../assets/home_carousel02.png";
+import thumbnailImg3 from "../assets/home_carousel03.png";
+
+import LandingThumbnail from "../components/LandingThumbnail";
+import CandidateSlide from "../components/CandidateSlide";
+
+
+export const landing_thumbnails = [
+    <LandingThumbnail
+        imageSrc={thumbnailImg1}
+        text={<p><span className="text-secondary">Innovating today</span> for the campaigns of tomorrow</p>}
+    />,
+    <LandingThumbnail
+        imageSrc={thumbnailImg2}
+        text={<p>Learn how we've <span className="text-secondary">driven people-powered</span> on-the-ground campaigns with cutting edge software.</p>}
+    />,
+    <LandingThumbnail
+        imageSrc={thumbnailImg3}
+        text={<p><span className="text-secondary">Power the new way forward</span> of campaigining with us</p>}
+    />
 ];
 
 export const career_text = (
@@ -25,14 +52,57 @@ export const career_text = (
     </>
 );
 
-export const peltola_text = (
+export const logos1 = [peltola_logo, ventura_logo, kumar_logo]
+export const logos2 = [ventura_logo, akdems_logo, peltola_logo, mcduffie_logo];
+
+
+export const joinus_content = (
+    <>
+        <p className={styles.heading4}>CAREER</p>
+        <p className={styles.heading3}>Join Us</p>
+        <p className={styles.paragraph}>
+            Power the New Way Forward of campaigning with us. From software
+            engineers and researchers to campaign managers and canvassers, we have a
+            team for you.
+        </p>
+    </>
+);
+
+export const landing_carousel = [
+    home_carousel01, home_carousel02,home_carousel03,
+];
+
+const peltola_text = (
     <>
         <p className={styles.heading4}>CASE STUDY</p>
         <p className={styles.heading3}>Mary Peltola</p>
         <p className={styles.paragraph}>
             How fish and freedom flipped a 50-year Republican stronghold against former governor Sarah Palin to seat the first Alaskan Native in Congress.
         </p>
-        <img src={peltola_logo} alt="test"/>
+        <img src={peltola_logo} className="h-[3vw] min-h-[75px] max-h-[60px] px-2 " />
+    </>
+);
+
+const ventura_text = (
+    <>
+        <p className={styles.heading4}>CASE STUDY</p>
+        <p className={styles.heading3}>Rachel Ventura</p>
+        <p className={styles.paragraph}>
+            How a former school board member beat out an incumbent while outraised 18-to-1 to win the Illinois State Senate seat.
+        </p>
+        <img src={ventura_logo} className="h-[3vw] min-h-[75px] max-h-[60px] px-2 " />
+
+    </>
+);
+const kumar_text = (
+    <>
+        <p className={styles.heading4}>CASE STUDY</p>
+        <p className={styles.heading3}>Rishi Kumar</p>
+        <p className={styles.paragraph}>
+            Holding a 30-year incumbent below 50% during the California primaries in a field dense with competition.
+        </p>
+        <img src={kumar_logo} className="h-[3vw] min-h-[75px] max-h-[60px] px-2 " />
+
     </>
 );
 
@@ -80,6 +150,14 @@ const dataContent = (
     </>
 );
 
+export const candidate_photos = [
+    peltola, ventura, kumar
+];
+
+export const candidate_texts = [
+    peltola_text, ventura_text, kumar_text
+];
+
 export const roles = [
     { content: strategyContent, imageSrc: careers_role01, imageAlt: 'Strategy image' },
     { content: researchContent, imageSrc: careers_role02, imageAlt: 'Marketing image' },
@@ -87,3 +165,36 @@ export const roles = [
     { content: dataContent, imageSrc: careers_role04, imageAlt: 'Operations image' }
 ];
 
+export const candidate_case_studies = [
+    <CandidateSlide
+        imageSrc={candidate_photos[0]}
+        imageAlt='Peltola image'
+        content={candidate_texts[0]}
+    />,
+    <CandidateSlide
+        imageSrc={candidate_photos[1]}
+        imageAlt='Peltola image'
+        content={candidate_texts[1]}
+
+    />,
+    <CandidateSlide
+        imageSrc={candidate_photos[2]}
+        imageAlt='Peltola image'
+        content={candidate_texts[2]}
+    />
+]
+
+export const homepage_stats = [
+    {
+        number: "10+ states",
+        text: "impacted."
+    },
+    {
+        number: "75%",
+        text: "election success rate."
+    },
+    {
+        number: "7.5 million+",
+        text: "reached."
+    },
+]

@@ -1,6 +1,4 @@
-import React from 'react'
 import { Newsletter } from '../components'
-import styles from '../style'
 import { mission } from '../assets'
 import { mission_tags } from '../constants'
 const About = () => {

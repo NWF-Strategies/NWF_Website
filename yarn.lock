@@ -225,15 +225,9 @@
     "@babel/helper-validator-identifier" "^7.22.20"
     "to-fast-properties" "^2.0.0"
 
-<<<<<<< HEAD
 "@esbuild/darwin-x64@0.18.20":
   "integrity" "sha512-pc5gxlMDxzm513qPGbCbDukOdsGtKhfxD1zJKXjCCcU7ju50O7MeAZ8c4krSJcOIJGFR+qx21yMMVYwiQvyTyQ=="
   "resolved" "https://registry.npmjs.org/@esbuild/darwin-x64/-/darwin-x64-0.18.20.tgz"
-=======
-"@esbuild/darwin-arm64@0.18.20":
-  "integrity" "sha512-bxRHW5kHU38zS2lPTPOyuyTm+S+eobPUnTNkdJEfAddYgEcll4xkT8DB9d2008DtTbl7uJag2HuE5NZAZgnNEA=="
-  "resolved" "https://registry.npmjs.org/@esbuild/darwin-arm64/-/darwin-arm64-0.18.20.tgz"
->>>>>>> a5c7602c0392867760304b6e8ad77ffd2ff1a4d0
   "version" "0.18.20"
 
 "@eslint-community/eslint-utils@^4.2.0", "@eslint-community/eslint-utils@^4.4.0":
@@ -344,8 +338,6 @@
   "integrity" "sha512-Lm+fYpMfZoEucJ7cMxgt4dYt8jLfbpwRCzAjm9UgSLOkmlqo9gupxt6YX3DY0Fk155NT9l17d/ydi+964uS9Lw=="
   "resolved" "https://registry.npmjs.org/@remix-run/router/-/router-1.10.0.tgz"
   "version" "1.10.0"
-<<<<<<< HEAD
-=======
 
 "@splidejs/react-splide@^0.7.12":
   "integrity" "sha512-UfXH+j47jsMc4x5HA/aOwuuHPqn6y9+ZTNYPWDRD8iLKvIVMZlzq2unjUEvyDAU+TTVPZOXkG2Ojeoz0P4AkZw=="
@@ -358,7 +350,6 @@
   "integrity" "sha512-5I30evTJcAJQXt6vJ26g2xEkG+l1nXcpEw4xpKh0/FWQ8ozmAeTbtniVtVmz2sH1Es3vgfC4SS8B2X4o5JMptA=="
   "resolved" "https://registry.npmjs.org/@splidejs/splide/-/splide-4.1.4.tgz"
   "version" "4.1.4"
->>>>>>> a5c7602c0392867760304b6e8ad77ffd2ff1a4d0
 
 "@types/json-schema@^7.0.12":
   "integrity" "sha512-RbSSoHliUbnXj3ny0CNFOoxrIDV6SUGyStHsvDqosw6CkdPV8TtWGlfecuK4ToyMEAql6pzNxgCFKanovUzlgQ=="

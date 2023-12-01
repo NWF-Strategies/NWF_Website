@@ -4,10 +4,10 @@ import { footerLinks, socialMedia } from "../constants";
 
 const Footer = () => (
   <section
-    className={`${styles.flexCenter}  flex-col px-10 border-t-2 border-white bg-lightGrey py-4`}
+    className={`flex-col px-10 border-t-2 border-white bg-lightGrey py-4`}
   >
-    <div className={`${styles.flexStart} md:flex-row flex-col mb-8 w-full`}>
-      <div className='flex-[1] flex flex-row justify-start mr-10'>
+    <div className={`${styles.flexCenter} sm:flex-row flex-col mb-8 w-full`}>
+      <div className='flex-[1] flex  justify-start mr-10'>
         <img
           src={polygon}
           alt='NWF'
@@ -21,13 +21,13 @@ const Footer = () => (
       </div>
 
       <div className=''>
-        <div className='flex flex-row md:mt-0 mt-6'>
+        <div className='flex md:mt-0 mt-6'>
           {socialMedia.map((social, index) => (
             <img
               key={social.id}
               src={social.icon}
               alt={social.id}
-              className={`w-[21px] h-[21px] object-contain cursor-pointer ${
+              className={`w-[40px] h-[40px] object-contain cursor-pointer ${
                 index !== socialMedia.length - 1 ? "mr-6" : "mr-0"
               }`}
               onClick={() => window.open(social.link)}
@@ -37,7 +37,7 @@ const Footer = () => (
       </div>
     </div>
 
-    <div className='w-full flex justify-between  md:flex-col flex-col  ]'>
+    <div className='w-full  justify-between  flex-col hidden sm:flex'>
       <p className='font-poppins font-normal text-left text-[14px] leading-[27px] text-white text-bold'>
         STAY INFORMED
       </p>

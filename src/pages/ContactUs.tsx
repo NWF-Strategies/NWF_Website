@@ -19,7 +19,6 @@ const ContactUs = () => {
 
       <div className={`${layout.sectionImg} flex-col`}>
         <Form />
-        <Button label='Submit' />
       </div>
     </section>
   );

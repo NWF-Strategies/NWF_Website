@@ -5,7 +5,7 @@ const styles = {
     "font-poppins font-normal text-primary md:text-[15px] sm:text-[13px] leading-[25px] xs:leading-[30.8px]",
 
   paragraph2:
-    "`text-white font-poppins lg:text-[25px] md:text-[20px] sm:text-[15px] font-normal leading-normal",
+    "text-white font-poppins lg:text-[25px] md:text-[20px] sm:text-[15px] font-normal leading-normal",
 
   heading2:
     "text-secondary font-poppins font-black xs:text-[48px] text-[40px] xs:leading-[76.8px] leading-[66.8px] w-full",

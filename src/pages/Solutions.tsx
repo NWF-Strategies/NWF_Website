@@ -40,21 +40,33 @@ const Solutions = () => {
           </ul>
         </div>
       </div>
+
       <div className='teal__black__gradient pb-10'>
         <div className='h-fit py-10 px-10 mb-10'>
           <ul>
             {solutions_notes.map((item, index) => (
-              <li className="h-fit flex flex-row w-full py-1">
-                <div  className={`flex justify-center items-center w-1/2 ${index % 2 === 0 ? 'order-first' : 'order-last'} px-10`}>
-                  <img src={item.img} className="scale-[80%]"/>
+              <li className='h-fit flex flex-row w-full py-1'>
+                <div
+                  className={`flex justify-center items-center w-1/2 ${
+                    index % 2 === 0 ? "order-first" : "order-last"
+                  } px-10`}
+                >
+                  <img src={item.img} className='scale-[80%]' />
                 </div>
-                <div className="w-1/2 flex flex-col justify-center items-start">
-                  <h3 className="text-[#43BCCD] font-poppins text-[20px] font-semibold leading-normal tracking-widest">Solution {index + 1}</h3>
-                  <div className="flex flex-row items-center justify-start w-full">
-                    <img src={item.icon} className="w-[60px] h-[60px]"/>
-                    <h3 className="ml-3 text-white font-poppins lg:text-[45px] md:text-[30px] sm:text-[20px] font-normal leading-normal tracking-normal">{item.title}</h3>
+
+                <div className='w-1/2 flex flex-col justify-center items-start'>
+                  <h3 className='text-[#43BCCD] font-poppins text-[20px] font-semibold leading-normal tracking-widest'>
+                    Solution {index + 1}
+                  </h3>
+                  <div className='flex flex-row items-center justify-start w-full'>
+                    <img src={item.icon} className='w-[60px] h-[60px]' />
+                    <h3 className='ml-3 text-white font-poppins lg:text-[45px] md:text-[30px] sm:text-[20px] font-normal leading-normal tracking-normal'>
+                      {item.title}
+                    </h3>
                   </div>
-                  <p className="text-white lg:text-[23px] md:text-[15px] sm:text-[13px] font-normal font-poppins">{item.description}</p>
+                  <p className='text-white lg:text-[23px] md:text-[15px] sm:text-[13px] font-normal font-poppins'>
+                    {item.description}
+                  </p>
                 </div>
               </li>
             ))}

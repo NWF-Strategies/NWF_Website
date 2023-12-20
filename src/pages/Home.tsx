@@ -14,10 +14,10 @@ const Home = () => {
       {/* Text Section 1 */}
       <div className='h-fit grid grid-cols-2 gap-x-5 text-white items-center relative my-20'>
         <div className="mx-5 z-10">
-          <div className={`${styles.callout} ${styles.paragraph}`}>
+          <div className={`${styles.callout} ${styles.paragraph} mission-card`}>
             At New Way Forward Strategies, we believe that Democracy starts with accessibility. From local elections to nationwide races, campaigns begin with the individual. We started the New Way Forward to deploy frontiering technologies and strategies, providing change-makers the tools to operate cutting-edge, winning campaigns.
           </div>
-          <div className={`${styles.callout} ${styles.paragraph}`}>
+          <div className={`${styles.callout} ${styles.paragraph} mission-card`}>
             Coupled with our team’s combined 50 years in campaign management, NWF Strategies has won groundbreaking uphill battles, high-profile races, and facilitated landmark movements.
           </div>
         </div>
@@ -65,7 +65,7 @@ const Home = () => {
             </li>
           ))}
         </ul>
-        <div className={`${styles.callout}`}>
+        <div className={`${styles.callout} mission-card`}>
           <p className={styles.heading4}>SOLUTIONS</p>
           <p className={styles.heading3}>Our Services</p>
           <p className={styles.paragraph}>

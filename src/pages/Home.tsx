@@ -12,23 +12,32 @@ const Home = () => {
       <GenericCarousel slides={landing_thumbnails} />
       
       {/* Text Section 1 */}
-      <div className='h-fit grid grid-cols-2 gap-x-5 text-white items-center relative my-20'>
-        <div className="mx-5 z-10">
-          <div className={`${styles.callout} ${styles.paragraph} mission-card`}>
+      <div className="text-white border border-white w-fit h-fit">
+        <p>current screen size:</p>
+        <p className="sm:hidden">SMALL</p>
+        <p className="hidden sm:block lg:hidden">MEDIUM</p>
+        <p className="hidden lg:block">LARGE</p>
+      </div>
+      <div className='h-fit sm:grid sm:grid-cols-2 gap-x-5 text-white items-center relative my-20'>
+        <div className="mx-5 z-10 hidden sm:block">
+          <div className={`${styles.callout} ${styles.paragraph}`}>
             At New Way Forward Strategies, we believe that Democracy starts with accessibility. From local elections to nationwide races, campaigns begin with the individual. We started the New Way Forward to deploy frontiering technologies and strategies, providing change-makers the tools to operate cutting-edge, winning campaigns.
           </div>
-          <div className={`${styles.callout} ${styles.paragraph} mission-card`}>
+          <div className={`${styles.callout} ${styles.paragraph} hidden md:block`}>
             Coupled with our team’s combined 50 years in campaign management, NWF Strategies has won groundbreaking uphill battles, high-profile races, and facilitated landmark movements.
           </div>
         </div>
-        <div>
-          <p className={styles.heading4}>WHO WE ARE</p>
-          <p className={styles.heading3}>New Way Forward Strategies</p>
-          <p className={styles.paragraph}>
-            Changing politics one people-powered campaign at a time.
-          </p>
-          <img src={whoweare} />
-          <Button label="About Us" />
+        <div className={`${styles.marginX} sm:mx-1`}>
+          <div className="flex flex-col mx-[8vw] sm:mx-auto"> 
+            <p className={styles.heading4}>WHO WE ARE</p>
+            <p className={styles.heading3}>New Way Forward Strategies</p>
+            <p className={styles.paragraph}>
+              Changing politics one people-powered campaign at a time.
+            </p>
+          
+            <img src={whoweare} className="max-w-[550px]"/>
+            <Button label="About Us" />
+          </div>
         </div>
       </div>
 

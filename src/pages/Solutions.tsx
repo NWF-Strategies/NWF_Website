@@ -1,6 +1,6 @@
 import React from "react";
 import { solutions_tags, solutions_notes } from "../constants";
-import { Navbar, Footer, Newsletter } from "../components";
+import { Newsletter } from "../components";
 import styles from "../style";
 import { gear } from "../assets";
 const Solutions = () => {
@@ -10,23 +10,23 @@ const Solutions = () => {
         <img
           src={gear}
           alt='gear'
-          className='absolute left-0 overflow-hidden -z-10 lg:w-100 md:w-50 md:top-0 sm:top-0'
+          className='absolute left-0 overflow-hidden -z-10 lg:w-100 md:w-50 md:top-0 sm:top-0 '
         />
         <div className='w-[100%] flex flex-col justify-center items-left lg:pl-[20%] md:pl-[20%] sm:pl-[20%] pl-[20%] z-10'>
           <div>
             <h1
-              className={`text-[#43BCCD] font-poppins lg:text-[100px] md:text-[50px] sm:text-[40px] font-bold leading-normal text-left `}
+              className={`text-[#43BCCD] font-poppins lg:text-[100px] md:text-[50px]  max-sm:text-[40px] font-bold leading-normal sm:text-left text-center `}
             >
               Solutions
             </h1>
             <p
-              className={`text-white font-poppins lg:text-[25px] md:text-[20px] sm:text-[15px] font-normal leading-normal `}
+              className={`text-white font-poppins lg:text-[25px] md:text-[20px] sm:text-[15px] font-normal leading-normal max-sm:text-center`}
             >
               We combine traditional outreach strategy with innovative
               technology.
             </p>
           </div>
-          <ul className='lg:ml-[100px] md:ml-[50px] sm:ml-[40px] mt-10'>
+          <ul className='lg:ml-[100px] md:ml-[50px] sm:ml-[40px] mt-10 max-sm:hidden'>
             {solutions_tags.map((item) => (
               <li className='flex flex-row justify-start items-center w-full'>
                 <img src={item.img} className='lg:scale-1 md:scale-75' />
@@ -45,7 +45,7 @@ const Solutions = () => {
         <div className='h-fit py-10 px-10 mb-10'>
           <ul>
             {solutions_notes.map((item, index) => (
-              <li className='h-fit flex flex-row w-full py-1'>
+              <li className='h-fit flex flex-col sm:flex-row w-full py-1 items-center'>
                 <div
                   className={`flex justify-center items-center w-1/2 ${
                     index % 2 === 0 ? "order-first" : "order-last"
@@ -59,7 +59,10 @@ const Solutions = () => {
                     Solution {index + 1}
                   </h3>
                   <div className='flex flex-row items-center justify-start w-full'>
-                    <img src={item.icon} className='w-[60px] h-[60px]' />
+                    <img
+                      src={item.icon}
+                      className='w-[60px] h-[60px] max-sm:hidden'
+                    />
                     <h3 className='ml-3 text-white font-poppins lg:text-[45px] md:text-[30px] sm:text-[20px] font-normal leading-normal tracking-normal'>
                       {item.title}
                     </h3>

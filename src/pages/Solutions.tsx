@@ -41,8 +41,8 @@ const Solutions = () => {
         </div>
       </div>
 
-      <div className='teal__black__gradient pb-10'>
-        <div className='h-fit py-10 px-10 mb-10'>
+      <div className='teal__black__gradient pb-10 flex justify-center items-center flex-col'>
+        <div className='h-fit py-10 px-10 mb-10 lg:w-[70%] md:w-[90%]'>
           <ul>
             {solutions_notes.map((item, index) => (
               <li className='h-fit flex flex-row w-full py-1'>
@@ -72,7 +72,9 @@ const Solutions = () => {
             ))}
           </ul>
         </div>
-        <Newsletter />
+        <div>
+          <Newsletter />
+        </div>
       </div>
     </div>
   );

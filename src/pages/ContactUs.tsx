@@ -20,18 +20,6 @@ const ContactUs = () => {
         <Form />
       </div>
     </section>
-
-    // <div className='flex flex-col justify-center items-center w-1/2'>
-    //     <h2 className={`${styles.heading2}`}> Contact Us</h2>
-    //     <p className={`${styles.paragraph2} text-white  mt-5`}>
-    //       Send us any questions or inquiries via the contact form, or email us
-    //       at info@nwfstrategies.com.
-    //     </p>
-    //   </div>
-
-    //   <div className={`${layout.sectionImg} flex-col`}>
-    //     <Form />
-    //   </div>
   );
 };
 

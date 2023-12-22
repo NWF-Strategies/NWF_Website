@@ -1,9 +1,10 @@
 import { Newsletter, Button, JoinUs } from "../components";
 import { GenericCarousel } from "../components/GenericCarousel";
-import { homepage_stats, candidate_case_studies, landing_thumbnails, logos2 } from "../constants/div_constants"
+import { homepage_stats, candidate_case_studies, landing_thumbnails, logos2, landing_solutions } from "../constants/div_constants"
 import { solutions_tags } from "../constants/"
 import styles from "../style";
 import whoweare from "../assets/whoweare.png";
+import TwoPieceFormat from "../components/TwoPieceFormat";
 
 
 const Home = () => {
@@ -12,12 +13,6 @@ const Home = () => {
       <GenericCarousel slides={landing_thumbnails} />
       
       {/* Text Section 1 */}
-      <div className="text-white border border-white w-fit h-fit">
-        <p>current screen size:</p>
-        <p className="sm:hidden">SMALL</p>
-        <p className="hidden sm:block lg:hidden">MEDIUM</p>
-        <p className="hidden lg:block">LARGE</p>
-      </div>
       <div className='h-fit sm:grid sm:grid-cols-2 gap-x-5 text-white items-center relative my-20'>
         <div className="mx-5 z-10 hidden sm:block">
           <div className={`${styles.callout} ${styles.paragraph}`}>
@@ -61,8 +56,15 @@ const Home = () => {
       </div>
 
       {/* Text Section 2 */}
-      <div className='h-fit flex flex-row text-white justify-center items-center mx-auto my-20'>
-        <ul className='lg:mx-[80px] md:mx-[30px] sm:mx-[20px] w-fit'>
+      {/* <div className="text-white border border-white w-fit h-fit">
+        <p>current screen size:</p>
+        <p className="sm:hidden">SMALL</p>
+        <p className="hidden sm:block lg:hidden">MEDIUM</p>
+        <p className="hidden lg:block">LARGE</p>
+      </div> */}
+      <div className={`${styles.marginX} h-fit flex flex-row text-white justify-center items-center my-20`}>
+        {/* Non-Mobile */}
+        <ul className='hidden sm:block lg:mx-[80px] md:mx-[30px] sm:mx-[20px] w-fit'>
           {solutions_tags.map((item) => (
             <li className='flex flex-row justify-start items-center w-full'>
               <img src={item.img} className='scale-100 mr-8' />
@@ -81,7 +83,18 @@ const Home = () => {
             We combine traditional outreach strategy with innovative technology.
           </p>
           <Button label="Explore Our Services"/>
-        </div>
+      </div>
+      </div>
+      {/* Mobile */}
+      <div className={`${styles.marginX} items-center sm:hidden`}>
+        {landing_solutions.map((role, index) => (
+          <TwoPieceFormat
+            key={index}
+            imageSrc={role.imageSrc}
+            imageAlt={role.imageAlt}
+            content={role.content}
+          />
+        ))}
       </div>
       <GenericCarousel slides={candidate_case_studies} />
 

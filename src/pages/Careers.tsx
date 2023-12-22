@@ -29,13 +29,13 @@ const Career = () => {
   ];
   return (
     <div>
-      <div className='relative lg:h-[100vh] h-[450px] py-[100px] blue__black__gradient flex flex-col items-center z-10'>
+      <div className='relative  h-[450px] py-[100px] blue__black__gradient flex flex-col items-center z-10'>
         <img
           src={careers_img}
           alt='people together'
-          className='absolute left-0 overflow-hidden -z-10 lg:w-100 md:w-50 md:top-0 sm:top-0'
+          className='absolute left-0 overflow-hidden -z-10 lg:w-100 md:w-50 md:top-0 sm:top-0 sm:w-fit w-[30rem]'
         />
-        <div className='w-[100%] flex flex-col justify-center items-left lg:ml-[30%] md:ml-[30%] sm:ml-[30%] ml-[30%] z-10 lg:top-[150px] md:top-[150px] sm:top-[150px]'>
+        <div className='w-[100%] flex flex-col justify-center items-left  md:ml-[30%] sm:ml-[30%] ml-[30%] z-10 lg:top-[150px] md:top-[150px] sm:top-[150px]'>
           <div>
             <h1
               className={`text-[#43BCCD] font-poppins lg:text-[100px] md:text-[50px] sm:text-[40px] font-bold leading-normal text-left `}
@@ -78,7 +78,7 @@ const Career = () => {
             <p>Interns play a vital role in the success of our campaigns. This internship is a great opportunity for students to gain hands-on experience in local and national politics. Interns will develop skills in research, communication, and leadership.</p>
             <br></br>
             Qualifications:
-            <ul className="list-disc">
+            <ul className="list-disc mx-5">
               <li>Currently enrolled in high school or above</li>
               <li>Strong verbal communication skills in English</li>
               <li>Natural intellectual curiosity and genuine passion for continuous learning</li>

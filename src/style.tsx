@@ -13,14 +13,14 @@ const styles = {
   heading1: `text-[#43BCCD] font-poppins lg:text-[100px] md:text-[50px] sm:text-[40px] font-bold leading-normal text-left `,
 
   heading3:
-    "font-poppins font-normal md:text-[30px] sm:text-[20px] text-white xs:leading-[76.8px] leading-[66.8px] w-full",
+    "font-poppins font-normal md:text-[30px] text-[20px] text-white xs:leading-[76.8px] leading-[66.8px] w-full",
   heading4:
     "font-poppins font-semibold	xs:text-20px text-[#43BCCD] tracking-[0.15px]",
 
   heading5:
     "font-poppins tracking-tighter font-[1000] bold text-[#43BCCD] text-[55px] leading-[50px]",
 
-  callout: "font-poppins bg-[#185767] h-fit rounded-2xl p-10 m-5",
+  callout: "font-poppins bg-[#185767] h-fit rounded-2xl p-10 m-5 mission-card",
 
   button:
     "bg-none hover:bg-secondaryButton border border-secondaryButton text-secondary hover:text-white w-fit rounded-2xl py-1 px-4 font-poppins font-light mt-5",

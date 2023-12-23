@@ -3,6 +3,7 @@ import {
   instagram,
   linkedin,
   twitter,
+  indeed,
   person,
   research,
   sms_Fill,
@@ -88,18 +89,8 @@ export const socialMedia = [
   },
   {
     id: "social-media-1",
-    icon: instagram,
-    link: "https://www.instagram.com/",
-  },
-  {
-    id: "social-media-3",
-    icon: twitter,
-    link: "https://www.twitter.com/",
-  },
-  {
-    id: "social-media-2",
-    icon: facebook,
-    link: "https://www.facebook.com/",
+    icon: indeed,
+    link: "https://www.indeed.com/cmp/Nwf-Strategies/jobs",
   },
 ];
 

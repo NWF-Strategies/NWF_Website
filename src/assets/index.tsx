@@ -5,6 +5,7 @@ import arrowUp from "./arrow-up.svg";
 import instagram from "./instagram.svg";
 import linkedin from "./linkedin.svg";
 import twitter from "./twitter.svg";
+import indeed from "./indeed.svg";
 import facebook from "./facebook.svg";
 import polygon from "./Polygon.svg";
 import person from "./person.svg";
@@ -49,6 +50,7 @@ export {
   facebook,
   instagram,
   linkedin,
+  indeed,
   twitter,
   polygon,
 };

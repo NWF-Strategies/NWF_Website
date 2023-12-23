@@ -179,6 +179,18 @@
   left: -35px; /* Half of the width to align it properly on the line */
   z-index: 1;
 }
+@media screen and (max-width: 480px) {
+  .timeline-event::before {
+    left: -25px; /* Adjust the left value for xs screens */
+  }
+}
+
+/* Media query for xxs screens */
+@media screen and (max-width: 300px) {
+  .timeline-event::before {
+    left: -30px; /* Adjust the left value for xxs screens */
+  }
+}
 
 /* Styles for each event on the timeline */
 .timeline-event {

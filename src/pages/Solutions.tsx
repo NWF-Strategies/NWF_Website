@@ -10,7 +10,7 @@ const Solutions = () => {
         <img
           src={gear}
           alt='gear'
-          className='absolute left-0 overflow-hidden -z-10 lg:w-100 md:w-50 md:top-0 sm:top-0'
+          className='absolute left-0 overflow-hidden -z-10 lg:w-100 md:w-50 md:top-0 sm:top-0 xs:-top-10 '
         />
         <div className='w-[100%] flex flex-col justify-center items-left lg:pl-[20%] md:pl-[20%] sm:pl-[20%] pl-[20%] z-10'>
           <div>

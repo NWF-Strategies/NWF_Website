@@ -9,7 +9,7 @@ interface GenericCarouselProps {
 export const GenericCarousel: React.FC<GenericCarouselProps> = ({ slides }) => {
   return (
     <Carousel
-      autoPlay={false}
+      autoPlay={true}
       infiniteLoop={true}
       showStatus={false}
       dynamicHeight={false}

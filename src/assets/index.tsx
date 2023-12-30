@@ -7,7 +7,7 @@ import linkedin from "./linkedin.svg";
 import twitter from "./twitter.svg";
 import indeed from "./indeed.svg";
 import facebook from "./facebook.svg";
-import polygon from "./Polygon.svg";
+import polygon from "./polygon.svg";
 import person from "./person.svg";
 import research from "./research.svg";
 import vibration from "./Vibration.svg";

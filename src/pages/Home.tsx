@@ -52,7 +52,7 @@ const Home = () => {
       {/* Firm Statistics Section */}
       <div className='flex flex-col justify-center items-center my-8'>
         <div className='flex flex-col sm:flex-row items-center'>
-          {homepage_stats.map((content, index) => (
+          {homepage_stats.map((content) => (
             <div className='items-center text-center py-10 mx-10'>
               <p className={`${styles.heading5}`}>{content.number}</p>
               <p className={`${styles.paragraph}`}>{content.text}</p>

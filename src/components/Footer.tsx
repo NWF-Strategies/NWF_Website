@@ -1,6 +1,6 @@
 import styles from "../style";
 import { logo, polygon, mail } from "../assets";
-import { footerLinks, socialMedia } from "../constants";
+import { socialMedia } from "../constants";
 
 const Footer = () => (
   <section

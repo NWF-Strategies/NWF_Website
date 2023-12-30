@@ -1,17 +1,16 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { Solutions, About, Careers, ContactUs, Home } from "./pages/";
 import { Navbar, Footer } from "./components";
-import styles from "./style";
 // ... import other pages as well
 
 function App() {
-  const DefaultPadding: React.FC<{ children: React.ReactNode }> = ({
-    children,
-  }) => (
-    <div className={`${styles.paddingX} ${styles.flexCenter}`}>
-      <div className={`${styles.boxWidth}`}>{children}</div>
-    </div>
-  );
+  // const DefaultPadding: React.FC<{ children: React.ReactNode }> = ({
+  //   children,
+  // }) => (
+  //   <div className={`${styles.paddingX} ${styles.flexCenter}`}>
+  //     <div className={`${styles.boxWidth}`}>{children}</div>
+  //   </div>
+  // );
 
   return (
     <div className='bg-grey'>

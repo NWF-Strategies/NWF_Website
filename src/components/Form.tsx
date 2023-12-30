@@ -1,5 +1,3 @@
-import styles from "../style";
-
 const Form = () => {
   return (
     //This form just need to be changed to work with the company's email.

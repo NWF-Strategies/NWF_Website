@@ -1,7 +1,5 @@
-import React from "react";
 import { solutions_tags, solutions_notes } from "../constants";
-import { Navbar, Footer, Newsletter } from "../components";
-import styles from "../style";
+import { Newsletter } from "../components";
 import { gear } from "../assets";
 const Solutions = () => {
   return (

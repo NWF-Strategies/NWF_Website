@@ -46,7 +46,7 @@ const About = () => {
           </div>
           <div className='pl-10 w-[40%] xs:w-[100%] xxs:w-[100%]'>
               <div className="timeline-container h-full">
-                  {mission_tags.map((event, index) => (
+                  {mission_tags.map((event) => (
                       <div className="timeline-event ">
                           <h3 className='text-white'>{event.date}</h3>
                           <p className='text-white'>{event.description}</p>

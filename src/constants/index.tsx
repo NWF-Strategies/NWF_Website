@@ -1,8 +1,5 @@
 import {
-  facebook,
-  instagram,
   linkedin,
-  twitter,
   indeed,
   person,
   research,
@@ -11,13 +8,11 @@ import {
   research_dev,
   operation,
   software_data,
-  software_data_bg,
   strategy,
   sms_colored,
   research_colored,
   person_colored,
   vibration_colored,
-  mail,
 } from "../assets";
 
 export const navLinks = [

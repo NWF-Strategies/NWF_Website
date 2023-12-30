@@ -1,5 +1,4 @@
-import React from "react";
-import { Navbar, Footer, Newsletter } from "../components";
+import { Newsletter } from "../components";
 import styles from "../style";
 import careers_img from "../assets/careers_img.png";
 
@@ -120,7 +119,7 @@ const Career = () => {
             </div>
           </div>
           <div className='flex flex-col sm:flex-row items-center'>
-            {career_categories.map((content, index) => (
+            {career_categories.map((content) => (
               <div className='items-center text-center py-10 mx-10'>
                 <img src={content.imgSrc} />
                 <p className={`${styles.heading3}`}>{content.title}</p>

@@ -1,6 +1,4 @@
-import React from "react";
 import styles, { layout } from "../style";
-import Button from "../components/Button";
 import Form from "../components/Form";
 
 const ContactUs = () => {

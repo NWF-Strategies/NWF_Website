@@ -1,5 +1,3 @@
-import React from "react";
-import styles from "../style";
 import TwoPieceFormat from "./TwoPieceFormat";
 import coverPhoto from "../assets/home_careers.png";
 import { joinus_content } from "../constants/div_constants";

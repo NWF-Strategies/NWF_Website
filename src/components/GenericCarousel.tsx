@@ -14,7 +14,7 @@ export const GenericCarousel: React.FC<GenericCarouselProps> = ({ slides }) => {
       showStatus={false}
       dynamicHeight={false}
     >
-      {slides.map((slideContent, index) => (
+      {slides.map((slideContent) => (
         <div className=''>{slideContent}</div>
       ))}
     </Carousel>

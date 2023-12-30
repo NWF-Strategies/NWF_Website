@@ -11,7 +11,7 @@ import polygon from "./polygon.svg";
 import person from "./person.svg";
 import research from "./research.svg";
 import vibration from "./vibration.svg";
-import sms_Fill from "./sms_Fill.svg";
+import sms_Fill from "./sms_fill.svg";
 import gear from "./gear.svg";
 import operation from "./operation.png";
 import research_dev from "./research_dev.png";

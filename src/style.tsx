@@ -7,18 +7,16 @@ const styles = {
   paragraph2:
     "text-white font-poppins lg:text-[25px] md:text-[20px] sm:text-[15px] font-normal leading-normal",
 
+    
+  heading1: `text-[#43BCCD] font-poppins lg:text-[100px] md:text-[50px] sm:text-[40px] font-bold leading-normal text-left `,    
   heading2:
     "text-secondary font-poppins font-black xs:text-[48px] text-[40px] xs:leading-[76.8px] leading-[66.8px] w-full",
-
-  heading1: `text-[#43BCCD] font-poppins lg:text-[100px] md:text-[50px] sm:text-[40px] font-bold leading-normal text-left `,
-
   heading3:
     "font-poppins font-normal md:text-[30px] text-[20px] text-white xs:leading-[76.8px] leading-[66.8px] w-full",
   heading4:
     "font-poppins font-semibold	xs:text-20px text-[#43BCCD] tracking-[0.15px]",
-
   heading5:
-    "font-poppins tracking-tighter font-[1000] bold text-[#43BCCD] text-[55px] leading-[50px]",
+    "font-poppins tracking-tighter font-[1000] bold text-[#43BCCD] sm:leading-[5rem] md:text-[50px] sm:text-[55px] text-[40px]",
 
   callout: "font-poppins bg-[#185767] h-fit rounded-2xl p-10 m-5 mission-card",
 

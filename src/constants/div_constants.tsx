@@ -42,7 +42,7 @@ export const landing_thumbnails = [
       <p>
         Learn how we've{" "}
         <span className='text-secondary'>driven people-powered</span>{" "}
-        on-the-ground campaigns with cutting edge software.
+        campaigns with cutting edge software.
       </p>
     }
   />,
@@ -51,7 +51,7 @@ export const landing_thumbnails = [
     text={
       <p>
         <span className='text-secondary'>Power the new way forward</span> of
-        campaigining with us
+        campaigning with us
       </p>
     }
   />,

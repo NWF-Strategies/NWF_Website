@@ -11,11 +11,32 @@ import { solutions_tags } from "../constants/";
 import styles from "../style";
 import whoweare from "../assets/whoweare.png";
 import TwoPieceFormat from "../components/TwoPieceFormat";
+import LandingThumbnail from "../components/LandingThumbnail";
+import thumbnailImg1 from "../assets/home_carousel01.png";
 
 const Home = () => {
   return (
     <>
-      <GenericCarousel slides={landing_thumbnails} />
+    <div className="sm:hidden">
+      <LandingThumbnail
+          imageSrc={thumbnailImg1}
+          text={
+            <p>
+              <span className='text-secondary'>Innovating today</span> for the
+              campaigns of tomorrow
+            </p>
+          }
+        />
+    </div>
+    <div className="hidden sm:block">
+        <GenericCarousel slides={landing_thumbnails} />
+    </div>
+      {/* <div className="text-white border border-white w-fit h-fit">
+        <p>current screen size:</p>
+        <p className="sm:hidden">SMALL</p>
+        <p className="hidden sm:block lg:hidden">MEDIUM</p>
+        <p className="hidden lg:block">LARGE</p>
+      </div> */}
 
       {/* Text Section 1 */}
       <div className='h-fit sm:grid sm:grid-cols-2 gap-x-5 text-white items-center relative my-20'>
@@ -73,12 +94,6 @@ const Home = () => {
       </div>
 
       {/* Text Section 2 */}
-      {/* <div className="text-white border border-white w-fit h-fit">
-        <p>current screen size:</p>
-        <p className="sm:hidden">SMALL</p>
-        <p className="hidden sm:block lg:hidden">MEDIUM</p>
-        <p className="hidden lg:block">LARGE</p>
-      </div> */}
       <div
         className={`${styles.marginX} h-fit flex flex-row text-white justify-center items-center my-20`}
       >

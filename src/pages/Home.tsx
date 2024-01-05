@@ -16,6 +16,11 @@ import LandingThumbnail from "../components/LandingThumbnail";
 import thumbnailImg1 from "../assets/home_carousel01.png";
 
 const Home = () => {
+  let navigate = useNavigate();
+  const routeChange = () => {
+    let path = `/`;
+    navigate(path);
+  };
   return (
     <>
       <div className='sm:hidden'>
@@ -67,7 +72,7 @@ const Home = () => {
 
             <img src={whoweare} className='max-w-[550px]' />
             <ExampleButton
-              onClick={() => alert("You clicked on the About Us Button")}
+              onClick={() => navigate("/about")}
               children='About Us'
             />
           </div>
@@ -117,9 +122,7 @@ const Home = () => {
             We combine traditional outreach strategy with innovative technology.
           </p>
           <ExampleButton
-            onClick={() =>
-              alert("You clicked on the explore our services button")
-            }
+            onClick={() => navigate("/solutions")}
             children='Explore Our Services'
           />
         </div>

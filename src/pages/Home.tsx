@@ -1,5 +1,6 @@
-import { Newsletter, Button, JoinUs } from "../components";
+import { Newsletter, Button, ExampleButton, JoinUs } from "../components";
 import { GenericCarousel } from "../components/GenericCarousel";
+import { useNavigate } from "react-router-dom";
 import {
   homepage_stats,
   candidate_case_studies,
@@ -17,8 +18,8 @@ import thumbnailImg1 from "../assets/home_carousel01.png";
 const Home = () => {
   return (
     <>
-    <div className="sm:hidden">
-      <LandingThumbnail
+      <div className='sm:hidden'>
+        <LandingThumbnail
           imageSrc={thumbnailImg1}
           text={
             <p>
@@ -27,10 +28,10 @@ const Home = () => {
             </p>
           }
         />
-    </div>
-    <div className="hidden sm:block">
+      </div>
+      <div className='hidden sm:block'>
         <GenericCarousel slides={landing_thumbnails} />
-    </div>
+      </div>
       {/* <div className="text-white border border-white w-fit h-fit">
         <p>current screen size:</p>
         <p className="sm:hidden">SMALL</p>
@@ -65,7 +66,10 @@ const Home = () => {
             </p>
 
             <img src={whoweare} className='max-w-[550px]' />
-            <Button label='About Us' />
+            <ExampleButton
+              onClick={() => alert("You clicked on the About Us Button")}
+              children='About Us'
+            />
           </div>
         </div>
       </div>
@@ -112,7 +116,12 @@ const Home = () => {
           <p className={styles.paragraph}>
             We combine traditional outreach strategy with innovative technology.
           </p>
-          <Button label='Explore Our Services' />
+          <ExampleButton
+            onClick={() =>
+              alert("You clicked on the explore our services button")
+            }
+            children='Explore Our Services'
+          />
         </div>
       </div>
       {/* Mobile */}

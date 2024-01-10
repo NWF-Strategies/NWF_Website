@@ -1,7 +1,6 @@
 import { Newsletter, ExampleButton } from "../components";
 import styles from "../style";
 import careers_img from "../assets/careers_img.png";
-import { useNavigate } from "react-router-dom";
 import TwoPieceFormat from "../components/TwoPieceFormat";
 import Button from "../components/Button";
 
@@ -12,8 +11,6 @@ import careers_category02 from "../assets/careers_category02.png";
 import careers_category03 from "../assets/careers_category03.png";
 
 const Career = () => {
-  let navigate = useNavigate();
-
   const career_categories = [
     {
       imgSrc: careers_category01,
@@ -79,7 +76,11 @@ const Career = () => {
               ))}
               <div className='flex justify-center'>
                 <ExampleButton
-                  onClick={() => navigate("/careers")}
+                  onClick={() =>
+                    window.open(
+                      "https://www.indeed.com/cmp/Nwf-Strategies/jobs"
+                    )
+                  }
                   children='See More Job Listings'
                 />
               </div>
@@ -124,7 +125,9 @@ const Career = () => {
             </div>
             <div className='flex justify-center'>
               <ExampleButton
-                onClick={() => navigate("/careers")}
+                onClick={() =>
+                  window.open("https://www.indeed.com/cmp/Nwf-Strategies")
+                }
                 children='Interested? Visit us on Indeed'
               />
             </div>
@@ -136,7 +139,11 @@ const Career = () => {
                 <p className={`${styles.heading3}`}>{content.title}</p>
                 <div className='flex justify-center'>
                   <ExampleButton
-                    onClick={() => navigate("/careers")}
+                    onClick={() =>
+                      window.open(
+                        "https://www.indeed.com/cmp/Nwf-Strategies/jobs"
+                      )
+                    }
                     children='Apply Now'
                   />
                 </div>

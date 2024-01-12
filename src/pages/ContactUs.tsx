@@ -4,7 +4,6 @@ import Form from "../components/Form";
 const ContactUs = () => {
   return (
     <section
-      id='features'
       className={`${layout.section} ${styles.paddingX} ${styles.paddingY}`}
     >
       <div className='flex flex-col py-3 sm:flex-row justify-between items-center w-full '>

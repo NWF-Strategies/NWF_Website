@@ -98,7 +98,9 @@ const peltola_text = (
       How fish and freedom flipped a 50-year Republican stronghold against
       former governor Sarah Palin to seat the first Alaskan Native in Congress.
     </p>
-    <img src={peltola_logo} className='h-[16vw] px-20  ' />
+    {/* <div className="w-50">
+      <img src={peltola_logo} className='px-20 ' />
+    </div> */}
   </>
 );
 
@@ -110,7 +112,9 @@ const ventura_text = (
       How a former school board member beat out an incumbent while outraised
       18-to-1 to win the Illinois State Senate seat.
     </p>
-    <img src={ventura_logo} className='h-[12vw] px-20 ' />
+    {/* <div className="w-50">
+      <img src={ventura_logo} className='px-20' />
+    </div> */}
   </>
 );
 const kumar_text = (
@@ -121,7 +125,9 @@ const kumar_text = (
       Holding a 30-year incumbent below 50% during the California primaries in a
       field dense with competition.
     </p>
-    <img src={kumar_logo} className='mt-4 h-[12vw] lg:p-0 px-20 py-4' />
+    {/* <div className="w-50">
+      <img src={kumar_logo} className='px-20' />
+    </div> */}
   </>
 );
 

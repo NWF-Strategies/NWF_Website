@@ -6,6 +6,8 @@ import {
   landing_thumbnails,
   logos2,
   landing_solutions,
+  candidate_photos,
+  candidate_texts,
 } from "../constants/div_constants";
 import { solutions_tags } from "../constants/";
 import styles from "../style";
@@ -13,6 +15,7 @@ import whoweare from "../assets/whoweare.png";
 import TwoPieceFormat from "../components/TwoPieceFormat";
 import LandingThumbnail from "../components/LandingThumbnail";
 import thumbnailImg1 from "../assets/home_carousel01.png";
+import CandidateSlide from "../components/CandidateSlide";
 
 const Home = () => {
   return (
@@ -31,12 +34,15 @@ const Home = () => {
     <div className="hidden sm:block">
         <GenericCarousel slides={landing_thumbnails} />
     </div>
-      {/* <div className="text-white border border-white w-fit h-fit">
+      <div className="text-white border border-white w-fit h-fit">
         <p>current screen size:</p>
-        <p className="sm:hidden">SMALL</p>
-        <p className="hidden sm:block lg:hidden">MEDIUM</p>
-        <p className="hidden lg:block">LARGE</p>
-      </div> */}
+
+        <p className="sm:hidden">XXS/XS (Mobile)</p>
+        <p className="hidden sm:block md:hidden">SM (Small)</p>
+        <p className="hidden md:block lg:hidden">MD (Medium)</p>
+        <p className="hidden lg:block">LG (Large)</p>
+
+      </div>
 
       {/* Text Section 1 */}
       <div className='h-fit sm:grid sm:grid-cols-2 gap-x-5 text-white items-center relative my-20'>
@@ -126,6 +132,7 @@ const Home = () => {
           />
         ))}
       </div>
+      
       <GenericCarousel slides={candidate_case_studies} />
 
       <JoinUs />

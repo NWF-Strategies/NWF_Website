@@ -1,31 +1,14 @@
-import { Newsletter } from "../components";
+import { useNavigate } from 'react-router-dom';
+
+import { Newsletter, ExampleButton } from "../components";
 import styles from "../style";
 import careers_img from "../assets/careers_img.png";
-
 import TwoPieceFormat from "../components/TwoPieceFormat";
-import Button from "../components/Button";
 
-import { roles } from "../constants/div_constants";
-
-import careers_category01 from "../assets/careers_category01.png";
-import careers_category02 from "../assets/careers_category02.png";
-import careers_category03 from "../assets/careers_category03.png";
+import { roles, career_categories } from "../constants/div_constants";
 
 const Career = () => {
-  const career_categories = [
-    {
-      imgSrc: careers_category01,
-      title: "Operations",
-    },
-    {
-      imgSrc: careers_category02,
-      title: "Research",
-    },
-    {
-      imgSrc: careers_category03,
-      title: "Data",
-    },
-  ];
+  const navigate = useNavigate();
   return (
     <div>
       <div className='relative  h-[450px] py-[100px] blue__black__gradient flex flex-col items-center z-10'>
@@ -58,7 +41,10 @@ const Career = () => {
             Please attach your resume and any relevant links in your email to
             info@nwfstrategies.com.
           </p>
-          <Button label='Apply via Email' />
+          <ExampleButton
+            onClick={() => navigate("/careers")}
+            children='Apply Via Email'
+          />
         </div>
 
         <div className='pb-10 justify-center'>
@@ -73,7 +59,14 @@ const Career = () => {
                 />
               ))}
               <div className='flex justify-center'>
-                <Button label='See More Job Listings' />
+                <ExampleButton
+                  onClick={() =>
+                    window.open(
+                      "https://www.indeed.com/cmp/Nwf-Strategies/jobs"
+                    )
+                  }
+                  children='See More Job Listings'
+                />
               </div>
             </div>
           </div>
@@ -115,7 +108,12 @@ const Career = () => {
               </p>
             </div>
             <div className='flex justify-center'>
-              <Button label='Interested? Visit us on Indeed' />
+              <ExampleButton
+                onClick={() =>
+                  window.open("https://www.indeed.com/cmp/Nwf-Strategies")
+                }
+                children='Interested? Visit us on Indeed'
+              />
             </div>
           </div>
           <div className='flex flex-col sm:flex-row items-center'>
@@ -124,7 +122,14 @@ const Career = () => {
                 <img src={content.imgSrc} />
                 <p className={`${styles.heading3}`}>{content.title}</p>
                 <div className='flex justify-center'>
-                  <Button label='Apply Now' />
+                  <ExampleButton
+                    onClick={() =>
+                      window.open(
+                        "https://www.indeed.com/cmp/Nwf-Strategies/jobs"
+                      )
+                    }
+                    children='Apply Now'
+                  />
                 </div>
               </div>
             ))}

@@ -1,13 +1,12 @@
-import { Newsletter, Button, JoinUs } from "../components";
+import { Newsletter, ExampleButton, JoinUs } from "../components";
 import { GenericCarousel } from "../components/GenericCarousel";
+import { useNavigate } from "react-router-dom";
 import {
   homepage_stats,
   candidate_case_studies,
   landing_thumbnails,
   logos2,
   landing_solutions,
-  candidate_photos,
-  candidate_texts,
 } from "../constants/div_constants";
 import { solutions_tags } from "../constants/";
 import styles from "../style";
@@ -15,13 +14,17 @@ import whoweare from "../assets/whoweare.png";
 import TwoPieceFormat from "../components/TwoPieceFormat";
 import LandingThumbnail from "../components/LandingThumbnail";
 import thumbnailImg1 from "../assets/home_carousel01.png";
-import CandidateSlide from "../components/CandidateSlide";
 
 const Home = () => {
+  let navigate = useNavigate();
+  // const routeChange = () => {
+  //   let path = `/`;
+  //   navigate(path);
+  // };
   return (
     <>
-    <div className="sm:hidden">
-      <LandingThumbnail
+      <div className='sm:hidden'>
+        <LandingThumbnail
           imageSrc={thumbnailImg1}
           text={
             <p>
@@ -30,11 +33,11 @@ const Home = () => {
             </p>
           }
         />
-    </div>
-    <div className="hidden sm:block">
+      </div>
+      <div className='hidden sm:block'>
         <GenericCarousel slides={landing_thumbnails} />
-    </div>
-      <div className="text-white border border-white w-fit h-fit">
+      </div>
+      {/* <div className="text-white border border-white w-fit h-fit">
         <p>current screen size:</p>
 
         <p className="sm:hidden">XXS/XS (Mobile)</p>
@@ -71,7 +74,10 @@ const Home = () => {
             </p>
 
             <img src={whoweare} className='max-w-[550px]' />
-            <Button label='About Us' />
+            <ExampleButton
+              onClick={() => navigate("/about")}
+              children='About Us'
+            />
           </div>
         </div>
       </div>
@@ -118,7 +124,10 @@ const Home = () => {
           <p className={styles.paragraph}>
             We combine traditional outreach strategy with innovative technology.
           </p>
-          <Button label='Explore Our Services' />
+          <ExampleButton
+            onClick={() => navigate("/solutions")}
+            children='Explore Our Services'
+          />
         </div>
       </div>
       {/* Mobile */}

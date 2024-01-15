@@ -26,6 +26,10 @@ import thumbnailImg3 from "../assets/home_carousel03.png";
 import LandingThumbnail from "../components/LandingThumbnail";
 import CandidateSlide from "../components/CandidateSlide";
 
+import careers_category01 from "../assets/careers_category01.png";
+import careers_category02 from "../assets/careers_category02.png";
+import careers_category03 from "../assets/careers_category03.png";
+
 export const landing_thumbnails = [
   <LandingThumbnail
     imageSrc={thumbnailImg1}
@@ -312,5 +316,20 @@ export const homepage_stats = [
   {
     number: "7.5 million+",
     text: "reached.",
+  },
+];
+
+export const career_categories = [
+  {
+    imgSrc: careers_category01,
+    title: "Operations",
+  },
+  {
+    imgSrc: careers_category02,
+    title: "Research",
+  },
+  {
+    imgSrc: careers_category03,
+    title: "Data",
   },
 ];

@@ -1,5 +1,5 @@
 import styles from "../style";
-import { logo, polygon, mail } from "../assets";
+import { logo, polygon } from "../assets";
 import { socialMedia } from "../constants";
 
 const Footer = () => (
@@ -41,7 +41,7 @@ const Footer = () => (
       <p className='font-poppins font-normal text-left text-[14px] leading-[27px] text-white text-bold'>
         STAY INFORMED
       </p>
-      <form className='w-85 max-w-md  pb-6'>
+      {/* <form className='w-85 max-w-md  pb-6'>
         <div className='flex h-10 relative'>
           <div className='absolute inset-y-0 start-0 flex items-center ps-2 pointer-events-none'>
             <img src={mail}></img>
@@ -59,7 +59,7 @@ const Footer = () => (
             subscribe
           </button>
         </div>
-      </form>
+      </form> */}
 
       <p className='font-poppins font-normal text-left text-[14px] leading-[27px] text-white'>
         Ⓒ 2023 New Way Forward. All Rights Reserved.

@@ -1,4 +1,5 @@
 import styles from "../style";
+import { useNavigate } from "react-router-dom";
 
 import home_carousel01 from "../assets/home_carousel01.png";
 import home_carousel02 from "../assets/home_carousel02.png";
@@ -29,6 +30,7 @@ import CandidateSlide from "../components/CandidateSlide";
 import careers_category01 from "../assets/careers_category01.png";
 import careers_category02 from "../assets/careers_category02.png";
 import careers_category03 from "../assets/careers_category03.png";
+import { Button, ExampleButton } from "../components";
 
 export const landing_thumbnails = [
   <LandingThumbnail
@@ -39,6 +41,7 @@ export const landing_thumbnails = [
         campaigns of tomorrow
       </p>
     }
+    button_label="The New Way Forward"
   />,
   <LandingThumbnail
     imageSrc={thumbnailImg2}
@@ -49,6 +52,7 @@ export const landing_thumbnails = [
         campaigns with cutting edge software.
       </p>
     }
+    button_label="Our Work"
   />,
   <LandingThumbnail
     imageSrc={thumbnailImg3}
@@ -58,6 +62,7 @@ export const landing_thumbnails = [
         campaigning with us
       </p>
     }
+    button_label="Careers"
   />,
 ];
 
@@ -76,17 +81,33 @@ export const career_text = (
 export const logos1 = [peltola_logo, ventura_logo, kumar_logo];
 export const logos2 = [ventura_logo, akdems_logo, peltola_logo, mcduffie_logo];
 
-export const joinus_content = (
-  <>
-    <p className={styles.heading4}>CAREER</p>
-    <p className={styles.heading3}>Join Us</p>
-    <p className={styles.paragraph}>
-      Power the New Way Forward of campaigning with us. From software engineers
-      and researchers to campaign managers and canvassers, we have a team for
-      you.
-    </p>
-  </>
-);
+export const JoinUsContent = () => {
+  const navigate = useNavigate();
+  const handleClick = () => {
+    // Scroll to the top of the page
+    window.scrollTo(0, 0);
+
+    // Navigate to "/solutions" path
+    navigate("/careers");
+  }
+
+  return (
+    <>
+      <p className={styles.heading4}>CAREER</p>
+      <p className={styles.heading3}>Join Us</p>
+      <p className={styles.paragraph}>
+        Power the New Way Forward of campaigning with us. From software engineers
+        and researchers to campaign managers and canvassers, we have a team for
+        you.
+      </p>
+      <ExampleButton
+        onClick={() => handleClick()}
+        children='Careers'
+      />
+    </>
+  );
+};
+
 
 export const landing_carousel = [
   home_carousel01,

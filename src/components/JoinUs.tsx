@@ -1,6 +1,6 @@
 import TwoPieceFormat from "./TwoPieceFormat";
 import coverPhoto from "../assets/home_careers.png";
-import { joinus_content } from "../constants/div_constants";
+import { JoinUsContent } from "../constants/div_constants";
 
 const JoinUs = () => {
   return (
@@ -8,7 +8,7 @@ const JoinUs = () => {
       <TwoPieceFormat
         imageSrc={coverPhoto}
         imageAlt='Join us image'
-        content={joinus_content}
+        content={<JoinUsContent />} // Using the component directly
       />
     </div>
   )

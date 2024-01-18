@@ -32,6 +32,7 @@ const Home = () => {
               campaigns of tomorrow
             </p>
           }
+          button_label="The New Way Forward"
         />
       </div>
       <div className='hidden sm:block'>
@@ -142,7 +143,7 @@ const Home = () => {
         ))}
       </div>
       
-      <GenericCarousel slides={candidate_case_studies} />
+      {/* <GenericCarousel slides={candidate_case_studies} /> */}
 
       <JoinUs />
       <div className='mb-12'>

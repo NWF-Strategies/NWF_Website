@@ -5,9 +5,10 @@ import styles from '../style';
 interface LandingThumbnailProps {
     imageSrc: string;
     text: ReactElement;
+    button_label: string;
 }
 
-const LandingThumbnail: React.FC<LandingThumbnailProps> = ({ imageSrc, text }) => {
+const LandingThumbnail: React.FC<LandingThumbnailProps> = ({ imageSrc, text, button_label }) => {
     return (
         <>
             <div className="items-start w-full ">
@@ -16,11 +17,11 @@ const LandingThumbnail: React.FC<LandingThumbnailProps> = ({ imageSrc, text }) =
                     </div>
             </div>
             <div className="absolute inset-y-0 z-20 flex justify-center items-center text-center max-h-[600px] px-[25px]">
-                <div className="flex flex-col gap-[1rem] px-[4rem] text-center items-center md:text-left md:items-start">
+                <div className="flex flex-col rounded-none gap-[1rem] px-[4rem] text-center items-center md:text-left md:items-start">
                     <p className={`${styles.heading5}  text-white font-medium`}>
                         {text}
                     </p>
-                    <Button label="The New Way Forward" />
+                    <Button label={button_label} />
                 </div>
             </div>
         </>

@@ -6,7 +6,7 @@ interface ButtonProps {
 }
 
 const Button: React.FC<ButtonProps> = ({ label }) => (
-  <div className={` ${styles.button}`}>
+  <div className={`${styles.button} rounded-none`}>
     <button type='button'> {label} </button>
   </div>
 );

@@ -30,7 +30,7 @@ import CandidateSlide from "../components/CandidateSlide";
 import careers_category01 from "../assets/careers_category01.png";
 import careers_category02 from "../assets/careers_category02.png";
 import careers_category03 from "../assets/careers_category03.png";
-import { Button, ExampleButton } from "../components";
+import { ExampleButton } from "../components";
 
 export const landing_thumbnails = [
   <LandingThumbnail

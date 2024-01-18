@@ -1,6 +1,5 @@
 import styles, { layout } from "../style";
 import { useNavigate } from "react-router-dom";
-import Form from "../components/Form";
 import error404 from "../assets/error404.svg";
 import { ExampleButton } from "../components";
 

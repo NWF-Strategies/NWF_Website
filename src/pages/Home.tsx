@@ -3,7 +3,6 @@ import { GenericCarousel } from "../components/GenericCarousel";
 import { useNavigate } from "react-router-dom";
 import {
   homepage_stats,
-  candidate_case_studies,
   landing_thumbnails,
   logos2,
   landing_solutions,

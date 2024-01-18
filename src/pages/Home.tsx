@@ -6,7 +6,7 @@ import {
   landing_thumbnails,
   logos2,
   landing_solutions,
-} from "../constants/div_constants";
+} from "../constants/";
 import { solutions_tags } from "../constants/";
 import styles from "../style";
 import whoweare from "../assets/whoweare.png";
@@ -15,7 +15,7 @@ import LandingThumbnail from "../components/LandingThumbnail";
 import thumbnailImg1 from "../assets/home_carousel01.png";
 
 const Home = () => {
-  let navigate = useNavigate();
+  const navigate = useNavigate();
   // const routeChange = () => {
   //   let path = `/`;
   //   navigate(path);

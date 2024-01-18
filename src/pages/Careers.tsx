@@ -5,7 +5,7 @@ import styles from "../style";
 import careers_img from "../assets/careers_img.png";
 import TwoPieceFormat from "../components/TwoPieceFormat";
 
-import { roles, career_categories } from "../constants/div_constants";
+import { roles, career_categories } from "../constants/";
 
 const Career = () => {
   const navigate = useNavigate();

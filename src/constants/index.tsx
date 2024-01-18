@@ -13,7 +13,36 @@ import {
   research_colored,
   person_colored,
   vibration_colored,
+  careers_category01,
+  careers_category02,
+  careers_category03,
 } from "../assets";
+
+import { dataContent, kumar_text, landing_sol1, landing_sol2, landing_sol3, landing_sol4, peltola_text, researchContent, softwareContent, strategyContent, ventura_text } from "./div_constants";
+
+
+import ventura_logo from "../assets/logo_ventura.png";
+import mcduffie_logo from "../assets/logo_mcduffie.png";
+import akdems_logo from "../assets/logo_akdems.png";
+import peltola_logo from "../assets/logo_peltola.png";
+import kumar_logo from "../assets/logo_kumar.png";
+
+import peltola from "../assets/home_peltola.png";
+import ventura from "../assets/home_ventura.png";
+import kumar from "../assets/home_kumar.png";
+
+// need to add these to assets folder; prev imgs still not high res yet
+import careers_role01 from "../assets/careers_role01.png";
+import careers_role02 from "../assets/careers_role02.png";
+import careers_role03 from "../assets/careers_role03.png";
+import careers_role04 from "../assets/careers_role04.png";
+
+import thumbnailImg1 from "../assets/home_carousel01.png";
+import thumbnailImg2 from "../assets/home_carousel02.png";
+import thumbnailImg3 from "../assets/home_carousel03.png";
+
+import LandingThumbnail from "../components/LandingThumbnail";
+import CandidateSlide from "../components/CandidateSlide";
 
 export const navLinks = [
   {
@@ -161,5 +190,139 @@ export const mission_tags = [
   {
     date: "August 2022",
     description: "Begin R&D for AI-powered campaigning tools",
+  },
+];
+
+export const landing_thumbnails = [
+  <LandingThumbnail
+    imageSrc={thumbnailImg1}
+    text={
+      <p>
+        <span className='text-secondary'>Innovating today</span> for the
+        campaigns of tomorrow
+      </p>
+    }
+    button_label="The New Way Forward"
+  />,
+  <LandingThumbnail
+    imageSrc={thumbnailImg2}
+    text={
+      <p>
+        Learn how we've{" "}
+        <span className='text-secondary'>driven people-powered</span>{" "}
+        campaigns with cutting edge software.
+      </p>
+    }
+    button_label="Our Work"
+  />,
+  <LandingThumbnail
+    imageSrc={thumbnailImg3}
+    text={
+      <p>
+        <span className='text-secondary'>Power the new way forward</span> of
+        campaigning with us
+      </p>
+    }
+    button_label="Careers"
+  />,
+];
+
+export const logos1 = [peltola_logo, ventura_logo, kumar_logo];
+export const logos2 = [ventura_logo, akdems_logo, peltola_logo, mcduffie_logo];
+
+export const candidate_photos = [peltola, ventura, kumar];
+
+export const candidate_texts = [peltola_text, ventura_text, kumar_text];
+
+export const roles = [
+  {
+    content: strategyContent,
+    imageSrc: careers_role01,
+    imageAlt: "Strategy image",
+  },
+  {
+    content: researchContent,
+    imageSrc: careers_role02,
+    imageAlt: "Marketing image",
+  },
+  {
+    content: softwareContent,
+    imageSrc: careers_role03,
+    imageAlt: "Development image",
+  },
+  {
+    content: dataContent,
+    imageSrc: careers_role04,
+    imageAlt: "Operations image",
+  },
+];
+
+export const landing_solutions = [
+  {
+    content: landing_sol1,
+    imageSrc: careers_role01,
+    imageAlt: "Strategy image",
+  },
+  {
+    content: landing_sol2,
+    imageSrc: careers_role02,
+    imageAlt: "Marketing image",
+  },
+  {
+    content: landing_sol3,
+    imageSrc: careers_role03,
+    imageAlt: "Development image",
+  },
+  {
+    content: landing_sol4,
+    imageSrc: careers_role04,
+    imageAlt: "Operations image",
+  },
+];
+
+export const candidate_case_studies = [
+  <CandidateSlide
+    imageSrc={candidate_photos[0]}
+    imageAlt='Peltola image'
+    content={candidate_texts[0]}
+  />,
+  <CandidateSlide
+    imageSrc={candidate_photos[1]}
+    imageAlt='Peltola image'
+    content={candidate_texts[1]}
+  />,
+  <CandidateSlide
+    imageSrc={candidate_photos[2]}
+    imageAlt='Peltola image'
+    content={candidate_texts[2]}
+  />,
+];
+export const homepage_stats = [
+  {
+    number: "10+ states",
+    text: "impacted.",
+  },
+  {
+    number: "75%",
+    text: "election success rate.",
+  },
+  {
+    number: "7.5 million+",
+    text: "reached.",
+  },
+];
+
+export const career_categories = [
+  {
+    imgSrc: careers_category01,
+    title: "Operations",
+  },
+  {
+    imgSrc: careers_category02,
+    title: "Research",
+  },
+  {
+    imgSrc: careers_category03,
+    title: "Data",
   },
 ];

@@ -4,7 +4,7 @@ import error404 from "../assets/error404.svg";
 import { ExampleButton } from "../components";
 
 const NotFound = () => {
-  let navigate = useNavigate();
+  const navigate = useNavigate();
 
   return (
     <section

@@ -23,7 +23,7 @@ import { dataContent, kumar_text, landing_sol1, landing_sol2, landing_sol3, land
 
 import ventura_logo from "../assets/logo_ventura.png";
 import mcduffie_logo from "../assets/logo_mcduffie.png";
-import akdems_logo from "../assets/logo_akdems.png";
+import summer_logo from "../assets/logo_summer.png";
 import peltola_logo from "../assets/logo_peltola.png";
 import kumar_logo from "../assets/logo_kumar.png";
 
@@ -219,7 +219,7 @@ export const landing_thumbnails = [
     imageSrc={thumbnailImg3}
     text={
       <p>
-        <span className='text-secondary'>Power the new way forward</span> of
+        <span className='text-[#e09c46]'>Power the new way forward</span> of
         campaigning with us
       </p>
     }
@@ -228,7 +228,7 @@ export const landing_thumbnails = [
 ];
 
 export const logos1 = [peltola_logo, ventura_logo, kumar_logo];
-export const logos2 = [ventura_logo, akdems_logo, peltola_logo, mcduffie_logo];
+export const logos2 = [summer_logo, mcduffie_logo,ventura_logo , peltola_logo];
 
 export const candidate_photos = [peltola, ventura, kumar];
 

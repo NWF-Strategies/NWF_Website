@@ -7,7 +7,7 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <nav className='w-full flex py-6 justify-between items-center navbar absolute top-0 left-0 z-10 border-b-2 border-white pr-10 bg-black bg-opacity-50'>
+    <nav className='w-full flex py-6 justify-between items-center navbar absolute top-0 left-0 z-10 border-b-2 border-white pr-10 bg-black'>
       <Link to={"/"}>
         <img src={polygon} alt='nwf' className='w-[124px] h-[32px]' />
       </Link>

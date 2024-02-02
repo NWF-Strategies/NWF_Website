@@ -18,7 +18,7 @@ const About = () => {
                 Our Mission
             </h1>
             <p
-                className={`text-white font-poppins lg:text-[25px] md:text-[20px] sm:text-[15px] font-normal leading-normal `}
+                className={`text-white font-poppins lg:text-[23px] md:text-[20px] sm:text-[15px] font-normal leading-normal `}
             >
                 At New Way Forward Strategies, we believe that Democracy starts with accessibility. We founded the New Way Forward to deploy pioneering technologies and strategies, providing change-makers the tools to operate cutting-edge, winning campaigns.
             </p>

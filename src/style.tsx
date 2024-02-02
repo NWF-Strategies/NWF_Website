@@ -8,11 +8,11 @@ const styles = {
     "text-white font-poppins lg:text-[25px] md:text-[20px] sm:text-[15px] font-normal leading-normal",
 
     
-  heading1: `text-[#43BCCD] font-poppins lg:text-[90px] text-[50px] font-bold leading-relaxed text-left `,    
+  heading1: `text-[#43BCCD] font-poppins lg:text-[85px] text-[50px] font-bold leading-relaxed text-left `,    
   heading2:
     "text-secondary font-poppins font-black xs:text-[48px] text-[40px] xs:leading-[70px] leading-[60px] w-full",
   heading3:
-    "font-poppins font-normal md:text-[30px] text-[22px] text-white leading-normal tracking-normal w-full",
+    "font-poppins font-normal md:text-[25px] text-[22px] text-white leading-normal tracking-normal w-full",
   heading4:
     "font-poppins font-semibold	xs:text-20px text-[#43BCCD] tracking-[0.15px]",
   heading5:

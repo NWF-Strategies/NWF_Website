@@ -1,6 +1,7 @@
 import { Newsletter } from '../components'
 import { mission } from '../assets'
 import { mission_tags } from '../constants'
+import styles from '../style';
 const About = () => {
   return (
     <div className=''>
@@ -10,9 +11,9 @@ const About = () => {
           alt='gear'
           className='absolute left-0 overflow-hidden -z-10 lg:w-100 md:w-50 md:top-5 sm:top-5'
         />
-        <div className='w-[100%] flex flex-col justify-center items-left lg:pl-[20%] md:pl-[20%] sm:pl-[20%] pl-[20%] lg:pr-[200px] md:pr-[200px] sm:pr-[50px] z-10 mb-[200px]'>
+        <div className='w-[90%] mt-20 flex flex-col justify-center items-left pl-[10%] lg:pr-[200px] md:pr-[200px] sm:pr-[50px] z-10 mb-[150px]'>
             <h1
-                className={`text-[#43BCCD] font-poppins lg:text-[100px] md:text-[50px] sm:text-[40px] font-bold leading-normal text-left `}
+                className={styles.heading1}
             >
                 Our Mission
             </h1>
@@ -22,17 +23,15 @@ const About = () => {
                 At New Way Forward Strategies, we believe that Democracy starts with accessibility. We founded the New Way Forward to deploy pioneering technologies and strategies, providing change-makers the tools to operate cutting-edge, winning campaigns.
             </p>
         </div>
-        <div className='flex md:flex-row xs:flex-col xxs:flex-col justify-between items-center px-20 sx:px-5 w-full xl:w-[70%] lg:w-[100%] '>
-          <div className='card-container md:w-[45%] md:mb-0 xs:w-[80%] xs:mb-10 xxs:mb-10 h-fit'>
-            <p className='mission-card bg-[#185767] text-white md:px-[70px] md:py-[50px] xs:px-[15px] xs:py-[10px] xxs:px-[15px] xxs:py-[10px] rounded-lg relative z-10'>
+        <div className='flex flex-col md:flex-row justify-between items-center px-18 w-[80%]'>
+            {/* <p className='mission-card bg-[#185767] text-white md:px-[70px] md:py-[50px] xs:px-[15px] xs:py-[10px] xxs:px-[15px] xxs:py-[10px] rounded-lg relative z-10'> */}
+          <p className={`${styles.callout} text-white w-[90%] lg:text-[18px]`}>
               We strive to revolutionize campaigns one step at a time. Starting at the grassroots level, NWF exists to catalyze innovation in campaign strategy and technology.
             </p>
-          </div>
-          <div className='card-container md:w-[45%] xs:w-[80%] h-fit'>
-            <p className='mission-card bg-[#185767] text-white md:px-[70px] md:py-[50px] xs:px-[15px] xs:py-[10px] xxs:px-[15px] xxs:py-[10px] rounded-lg relative z-10'>
+            {/* <p className='mission-card bg-[#185767] text-white md:px-[70px] md:py-[50px] xs:px-[15px] xs:py-[10px] xxs:px-[15px] xxs:py-[10px] rounded-lg relative z-10'> */}
+          <p className={`${styles.callout} text-white w-[90%] lg:text-[18px]`}>
               By leveraging technology with our political experience, we support aspiring change-makers in their journey to generate positive impact in the United States.
             </p>
-          </div>
         </div>
       </div>
       <div className='timeline-section pb-10 flex flex-col w-full items-center'>

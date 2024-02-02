@@ -1,24 +1,26 @@
 import { solutions_tags, solutions_notes } from "../constants";
 import { Newsletter } from "../components";
 import { gear } from "../assets";
+import styles from "../style";
 const Solutions = () => {
   return (
-    <div className=''>
-      <div className='relative h-fit py-[100px] blue__black__gradient flex flex-col items-center z-10'>
+    <div>
+      <div className='relative py-[100px] h-fit blue__black__gradient flex flex-col justify-center z-10'>
         <img
           src={gear}
           alt='gear'
           className='absolute left-0 overflow-hidden -z-10 lg:w-100 md:w-50 md:top-0 sm:top-0 xs:-top-10 '
         />
-        <div className='w-[100%] flex flex-col justify-center items-left lg:pl-[20%] md:pl-[20%] sm:pl-[20%] pl-[20%] z-10'>
+        <div className='w-[90%] mt-20 flex flex-col items-left pl-[20%] mr-5 z-10'>
           <div>
             <h1
-              className={`text-[#43BCCD] font-poppins lg:text-[100px] md:text-[50px] sm:text-[40px] font-bold leading-normal text-left `}
+              className={styles.heading1}
             >
               Solutions
             </h1>
             <p
               className={`text-white font-poppins lg:text-[25px] md:text-[20px] sm:text-[15px] font-normal leading-normal `}
+
             >
               We combine traditional outreach strategy with innovative
               technology.
@@ -29,7 +31,10 @@ const Solutions = () => {
               <li className='flex flex-row justify-start items-center w-full'>
                 <img src={item.img} className='lg:scale-1 md:scale-75' />
                 <p
-                  className={`text-white font-poppins lg:text-[33px] md:text-[30px] sm:text-[22px] font-normal leading-normal text-center ml-5`}
+                  // className={`text-white font-poppins lg:text-[33px] md:text-[30px] sm:text-[22px] font-normal leading-normal text-center ml-5`}
+                  //fix this
+                  className={`${styles.heading3} text-[20px]`}
+
                 >
                   {item.title}
                 </p>
@@ -53,13 +58,13 @@ const Solutions = () => {
                 </div>
 
                 <div className='w-1/2 flex flex-col justify-center items-start'>
-                  <div className='flex flex-row items-center justify-start w-full'>
-                    <img src={item.icon} className='w-[60px] h-[60px]' />
-                    <h3 className='ml-3 text-white font-poppins lg:text-[45px] md:text-[30px] sm:text-[20px] font-normal leading-normal tracking-normal'>
+                  <div className='flex flex-row items-center justify-start w-full my-2'>
+                    <img src={item.icon} className='hidden sm:block w-[60px] h-[60px] mx-3' />
+                    <p className={styles.heading3}>
                       {item.title}
-                    </h3>
+                    </p>
                   </div>
-                  <p className='text-white lg:text-[23px] md:text-[15px] sm:text-[13px] font-normal font-poppins'>
+                  <p className={styles.paragraph}>
                     {item.description}
                   </p>
                 </div>

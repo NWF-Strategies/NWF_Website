@@ -29,7 +29,7 @@ const Solutions = () => {
           <ul className='lg:ml-[100px] md:ml-[50px] sm:ml-[40px] mt-10'>
             {solutions_tags.map((item) => (
               <li className='flex flex-row justify-start items-center w-full'>
-                <img src={item.img} className='lg:scale-1 md:scale-75' />
+                <img src={item.img} className='lg:scale-1 md:scale-75 mx-3' />
                 <p
                   // className={`text-white font-poppins lg:text-[33px] md:text-[30px] sm:text-[22px] font-normal leading-normal text-center ml-5`}
                   //fix this
@@ -54,7 +54,7 @@ const Solutions = () => {
                     index % 2 === 0 ? "order-first" : "order-last"
                   } px-10`}
                 >
-                  <img src={item.img} className='scale-[80%]' />
+                  <img src={item.img} className='sm:scale-[80%]' />
                 </div>
 
                 <div className='w-1/2 flex flex-col justify-center items-start'>

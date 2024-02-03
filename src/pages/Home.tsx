@@ -31,7 +31,8 @@ const Home = () => {
               campaigns of tomorrow
             </p>
           }
-          button_label="The New Way Forward"
+          buttonLabel="The New Way Forward"
+          navigateTo="/"
         />
       </div>
       <div className='hidden sm:block'>

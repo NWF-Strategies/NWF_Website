@@ -12,7 +12,7 @@ const styles = {
   heading2:
     "text-secondary font-poppins font-black xs:text-[48px] text-[40px] xs:leading-[70px] leading-[60px] w-full",
   heading3:
-    "font-poppins font-normal md:text-[25px] text-[22px] text-white leading-normal tracking-normal w-full",
+    "font-poppins font-normal md:text-[30px] text-[22px] text-white leading-normal tracking-normal w-full",
   heading4:
     "font-poppins font-semibold	xs:text-20px text-[#43BCCD] tracking-[0.15px]",
   heading5:
@@ -22,6 +22,9 @@ const styles = {
 
   button:
     "bg-none hover:bg-secondaryButton border border-secondaryButton text-secondary hover:text-white w-fit rounded-2xl py-1 px-4 font-poppins font-light mt-5",
+  
+  landingbutton:
+    "bg-none  hover:bg-white border border-white text-white hover:text-gray-500 w-fit py-1 px-4 font-poppins font-light mt-5",
 
   form: "bg-black-gradient appearance-none border-2 border-secondary rounded w-full py-2 px-4 text-white leading-tight focus:outline-none focus:bg-white",
 

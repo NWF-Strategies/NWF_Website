@@ -1,14 +1,25 @@
 import React, { ReactElement } from 'react';
-import Button from './Button';
 import styles from '../style';
+import { useNavigate } from 'react-router-dom';
 
 interface LandingThumbnailProps {
     imageSrc: string;
     text: ReactElement;
-    button_label: string;
+    buttonLabel: string;
+    navigateTo: string;
 }
 
-const LandingThumbnail: React.FC<LandingThumbnailProps> = ({ imageSrc, text, button_label }) => {
+const LandingThumbnail: React.FC<LandingThumbnailProps> = ({ imageSrc, text, buttonLabel, navigateTo }) => {
+    const navigate = useNavigate();
+    const handleButtonClick = () => {
+        if (navigateTo!="/") {
+            navigate(navigateTo);
+            window.scrollTo(0, 0);
+        } else {
+            window.scrollTo(0, 700);
+        }
+    }
+    
     return (
         <>
             <div className="items-start w-full h-screen">
@@ -21,7 +32,9 @@ const LandingThumbnail: React.FC<LandingThumbnailProps> = ({ imageSrc, text, but
                     <p className={`${styles.heading5}  text-white font-medium`}>
                         {text}
                     </p>
-                    <Button label={button_label} />
+                    <button className={styles.landingbutton} type='button' onClick={handleButtonClick}>
+                        {buttonLabel}
+                    </button>
                 </div>
             </div>
         </>

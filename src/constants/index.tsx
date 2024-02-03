@@ -202,7 +202,8 @@ export const landing_thumbnails = [
         campaigns of tomorrow
       </p>
     }
-    button_label="The New Way Forward"
+    buttonLabel="The New Way Forward"
+    navigateTo="/"
   />,
   <LandingThumbnail
     imageSrc={thumbnailImg2}
@@ -213,7 +214,8 @@ export const landing_thumbnails = [
         campaigns with cutting edge software.
       </p>
     }
-    button_label="Our Work"
+    buttonLabel="Our Work"
+    navigateTo="/solutions"
   />,
   <LandingThumbnail
     imageSrc={thumbnailImg3}
@@ -223,9 +225,11 @@ export const landing_thumbnails = [
         campaigning with us
       </p>
     }
-    button_label="Careers"
+    buttonLabel="Careers"
+    navigateTo="/careers"
   />,
 ];
+
 
 export const logos1 = [peltola_logo, ventura_logo, kumar_logo];
 export const logos2 = [summer_logo, mcduffie_logo,ventura_logo , peltola_logo];

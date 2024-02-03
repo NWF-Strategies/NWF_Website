@@ -164,7 +164,13 @@
   top: 0;
   bottom: 0;
   left: 0%;
-  transform: translateX(-50%);
+  transform: translateX(-40%);
+}
+
+@media screen and (max-width: 200px) {
+  .timeline-container::after {
+    transform: translateX(-20spx);
+  }
 }
 
 .timeline-event::before {
@@ -188,7 +194,7 @@
 /* Media query for xxs screens */
 @media screen and (max-width: 300px) {
   .timeline-event::before {
-    left: -30px; /* Adjust the left value for xxs screens */
+    left: -50px; /* Adjust the left value for xxs screens */
   }
 }
 
@@ -209,18 +215,6 @@
 .date {
   color: #888;
   font-size: 0.85em;
-}
-
-/* Adjustments for smaller screens */
-@media screen and (max-width: 600px) {
-  .timeline-event {
-    width: 100%;
-    left: 0 !important;
-  }
-
-  .timeline-container::after {
-    left: 10px;
-  }
 }
 
 .card-container {

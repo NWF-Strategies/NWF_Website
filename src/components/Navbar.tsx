@@ -7,13 +7,13 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <nav className='w-full flex py-6 justify-between items-center navbar absolute top-0 left-0 z-10 border-b-2 border-white pr-10 bg-black'>
+    <nav className='w-full flex py-6 absolute z-50 justify-between items-center navbar border-white border-b-[1px] pr-10 bg-[#27272a] bg-opacity-60'>
       <Link to={"/"}>
-        <img src={polygon} alt='nwf' className='w-[124px] h-[32px]' />
+        <img src={polygon} alt='nwf' className='w-[124px] h-[32px] mr-5' />
       </Link>
 
       <Link to={"/"}>
-        <img src={logo} alt='nwf' className='w-[124px] h-[32px]' />
+        <img src={logo} alt='nwf' className='w-[124px] h-[32px] mr-5' />
       </Link>
 
       <ul className='list-none sm:flex hidden justify-end items-center flex-1'>
@@ -21,7 +21,8 @@ const Navbar = () => {
           <li
             key={nav.id}
             className={`font-poppins
-              font-normal cursor-pointer text-[16px] ${index === navLinks.length - 1 ? "mr-0" : "mr-10"
+              font-normal cursor-pointer text-[16px] ${
+                index === navLinks.length - 1 ? "mr-0" : "mr-10"
               } text-white`}
           >
             <Link to={`/${nav.id}`}>{nav.title}</Link>
@@ -38,15 +39,17 @@ const Navbar = () => {
         />
 
         <div
-          className={`${toggle ? "flex" : "hidden"
-            } z-20 p-6 bg-black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar`}
+          className={`${
+            toggle ? "flex" : "hidden"
+          } z-20 p-6 bg-black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar`}
         >
           <ul className='list-none flex-col flex justify-end items-center flex-1'>
             {navLinks.map((nav, index) => (
               <li
                 key={nav.id}
                 className={`font-poppins
-                  font-normal cursor-pointer text-[16px] ${index === navLinks.length - 1 ? "mr-0" : "mb-4"
+                  font-normal cursor-pointer text-[16px] ${
+                    index === navLinks.length - 1 ? "mr-0" : "mb-4"
                   } text-white`}
               >
                 <a href={`${nav.id}`}>{nav.title}</a>

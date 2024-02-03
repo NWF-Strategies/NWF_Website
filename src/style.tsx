@@ -2,17 +2,17 @@ const styles = {
   boxWidth: "xl:max-w-[1280px] w-full",
 
   paragraph:
-    "font-poppins font-normal text-primary md:text-[15px] sm:text-[13px] leading-[25px] xs:leading-[30.8px]",
+    "font-poppins font-normal text-primary md:text-[15px] text-[13px] leading-[25px] xs:leading-[30.8px]",
 
   paragraph2:
     "text-white font-poppins lg:text-[25px] md:text-[20px] sm:text-[15px] font-normal leading-normal",
 
     
-  heading1: `text-[#43BCCD] font-poppins lg:text-[100px] md:text-[50px] sm:text-[40px] font-bold leading-normal text-left `,    
+  heading1: `text-[#43BCCD] font-poppins lg:text-[85px] text-[50px] font-bold leading-relaxed text-left `,    
   heading2:
     "text-secondary font-poppins font-black xs:text-[48px] text-[40px] xs:leading-[70px] leading-[60px] w-full",
   heading3:
-    "font-poppins font-normal md:text-[30px] text-[20px] text-white xs:leading-[70px] leading-[60px] w-full",
+    "font-poppins font-normal md:text-[30px] text-[22px] text-white leading-normal tracking-normal w-full",
   heading4:
     "font-poppins font-semibold	xs:text-20px text-[#43BCCD] tracking-[0.15px]",
   heading5:
@@ -22,6 +22,9 @@ const styles = {
 
   button:
     "bg-none hover:bg-secondaryButton border border-secondaryButton text-secondary hover:text-white w-fit rounded-2xl py-1 px-4 font-poppins font-light mt-5",
+  
+  landingbutton:
+    "bg-none  hover:bg-white border border-white text-white hover:text-gray-500 w-fit py-1 px-4 font-poppins font-light mt-5",
 
   form: "bg-black-gradient appearance-none border-2 border-secondary rounded w-full py-2 px-4 text-white leading-tight focus:outline-none focus:bg-white",
 

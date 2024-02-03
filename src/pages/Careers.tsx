@@ -11,16 +11,16 @@ const Career = () => {
   const navigate = useNavigate();
   return (
     <div>
-      <div className='relative  h-[450px] py-[100px] blue__black__gradient flex flex-col items-center z-10'>
+      <div className='relative h-[500px] blue__black__gradient flex flex-col justify-center z-10'>
         <img
           src={careers_img}
           alt='people together'
-          className='absolute left-0 overflow-hidden -z-10 lg:w-100 md:w-50 md:top-0 sm:top-0 sm:w-fit w-[30rem]'
+          className='absolute bottom-0 overflow-hidden z-10 lg:w-fit w-[30rem]'
         />
         <div className='w-[100%] flex flex-col justify-center items-left  md:ml-[30%] sm:ml-[30%] ml-[30%] z-10 lg:top-[150px] md:top-[150px] sm:top-[150px]'>
           <div>
             <h1
-              className={`text-[#43BCCD] font-poppins lg:text-[100px] md:text-[50px] sm:text-[40px] font-bold leading-normal text-left `}
+              className={`text-[#43BCCD] font-poppins lg:text-[100px] md:text-[50px] text-[40px] font-bold leading-normal text-left `}
             >
               Careers
             </h1>

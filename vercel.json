@@ -1,0 +1,9 @@
+{
+  "routes": [
+    { "src": "/solutions", "dest": "/src/pages/Solutions.tsx" },
+    { "src": "/contactus", "dest": "/src/pages/ContactUs.tsx" },
+    { "src": "/about", "dest": "/src/pages/About.tsx" },
+    { "src": "/careers", "dest": "/src/pages/Careers.tsx" },
+    { "src": "/(.*)", "dest": "/src/pages/Home.tsx" }
+  ]
+}

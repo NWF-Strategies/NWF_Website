@@ -1,4 +1,4 @@
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 
 import { Newsletter, ExampleButton } from "../components";
 import styles from "../style";
@@ -42,7 +42,7 @@ const Career = () => {
             info@nwfstrategies.com.
           </p>
           <ExampleButton
-            onClick={() => navigate("/careers")}
+            onClick={() => navigate("/contactus")}
             children='Apply Via Email'
           />
         </div>

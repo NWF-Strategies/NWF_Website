@@ -20,6 +20,11 @@ const Home = () => {
   //   let path = `/`;
   //   navigate(path);
   // };
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
     <>
       <div className='sm:hidden'>
@@ -31,8 +36,8 @@ const Home = () => {
               campaigns of tomorrow
             </p>
           }
-          buttonLabel="The New Way Forward"
-          navigateTo="/"
+          buttonLabel='The New Way Forward'
+          navigateTo='/'
         />
       </div>
       <div className='hidden sm:block'>
@@ -76,7 +81,10 @@ const Home = () => {
 
             <img src={whoweare} className='max-w-[550px]' />
             <ExampleButton
-              onClick={() => navigate("/about")}
+              onClick={() => {
+                navigate("/about");
+                scrollToTop();
+              }}
               children='About Us'
             />
           </div>
@@ -126,7 +134,10 @@ const Home = () => {
             We combine traditional outreach strategy with innovative technology.
           </p>
           <ExampleButton
-            onClick={() => navigate("/solutions")}
+            onClick={() => {
+              navigate("/solutions");
+              scrollToTop();
+            }}
             children='Explore Our Services'
           />
         </div>
@@ -142,7 +153,7 @@ const Home = () => {
           />
         ))}
       </div>
-      
+
       {/* <GenericCarousel slides={candidate_case_studies} /> */}
 
       <JoinUs />

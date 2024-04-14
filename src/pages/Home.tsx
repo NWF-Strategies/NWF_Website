@@ -7,23 +7,39 @@ import {
   logos2,
   landing_solutions,
 } from "../constants/";
+import { useState, useEffect, useRef } from "react";
 import { solutions_tags } from "../constants/";
 import styles from "../style";
 import whoweare from "../assets/whoweare.png";
 import TwoPieceFormat from "../components/TwoPieceFormat";
 import LandingThumbnail from "../components/LandingThumbnail";
 import thumbnailImg1 from "../assets/home_carousel01.png";
+import ScrollTrigger from "react-scroll-trigger";
 
 const Home = () => {
   const navigate = useNavigate();
+  const [section1Visible, setSection1Visible] = useState(false);
+  const [section2Visible, setSection2Visible] = useState(false);
   // const routeChange = () => {
   //   let path = `/`;
   //   navigate(path);
   // };
 
+  const ref = useRef(null);
+
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
+
+  const handleSection1Enter = () => {
+    setSection1Visible(true);
+  };
+
+  const handleSection2Enter = () => {
+    setSection2Visible(true);
+  };
+
+  const [showImages, setShowImages] = useState(false);
 
   return (
     <>
@@ -54,65 +70,90 @@ const Home = () => {
       </div>
 
       {/* Text Section 1 */}
-      <div className='h-fit sm:grid sm:grid-cols-2 gap-x-5 text-white items-center relative my-20'>
-        <div className='mx-5 z-10 hidden sm:block'>
-          <div className={`${styles.callout} ${styles.paragraph}`}>
-            At New Way Forward Strategies, we believe that Democracy starts with
-            accessibility. From local elections to nationwide races, campaigns
-            begin with the individual. We started the New Way Forward to deploy
-            frontiering technologies and strategies, providing change-makers the
-            tools to operate cutting-edge, winning campaigns.
-          </div>
+      <ScrollTrigger onEnter={handleSection1Enter}>
+        <div
+          className={`h-fit sm:grid sm:grid-cols-2 gap-x-5 text-white items-center relative my-20 transition-all duration-1000 ${
+            section1Visible ? "translate-x-0" : "-translate-x-full"
+          }`}
+        >
           <div
-            className={`${styles.callout} ${styles.paragraph} hidden md:block`}
+            className={`mx-5 z-10 hidden sm:block ${
+              section1Visible ? "translate-x-0" : "-translate-x-full"
+            }`}
           >
-            Coupled with our team’s combined 50 years in campaign management,
-            NWF Strategies has won groundbreaking uphill battles, high-profile
-            races, and facilitated landmark movements.
-          </div>
-        </div>
-        <div className={`${styles.marginX} sm:mx-1`}>
-          <div className='flex flex-col mx-[8vw] sm:mx-auto'>
-            <p className={styles.heading4}>WHO WE ARE</p>
-            <p className={styles.heading3}>New Way Forward Strategies</p>
-            <p className={styles.paragraph}>
-              Changing politics one people-powered campaign at a time.
-            </p>
-
-            <img src={whoweare} className='max-w-[550px]' />
-            <ExampleButton
-              onClick={() => {
-                navigate("/about");
-                scrollToTop();
-              }}
-              children='About Us'
-            />
-          </div>
-        </div>
-      </div>
-
-      {/* Firm Statistics Section */}
-      <div className='flex flex-col justify-center items-center my-8'>
-        <div className='flex flex-col sm:flex-row items-center'>
-          {homepage_stats.map((content) => (
-            <div className='items-center text-center py-10 mx-10'>
-              <p className={`${styles.heading5}`}>{content.number}</p>
-              <p className={`${styles.paragraph}`}>{content.text}</p>
+            <div className={`${styles.callout} ${styles.paragraph}`}>
+              At New Way Forward Strategies, we believe that Democracy starts
+              with accessibility. From local elections to nationwide races,
+              campaigns begin with the individual. We started the New Way
+              Forward to deploy frontiering technologies and strategies,
+              providing change-makers the tools to operate cutting-edge, winning
+              campaigns.
             </div>
-          ))}
-        </div>
-        <div className='grid grid-cols-2 sm:grid-cols-4'>
-          {logos2.map((logo, index) => (
-            <div key={index} className='flex justify-center items-center my-2'>
-              <img
-                src={logo}
-                alt={`Logo ${index + 1}`}
-                className='h-[9vw] min-h-[75px] px-2'
+            <div
+              className={`${styles.callout} ${styles.paragraph} hidden md:block`}
+            >
+              Coupled with our team’s combined 50 years in campaign management,
+              NWF Strategies has won groundbreaking uphill battles, high-profile
+              races, and facilitated landmark movements.
+            </div>
+          </div>
+
+          <div className={`${styles.marginX} sm:mx-1`}>
+            {/* Text Section 2 */}
+            <div className='flex flex-col mx-[8vw] sm:mx-auto'>
+              <p className={styles.heading4}>WHO WE ARE</p>
+              <p className={styles.heading3}>New Way Forward Strategies</p>
+              <p className={styles.paragraph}>
+                Changing politics one people-powered campaign at a time.
+              </p>
+
+              <img src={whoweare} className='max-w-[550px]' />
+              <ExampleButton
+                onClick={() => {
+                  navigate("/about");
+                  scrollToTop();
+                }}
+                children='About Us'
               />
             </div>
-          ))}
+          </div>
         </div>
-      </div>
+      </ScrollTrigger>
+
+      {/* Firm Statistics Section */}
+      <ScrollTrigger onEnter={() => setShowImages(true)}>
+        <div className={`flex flex-col justify-center items-center my-8 `}>
+          <div className='flex flex-col sm:flex-row items-center'>
+            {homepage_stats.map((content) => (
+              <div
+                className={`items-center text-center py-10 mx-10 ${
+                  showImages
+                    ? "opacity-100 translate-y-0"
+                    : "opacity-0 translate-y-10"
+                } duration-1000`}
+              >
+                <p className={`${styles.heading5}`}>{content.number}</p>
+                <p className={`${styles.paragraph}`}>{content.text}</p>
+              </div>
+            ))}
+          </div>
+          <div className='grid grid-cols-2 sm:grid-cols-4'>
+            {logos2.map((logo, index) => (
+              <div
+                key={index}
+                className={`flex justify-center items-center my-2 transition-all `}
+              >
+                <img
+                  src={logo}
+                  alt={`Logo ${index + 1}`}
+                  className='h-[9vw] min-h-[75px] px-2'
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+      </ScrollTrigger>
+      {/* End Of Firm Statistics Section */}
 
       {/* Text Section 2 */}
       <div
@@ -155,8 +196,15 @@ const Home = () => {
       </div>
 
       {/* <GenericCarousel slides={candidate_case_studies} /> */}
-
-      <JoinUs />
+      <ScrollTrigger onEnter={handleSection1Enter}>
+        <div
+          className={`${
+            section1Visible ? "translate-x-0" : "-translate-x-full"
+          }`}
+        >
+          <JoinUs />
+        </div>
+      </ScrollTrigger>
       <div className='mb-12'>
         <Newsletter />
       </div>

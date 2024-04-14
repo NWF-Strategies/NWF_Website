@@ -41,28 +41,9 @@ const Footer = () => (
       <p className='font-poppins font-normal text-left text-[14px] leading-[27px] text-white text-bold'>
         STAY INFORMED
       </p>
-      {/* <form className='w-85 max-w-md  pb-6'>
-        <div className='flex h-10 relative'>
-          <div className='absolute inset-y-0 start-0 flex items-center ps-2 pointer-events-none'>
-            <img src={mail}></img>
-          </div>
-          <input
-            className='bg-black-gradient appearance-none border border-secondary rounded-s w-full  text-white focus:outline-none focus:bg-white  pl-12'
-            type='email'
-            placeholder='Sign Up For Our Latest Opportunities '
-          ></input>
-
-          <button
-            type='submit'
-            className=' justify-center items-center  bg-[#43BCCD] rounded-e text-white font-bold px-3'
-          >
-            subscribe
-          </button>
-        </div>
-      </form> */}
 
       <p className='font-poppins font-normal text-left text-[14px] leading-[27px] text-white'>
-        Ⓒ 2023 New Way Forward. All Rights Reserved.
+        Ⓒ 2024 New Way Forward. All Rights Reserved.
       </p>
     </div>
   </section>

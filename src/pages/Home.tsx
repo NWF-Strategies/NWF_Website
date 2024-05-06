@@ -7,7 +7,7 @@ import {
   logos2,
   landing_solutions,
 } from "../constants/";
-import { useState, useEffect, useRef } from "react";
+import { useState, useRef } from "react";
 import { solutions_tags } from "../constants/";
 import styles from "../style";
 import whoweare from "../assets/whoweare.png";
@@ -39,7 +39,8 @@ const Home = () => {
     setSection2Visible(true);
   };
 
-  const [showImages, setShowImages] = useState(false);
+  const [showImages1, setShowImages1] = useState(false);
+  const [showImages2, setShowImages2] = useState(false);
 
   return (
     <>
@@ -121,13 +122,13 @@ const Home = () => {
       </ScrollTrigger>
 
       {/* Firm Statistics Section */}
-      <ScrollTrigger onEnter={() => setShowImages(true)}>
+      <ScrollTrigger onEnter={() => setShowImages1(true)}>
         <div className={`flex flex-col justify-center items-center my-8 `}>
           <div className='flex flex-col sm:flex-row items-center'>
             {homepage_stats.map((content) => (
               <div
                 className={`items-center text-center py-10 mx-10 ${
-                  showImages
+                  showImages1
                     ? "opacity-100 translate-y-0"
                     : "opacity-0 translate-y-10"
                 } duration-1000`}
@@ -156,33 +157,43 @@ const Home = () => {
       {/* End Of Firm Statistics Section */}
 
       {/* Text Section 2 */}
-      <div
-        className={`${styles.marginX} h-fit flex flex-row text-white justify-center items-center my-20`}
-      >
-        {/* Non-Mobile */}
-        <ul className='hidden sm:block lg:mx-[80px] md:mx-[30px] sm:mx-[20px] w-fit'>
-          {solutions_tags.map((item) => (
-            <li className='flex flex-row justify-start items-center w-full'>
-              <img src={item.img} className='scale-100 mr-8' />
-              <p className={`${styles.paragraph}`}>{item.title}</p>
-            </li>
-          ))}
-        </ul>
-        <div className={`${styles.callout} mission-card`}>
-          <p className={styles.heading4}>SOLUTIONS</p>
-          <p className={styles.heading3}>Our Services</p>
-          <p className={styles.paragraph}>
-            We combine traditional outreach strategy with innovative technology.
-          </p>
-          <ExampleButton
-            onClick={() => {
-              navigate("/solutions");
-              scrollToTop();
-            }}
-            children='Explore Our Services'
-          />
+      <ScrollTrigger onEnter={() => setShowImages2(true)}>
+        <div
+          className={`${
+            styles.marginX
+          } h-fit flex flex-row text-white justify-center items-center my-20 ${
+            showImages2
+              ? "opacity-100 translate-y-0"
+              : "opacity-0 translate-y-10"
+          } duration-1000`}
+        >
+          {/* Non-Mobile */}
+          <ul className='hidden sm:block lg:mx-[80px] md:mx-[30px] sm:mx-[20px] w-fit'>
+            {solutions_tags.map((item) => (
+              <li className='flex flex-row justify-start items-center w-full'>
+                <img src={item.img} className='scale-100 mr-8' />
+                <p className={`${styles.paragraph}`}>{item.title}</p>
+              </li>
+            ))}
+          </ul>
+          <div className={`${styles.callout} mission-card`}>
+            <p className={styles.heading4}>SOLUTIONS</p>
+            <p className={styles.heading3}>Our Services</p>
+            <p className={styles.paragraph}>
+              We combine traditional outreach strategy with innovative
+              technology.
+            </p>
+            <ExampleButton
+              onClick={() => {
+                navigate("/solutions");
+                scrollToTop();
+              }}
+              children='Explore Our Services'
+            />
+          </div>
         </div>
-      </div>
+      </ScrollTrigger>
+
       {/* Mobile */}
       <div className={`${styles.marginX} items-center sm:hidden`}>
         {landing_solutions.map((role, index) => (
@@ -196,15 +207,10 @@ const Home = () => {
       </div>
 
       {/* <GenericCarousel slides={candidate_case_studies} /> */}
-      <ScrollTrigger onEnter={handleSection1Enter}>
-        <div
-          className={`${
-            section1Visible ? "translate-x-0" : "-translate-x-full"
-          }`}
-        >
-          <JoinUs />
-        </div>
-      </ScrollTrigger>
+      <div className={``}>
+        <JoinUs />
+      </div>
+
       <div className='mb-12'>
         <Newsletter />
       </div>

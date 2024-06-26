@@ -62,7 +62,7 @@ const Footer = () => (
       </form> */}
 
       <p className='font-poppins font-normal text-left text-[14px] leading-[27px] text-white'>
-        Ⓒ 2023 New Way Forward. All Rights Reserved.
+        Ⓒ 2024 New Way Forward. All Rights Reserved.
       </p>
     </div>
   </section>

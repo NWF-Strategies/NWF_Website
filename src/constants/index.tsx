@@ -26,6 +26,7 @@ import mcduffie_logo from "../assets/logo_mcduffie.png";
 import summer_logo from "../assets/logo_summer.png";
 import peltola_logo from "../assets/logo_peltola.png";
 import kumar_logo from "../assets/logo_kumar.png";
+import bush_logo from "../assets/logo_bush.png";
 
 import peltola from "../assets/home_peltola.png";
 import ventura from "../assets/home_ventura.png";
@@ -232,7 +233,7 @@ export const landing_thumbnails = [
 
 
 export const logos1 = [peltola_logo, ventura_logo, kumar_logo];
-export const logos2 = [summer_logo, mcduffie_logo,ventura_logo , peltola_logo];
+export const logos2 = [summer_logo, mcduffie_logo, bush_logo , peltola_logo]; //replaced ventura_logo with bush_logo
 
 export const candidate_photos = [peltola, ventura, kumar];
 

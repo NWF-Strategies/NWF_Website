@@ -13,6 +13,9 @@ import whoweare from "../assets/whoweare.png";
 import TwoPieceFormat from "../components/TwoPieceFormat";
 import LandingThumbnail from "../components/LandingThumbnail";
 import thumbnailImg1 from "../assets/home_carousel01.png";
+import WeirdCarousel from "../components/FalseCarousel";
+import { WeirdCarousel2 } from "../components/FalseCarousel2";
+import { WeirdCarousel3 } from "../components/FalseCarousel3";
 
 const Home = () => {
   const navigate = useNavigate();
@@ -53,19 +56,17 @@ const Home = () => {
 
       </div>
 
-      {/* Text Section 1 */}
-      <div className='h-fit sm:grid sm:grid-cols-2 gap-x-5 text-white items-center relative my-20'>
-        <div className='mx-5 z-10 hidden sm:block'>
-          <div className={`${styles.callout} ${styles.paragraph}`}>
+      { Text Section 1 */}
+      <div className='h-fit sm:grid sm:grid-cols-2 gap-x-5 text-white items-center relative my-20 3xl:ml-[20%] 3xl:w-[60%]'>
+        <div className= "relative mx-5 z-10">
+          <div className={`${styles.callout2} ${styles.paragraph3} hidden sm:block`}>
             At New Way Forward Strategies, we believe that Democracy starts with
             accessibility. From local elections to nationwide races, campaigns
             begin with the individual. We started the New Way Forward to deploy
             frontiering technologies and strategies, providing change-makers the
             tools to operate cutting-edge, winning campaigns.
           </div>
-          <div
-            className={`${styles.callout} ${styles.paragraph} hidden md:block`}
-          >
+          <div className={`${styles.callout2} ${styles.paragraph3} hidden md:block`}>
             Coupled with our team’s combined 50 years in campaign management,
             NWF Strategies has won groundbreaking uphill battles, high-profile
             races, and facilitated landmark movements.
@@ -74,9 +75,9 @@ const Home = () => {
         <div className={`${styles.marginX} sm:mx-1`}>
           <div className='flex flex-col mx-[8vw] sm:mx-auto'>
             <p className={styles.heading4}>WHO WE ARE</p>
-            <p className={styles.heading3}>New Way Forward Strategies</p>
-            <p className={styles.paragraph}>
-              Changing politics one people-powered campaign at a time.
+            <p className={`py-4 ${styles.heading3}`}>New Way Forward Strategies</p>
+            <p className={styles.heading6}>
+              Shifting politics <span className="text-greenBlue">one people-powered</span>  campaign at a time.
             </p>
 
             <img src={whoweare} className='max-w-[550px]' />
@@ -90,18 +91,18 @@ const Home = () => {
           </div>
         </div>
       </div>
-
+              
       {/* Firm Statistics Section */}
-      <div className='flex flex-col justify-center items-center my-8'>
-        <div className='flex flex-col sm:flex-row items-center'>
+      <div className='flex flex-col justify-center items-center my-8 bg-grey pb-12'>
+        <div className='flex flex-col lg:flex-row items-center flex-nowrap overflow-hidden whitespace-nowrap'>
           {homepage_stats.map((content) => (
             <div className='items-center text-center py-10 mx-10'>
-              <p className={`${styles.heading5}`}>{content.number}</p>
+              <p>{content.counter}</p>
               <p className={`${styles.paragraph}`}>{content.text}</p>
             </div>
           ))}
         </div>
-        <div className='grid grid-cols-2 sm:grid-cols-4'>
+        {/*<div className='grid grid-cols-2 sm:grid-cols-4'>
           {logos2.map((logo, index) => (
             <div key={index} className='flex justify-center items-center my-2'>
               <img
@@ -111,13 +112,12 @@ const Home = () => {
               />
             </div>
           ))}
-        </div>
+        </div>*/}
+        <WeirdCarousel3 />
       </div>
 
       {/* Text Section 2 */}
-      <div
-        className={`${styles.marginX} h-fit flex flex-row text-white justify-center items-center my-20`}
-      >
+      <div className={`${styles.marginX} h-fit flex flex-row text-white justify-center items-center my-20`} >
         {/* Non-Mobile */}
         <ul className='hidden sm:block lg:mx-[80px] md:mx-[30px] sm:mx-[20px] w-fit'>
           {solutions_tags.map((item) => (
@@ -127,7 +127,7 @@ const Home = () => {
             </li>
           ))}
         </ul>
-        <div className={`${styles.callout} mission-card`}>
+        <div className={`${styles.callout2} mission-card 3xl:ml-26 3xl:w-[42%]`}>
           <p className={styles.heading4}>SOLUTIONS</p>
           <p className={styles.heading3}>Our Services</p>
           <p className={styles.paragraph}>
@@ -154,7 +154,9 @@ const Home = () => {
         ))}
       </div>
 
-      {/* <GenericCarousel slides={candidate_case_studies} /> */}
+      {/* <GenericCarousel slides={candidate_case_studies} /> 
+      
+      */}
 
       <JoinUs />
       <div className='mb-12'>

@@ -2,17 +2,41 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { close, logo, polygon, menu } from "../assets";
 import { navLinks } from "../constants";
+import { useEffect } from "react";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
+  const scrollToTop = () => {
+    window.scrollBy({
+      top: -3500,
+      left: 0,
+      behavior: "instant",
+    });
+    window.scrollTo(0, 0); 
+    setToggle(false);
+  };
+
+  useEffect(() => {
+    const handleBeforeUnload = () => {
+      scrollToTop();
+      window.scrollTo(0, 0);
+    };
+
+    window.addEventListener("beforeunload", handleBeforeUnload);
+
+    return () => {
+      window.removeEventListener("beforeunload", handleBeforeUnload);
+    };
+  }, []);
+
   return (
-    <nav className='w-full flex py-6 absolute z-50 justify-between items-center navbar border-white border-b-[1px] pr-10 bg-[#27272a] bg-opacity-60'>
-      <Link to={"/"}>
+    <nav className='w-full flex py-6 absolute z-50 justify-between items-center navbar border-white border-b-[1px] pr-10 bg-[#27272a] bg-opacity-60 sticky top-0'>
+      <Link to={"/"} onClick={scrollToTop}>
         <img src={polygon} alt='nwf' className='w-[124px] h-[32px] mr-5' />
       </Link>
 
-      <Link to={"/"}>
+      <Link to={"/"} onClick={scrollToTop}>
         <img src={logo} alt='nwf' className='w-[124px] h-[32px] mr-5' />
       </Link>
 
@@ -25,7 +49,7 @@ const Navbar = () => {
                 index === navLinks.length - 1 ? "mr-0" : "mr-10"
               } text-white hover:text-secondary`}
           >
-            <Link to={`/${nav.id}`}>{nav.title}</Link>
+            <Link to={`/${nav.id}`} onClick={scrollToTop}>{nav.title}</Link>
           </li>
         ))}
       </ul>
@@ -52,7 +76,7 @@ const Navbar = () => {
                     index === navLinks.length - 1 ? "mr-0" : "mb-4"
                   } text-white`}
               >
-                <a href={`${nav.id}`}>{nav.title}</a>
+                <a href={`${nav.id}`} onClick={scrollToTop}>{nav.title}</a>
               </li>
             ))}
           </ul>

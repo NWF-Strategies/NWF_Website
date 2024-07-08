@@ -28,7 +28,7 @@ const Career = () => {
         </div>
       </div>
 
-      <div className='teal__black__gradient'>
+      <div className='2xl:ml-[25%] 2xl:w-[50%]'>
         <div className={`${styles.paddingX} ${styles.paddingY}`}>
           <p className={styles.heading4}>CORE STAFF</p>
           <p className={styles.heading3}>Officer Departments</p>
@@ -70,6 +70,7 @@ const Career = () => {
               </div>
             </div>
           </div>
+          <hr></hr>
           <div className={`${styles.paddingX} ${styles.paddingY}`}>
             <p className={styles.heading4}>INTERN</p>
             <p className={styles.heading3}>Internship Program</p>
@@ -116,7 +117,7 @@ const Career = () => {
               />
             </div>
           </div>
-          <div className='flex flex-col sm:flex-row items-center'>
+          <div className='flex flex-col sm:flex-row items-center mb-10  xl:ml-20 2xl:ml-12'>
             {career_categories.map((content) => (
               <div className='items-center text-center py-10 mx-10'>
                 <img src={content.imgSrc} />
@@ -134,8 +135,10 @@ const Career = () => {
               </div>
             ))}
           </div>
-          <Newsletter />
         </div>
+      </div>
+      <div className="2xl:ml-[15%] 2xl:w-[70%] xl:w-[95%] xl:ml-10">
+        <Newsletter />
       </div>
     </div>
   );

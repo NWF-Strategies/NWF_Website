@@ -1,6 +1,8 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { NotFound, Solutions, About, Careers, ContactUs, Home } from "./pages/";
 import { Navbar, Footer } from "./components";
+import Cursor from './components/Cursor';
+
 
 // ... import other pages as well
 
@@ -14,7 +16,7 @@ function App() {
   // );
 
   return (
-    <div className='bg-grey'>
+    <div className='doublepillgradient'>
       <Router>
         <Navbar />
 
@@ -29,6 +31,7 @@ function App() {
 
         <Footer />
       </Router>
+      <Cursor />
     </div>
   );
 }

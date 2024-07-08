@@ -2,10 +2,13 @@ const styles = {
   boxWidth: "xl:max-w-[1280px] w-full",
 
   paragraph:
-    "font-poppins font-normal text-primary md:text-[15px] text-[13px] leading-[25px] xs:leading-[30.8px]",
+    "font-poppins font-normal text-primary 3xl:text-[23px] 3xl:leading-[40px] xl:text-[22px] xl:leading-[35px] md:text-[15px] text-[13px] leading-[25px] xs:leading-[30.8px]",
 
   paragraph2:
     "text-white font-poppins lg:text-[25px] md:text-[20px] sm:text-[15px] font-normal leading-normal",
+  
+  paragraph3:
+    "font-poppins font-normal text-primary md:text-[18px] text-[15px] leading-[33px] xs:leading-[35.8px]",
 
     
   heading1: `text-[#43BCCD] font-poppins lg:text-[85px] text-[50px] font-bold leading-relaxed text-left `,    
@@ -17,14 +20,26 @@ const styles = {
     "font-poppins font-semibold	xs:text-20px text-[#43BCCD] tracking-[0.15px]",
   heading5:
     "font-poppins tracking-tighter font-[1000] bold text-[#43BCCD] sm:leading-[5rem] md:text-[50px] sm:text-[55px] text-[40px]",
+  heading6:
+    "font-poppins font-semibold	text-[25px] text-white tracking-[0.15px] leading-relaxed",
+  heading7:
+    "font-poppins tracking-tighter font-[1000] bold text-[#43BCCD] sm:leading-[5rem] 3xl:leading-[10rem] 3xl:text-[125px] lg:text-[65px] md:text-[55px] sm:text-[55px] text-[40px]",
 
   callout: "font-poppins bg-[#185767] h-fit rounded-2xl p-10 m-5 mission-card",
+  callout2: "font-poppins bg-[#185767] h-fit rounded-2xl p-10 m-5 mission-card2",
+  callout3: "font-poppins bg-[#185767] h-fit rounded-2xl p-10 m-5 mission-card3",
 
+   //button and landingbutton act the same now on the figma
   button:
-    "bg-none hover:bg-secondaryButton border border-secondaryButton text-secondary hover:text-white w-fit rounded-2xl py-1 px-4 font-poppins font-light mt-5",
-  
+    //"bg-none hover:bg-secondaryButton border border-secondaryButton text-secondary hover:text-white w-fit rounded-2xl py-1 px-4 font-poppins font-light mt-5",
+    "bg-none hover:bg-opacity-25 hover:bg-greenBlue border-2 border-greenBlue text-greenBlue w-fit rounded-md py-2 px-5 font-poppins font-light mt-5",
+
   landingbutton:
-    "bg-none  hover:bg-white border border-white text-white hover:text-gray-500 w-fit py-1 px-4 font-poppins font-light mt-5",
+    //"bg-none  hover:bg-white border border-white text-white hover:text-gray-500 w-fit py-1 px-4 font-poppins font-light mt-5",
+    "bg-none hover:bg-opacity-25 hover:bg-greenBlue border-2 border-greenBlue text-greenBlue w-fit rounded-md py-2 px-5 font-poppins font-light mt-5",
+  
+  landingbutton2:
+    "bg-none hover:bg-opacity-25 hover:bg-brownish border-2 border-brownish text-brownish w-fit rounded-md py-2 px-5 font-poppins font-light mt-5",
 
   form: "bg-black-gradient appearance-none border-2 border-secondary rounded w-full py-2 px-4 text-white leading-tight focus:outline-none focus:bg-white",
 

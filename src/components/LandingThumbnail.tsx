@@ -29,7 +29,7 @@ const LandingThumbnail: React.FC<LandingThumbnailProps> = ({ imageSrc, text, but
             </div>
             <div className="absolute inset-y-0 z-20 flex justify-center items-center text-center px-[25px] mt-20">
                 <div className="flex flex-col rounded-none gap-[1rem] px-[4rem] text-center items-center md:text-left md:items-start">
-                    <p className={`${styles.heading5}  text-white font-medium`}>
+                    <p className={`${styles.heading7}  text-white font-medium`}>
                         {text}
                     </p>
                     <button className={styles.landingbutton} type='button' onClick={handleButtonClick}>

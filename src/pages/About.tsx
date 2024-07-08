@@ -23,19 +23,19 @@ const About = () => {
                 At New Way Forward Strategies, we believe that Democracy starts with accessibility. We founded the New Way Forward to deploy pioneering technologies and strategies, providing change-makers the tools to operate cutting-edge, winning campaigns.
             </p>
         </div>
-        <div className='flex flex-col md:flex-row justify-between items-center px-18 w-[80%]'>
+        <div className='flex flex-col md:flex-row justify-between items-center px-18 w-[80%] mb-12 2xl:ml-[1%] 2xl:w-[50%]'>
             {/* <p className='mission-card bg-[#185767] text-white md:px-[70px] md:py-[50px] xs:px-[15px] xs:py-[10px] xxs:px-[15px] xxs:py-[10px] rounded-lg relative z-10'> */}
-          <p className={`${styles.callout} text-white w-[90%] lg:text-[18px] h-full`}>
+          <p className={`${styles.callout2} text-white w-[90%] lg:text-[18px] h-full 2xl:mr-10`}>
               We strive to revolutionize campaigns one step at a time. Starting at the grassroots , NWF catalyzes innovation in campaign strategy and technology.
             </p>
             {/* <p className='mission-card bg-[#185767] text-white md:px-[70px] md:py-[50px] xs:px-[15px] xs:py-[10px] xxs:px-[15px] xxs:py-[10px] rounded-lg relative z-10'> */}
-          <p className={`${styles.callout} text-white w-[90%] lg:text-[18px] h-full`}>
+          <p className={`${styles.callout2} text-white w-[90%] lg:text-[18px] h-full 2xl:ml-10`}>
               By leveraging technology with our political experience, we support aspiring change-makers in their journey to generate positive impact in the United States.
             </p>
         </div>
       </div>
       <div className={`${styles.marginX} items-center`}>
-        <div className='flex flex-col-reverse md:flex-row justify-center items-center md:mb-20 py-10 h-fit'>
+        <div className='flex flex-col-reverse md:flex-row justify-center items-center md:mb-20 py-10 h-fit  2xl:ml-[17%] 2xl:w-[70%] xl:ml-4'>
           <div className='my-5 w-[80%]'>
             <h2 className='text-white font-poppins text-[47px] font-normal tracking-tight leading-relaxed'>About Us</h2>
             <p className={`${styles.paragraph} text-[16px] mb-4 leading-relaxed`}><span className='font-semibold'>We're doers before consultants.</span> Out of Silicon Valley, we started as a group of individuals who wanted to make a change. With diverse, first-hand knowledge in effective campaigning, we recognized early on that key inefficiencies permeate the political sphere, inflating costs and threatening our Democracy's accessibility. </p>
@@ -57,7 +57,7 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div>
+      <div className = "3xl:ml-[1%] xl:w-[100%]">
         <Newsletter />
       </div>
     </>

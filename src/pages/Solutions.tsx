@@ -19,7 +19,7 @@ const Solutions = () => {
               Solutions
             </h1>
             <p
-              className={`text-white font-poppins lg:text-[23px] md:text-[20px] sm:text-[15px] font-normal leading-normal `}
+              className={`text-white font-poppins 3xl:text-[40px] lg:text-[23px] md:text-[20px] sm:text-[15px] font-normal leading-normal `}
 
             >
               We combine traditional outreach strategy with innovative
@@ -44,8 +44,8 @@ const Solutions = () => {
         </div>
       </div>
 
-      <div className='teal__black__gradient pb-10 flex justify-center items-center flex-col'>
-        <div className='h-fit py-10 px-10 mb-10 lg:w-[70%] md:w-[90%]'>
+      <div className='pb-10 flex justify-center items-center flex-col'>
+        <div className='h-fit py-10 px-10 mb-10 3xl:w-[42%] 3xl:ml-[1%] 2xl:w-[70%] xl:ml-[2%] xl:w-[98%] lg:w-[100%] md:w-[100%]'>
           <ul>
             {solutions_notes.map((item, index) => (
               <li className='h-fit flex flex-row w-full py-1'>
@@ -72,7 +72,7 @@ const Solutions = () => {
             ))}
           </ul>
         </div>
-        <div>
+        <div className = "3xl:w-[62%]">
           <Newsletter />
         </div>
       </div>

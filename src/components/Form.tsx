@@ -18,7 +18,7 @@ const Form = () => {
               type='text'
               name='name'
               id='name'
-              placeholder='John Doe'
+              placeholder='Name *'
               className='bg-transparent text-white w-full'
               required
             />
@@ -28,7 +28,7 @@ const Form = () => {
               type='email'
               name='email'
               id='email'
-              placeholder='you@email.com'
+              placeholder='Email *'
               className='bg-transparent text-white w-full'
               required
             />
@@ -40,14 +40,14 @@ const Form = () => {
             name='message'
             id='message'
             placeholder='Your Message'
-            className='bg-transparent text-white w-full h-[100px] py-3 px-[20px]'
+            className='bg-transparent text-white w-full h-[220px] py-3 px-[20px]'
             required
           ></textarea>
         </div>
         <div className='w-full flex justify-center items-center'>
           <button
             type='submit'
-            className='flex justify-center items-center px-[24px] py-[5px] bg-[#43BCCD] rounded-md w-[120px] text-white'
+            className='flex justify-center items-center px-[24px] py-[5px] bg-[#43BCCD] rounded-full w-[120px] text-black'
           >
             Submit
           </button>

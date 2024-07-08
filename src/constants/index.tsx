@@ -27,6 +27,7 @@ import summer_logo from "../assets/logo_summer.png";
 import peltola_logo from "../assets/logo_peltola.png";
 import kumar_logo from "../assets/logo_kumar.png";
 import bush_logo from "../assets/logo_bush.png";
+import kansas_logo from "../assets/logo_kansas.png";
 
 import peltola from "../assets/home_peltola.png";
 import ventura from "../assets/home_ventura.png";
@@ -40,10 +41,13 @@ import careers_role04 from "../assets/careers_role04.png";
 
 import thumbnailImg1 from "../assets/home_carousel01.png";
 import thumbnailImg2 from "../assets/home_carousel02.png";
-import thumbnailImg3 from "../assets/home_carousel03.png";
+//import thumbnailImg3 from "../assets/home_carousel03.png";
+import thumbnailImg3 from "../assets/home_carousel03b.png";
 
 import LandingThumbnail from "../components/LandingThumbnail";
+import LandingThumbnail2 from "../components/LandingThumbnail2";
 import CandidateSlide from "../components/CandidateSlide";
+import Counter from "../components/Counter";
 
 export const navLinks = [
   {
@@ -215,10 +219,10 @@ export const landing_thumbnails = [
         campaigns with cutting edge software.
       </p>
     }
-    buttonLabel="Our Work"
+    buttonLabel="Our Impact"
     navigateTo="/solutions"
   />,
-  <LandingThumbnail
+  <LandingThumbnail2
     imageSrc={thumbnailImg3}
     text={
       <p>
@@ -226,14 +230,14 @@ export const landing_thumbnails = [
         campaigning with us
       </p>
     }
-    buttonLabel="Careers"
+    buttonLabel="Join Us"
     navigateTo="/careers"
   />,
 ];
 
 
 export const logos1 = [peltola_logo, ventura_logo, kumar_logo];
-export const logos2 = [summer_logo, mcduffie_logo, bush_logo , peltola_logo]; //replaced ventura_logo with bush_logo
+export const logos2 = [summer_logo, mcduffie_logo, bush_logo , ventura_logo, kansas_logo, peltola_logo]; 
 
 export const candidate_photos = [peltola, ventura, kumar];
 
@@ -303,7 +307,7 @@ export const candidate_case_studies = [
   />,
 ];
 export const homepage_stats = [
-  {
+  /*{
     number: "10+ states",
     text: "impacted.",
   },
@@ -313,6 +317,18 @@ export const homepage_stats = [
   },
   {
     number: "7.5 million+",
+    text: "reached.",
+  },*/
+  {
+    counter: <Counter endValue={10} delta={1} suffix="+ states" decimalPlaces="0"/>,
+    text: "impacted.",
+  },
+  {
+    counter: <Counter endValue={75} delta={5} suffix="%" decimalPlaces="0"/>,
+    text: "election success rate.",
+  },
+  {
+    counter: <Counter endValue={7.5} delta={0.1} suffix="   million+" decimalPlaces="1"/>,
     text: "reached.",
   },
 ];

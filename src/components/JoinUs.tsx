@@ -4,11 +4,11 @@ import { JoinUsContent } from "../constants/div_constants";
 
 const JoinUs = () => {
   return (
-    <div className='m-10'>
+    <div className='m-10 3xl:ml-[19%] 3xl:w-[80%]'>
       <TwoPieceFormat
         imageSrc={coverPhoto}
         imageAlt='Join us image'
-        content={<JoinUsContent />} // Using the component directly
+        content={<JoinUsContent />}
       />
     </div>
   );

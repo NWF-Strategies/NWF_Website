@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import home_carousel01 from "../assets/home_carousel01.png";
 import home_carousel02 from "../assets/home_carousel02.png";
 import home_carousel03 from "../assets/home_carousel03.png";
+import home_carousel03b from "../assets/home_carousel03b.png";
 
 import { ExampleButton } from "../components";
 
@@ -30,7 +31,7 @@ export const JoinUsContent = () => {
   }
 
   return (
-    <>
+    <div className="2xl:w-[66%] 2xl:ml-[5%]">
       <p className={styles.heading4}>CAREER</p>
       <p className={styles.heading3}>Join Us</p>
       <p className={styles.paragraph}>
@@ -42,7 +43,7 @@ export const JoinUsContent = () => {
         onClick={() => handleClick()}
         children='Careers'
       />
-    </>
+    </div>
   );
 };
 
@@ -50,7 +51,8 @@ export const JoinUsContent = () => {
 export const landing_carousel = [
   home_carousel01,
   home_carousel02,
-  home_carousel03,
+  home_carousel03b,
+  //home_carousel03,
 ];
 
 export const peltola_text = (

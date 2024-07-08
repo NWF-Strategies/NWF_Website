@@ -1,5 +1,4 @@
 import { map } from "../assets";
-import styles from "../style";
 import Form2 from "./Form2";
 
 const Newsletter2 = () => {

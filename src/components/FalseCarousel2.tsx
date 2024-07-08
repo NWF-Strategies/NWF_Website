@@ -8,7 +8,7 @@ interface WeirdCarousel2Props {
   slides: React.ReactNode[];
 }
 
-export const WeirdCarousel2: React.FC<WeirdCarousel2Props> = ({ slides }) => {
+export const WeirdCarousel2: React.FC<WeirdCarousel2Props> = ({}) => {
   return (
     <Carousel
       className="banner-container"

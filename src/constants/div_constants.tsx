@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 
 import home_carousel01 from "../assets/home_carousel01.png";
 import home_carousel02 from "../assets/home_carousel02.png";
-import home_carousel03 from "../assets/home_carousel03.png";
+/*import home_carousel03 from "../assets/home_carousel03.png";*/
 import home_carousel03b from "../assets/home_carousel03b.png";
 
 import { ExampleButton } from "../components";

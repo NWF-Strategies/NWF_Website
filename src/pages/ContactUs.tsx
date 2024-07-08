@@ -1,5 +1,5 @@
 import styles, { layout } from "../style";
-import Form from "../components/Form";
+/*import Form from "../components/Form";*/
 import { Newsletter2 } from '../components'
 
 const ContactUs = () => {

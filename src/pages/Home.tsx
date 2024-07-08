@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import {
   homepage_stats,
   landing_thumbnails,
-  logos2,
+  /*logos2,*/
   landing_solutions,
 } from "../constants/";
 import { solutions_tags } from "../constants/";
@@ -13,8 +13,8 @@ import whoweare from "../assets/whoweare.png";
 import TwoPieceFormat from "../components/TwoPieceFormat";
 import LandingThumbnail from "../components/LandingThumbnail";
 import thumbnailImg1 from "../assets/home_carousel01.png";
-import WeirdCarousel from "../components/FalseCarousel";
-import { WeirdCarousel2 } from "../components/FalseCarousel2";
+/*import WeirdCarousel from "../components/FalseCarousel";
+import { WeirdCarousel2 } from "../components/FalseCarousel2";*/
 import { WeirdCarousel3 } from "../components/FalseCarousel3";
 
 const Home = () => {

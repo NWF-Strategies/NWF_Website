@@ -320,7 +320,7 @@ export const homepage_stats = [
     text: "reached.",
   },*/
   {
-    counter: <Counter endValue={10} delta={1} suffix="+ states" decimalPlaces="0"/>,
+    counter: <Counter endValue={15} delta={1} suffix="+ states" decimalPlaces="0"/>,
     text: "impacted.",
   },
   {
@@ -328,7 +328,7 @@ export const homepage_stats = [
     text: "election success rate.",
   },
   {
-    counter: <Counter endValue={7.5} delta={0.1} suffix="   million+" decimalPlaces="1"/>,
+    counter: <Counter endValue={20} delta={1} suffix="+   million" decimalPlaces="0"/>,
     text: "reached.",
   },
 ];

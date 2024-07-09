@@ -40,13 +40,14 @@ const Cursor: React.FC = () => {
       }
     };
 
+
     const handleClick = () => {
       setClicked(true);
       setTimeout(() => {
         setClicked(false);
       }, 380); // Adjust the delay as needed
     };
-
+    
     window.addEventListener('mousemove', moveCursor);
     document.body.addEventListener('mouseenter', handleMouseEnter, true);
     document.body.addEventListener('mouseleave', handleMouseLeave, true);
@@ -59,7 +60,7 @@ const Cursor: React.FC = () => {
       document.body.removeEventListener('mousedown', handleClick, true);
     };
   }, []);
-
+  
   const cursorStyle: React.CSSProperties = {
     width: clicked ? '70px' : (hovered ? '16px' : '26px'),
     height: clicked ? '70px' : (hovered ? '16px' : '26px'),
@@ -70,7 +71,7 @@ const Cursor: React.FC = () => {
     position: 'fixed',
     top: '0',
     left: '0',
-    transform: 'translate(-50%, -50%)', // Center the cursor
+    transform: 'translate(-50%, -50%)', 
     pointerEvents: 'none',
     zIndex: 9999,
     transition: 'width 0.2s ease, height 0.2s ease, border-color 0.2s ease, opacity 0.2s ease, border-width 0.2s ease',

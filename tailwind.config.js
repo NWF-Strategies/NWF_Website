@@ -42,7 +42,6 @@ export default {
 };
 // richard li
 // TODO:
-// alignment
 // expanding underline under the 4 thingies 
 // implement the 4 thingies ^
 

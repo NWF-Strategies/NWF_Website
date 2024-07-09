@@ -11,13 +11,14 @@ interface WeirdCarousel3Props {
 export const WeirdCarousel3: React.FC<WeirdCarousel3Props> = () => {
   const settings = {
     dots: false,
-    initialSlide: 4,
+    rows: 1,
+    initialSlide: 5,
     infinite: true,
-    slidesToShow: 3,
+    slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
-    speed: 10000,
-    autoplaySpeed: 0,
+    speed: 3000,
+    autoplaySpeed: 3000,
     accessibility: false,
     arrows: false,
     draggable: false,
@@ -26,12 +27,12 @@ export const WeirdCarousel3: React.FC<WeirdCarousel3Props> = () => {
     swipe: false,
     touchMove: false,
     rtl: true,
-    cssEase: 'linear',
+    cssEase: 'ease-in-out',
   };
 
   return (
     <Slider
-      className="banner-container"
+      className="banner-container slick-track justify-center"
       {...settings}
     >
       {logos2.map((logo, index) => (
@@ -39,7 +40,7 @@ export const WeirdCarousel3: React.FC<WeirdCarousel3Props> = () => {
           <img
             src={logo}
             alt={`Logo ${index + 1}`}
-            className="h-[9vw] min-h-[75px] px-2 sm:mx-20 xl:mx-40 xl:mx-200 2xl:max-h-[205px] sm:max-h-[175px] max-h-[170px] w-auto"
+            className="h-[9vw] min-h-[75px] mx-20 2xl:max-h-[205px] max-h-[175px] w-auto"
           />
         </div>
       ))}

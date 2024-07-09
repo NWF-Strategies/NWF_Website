@@ -3,7 +3,6 @@ import { NotFound, Solutions, About, Careers, ContactUs, Home } from "./pages/";
 import { Navbar, Footer } from "./components";
 import Cursor from './components/Cursor';
 
-
 // ... import other pages as well
 
 function App() {

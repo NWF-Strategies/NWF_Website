@@ -1,7 +1,6 @@
 import { map } from "../assets";
 import FadeIn from "./FadeIn";
 import Form2 from "./Form2";
-import SlideIn from "./SlideInAnimation";
 
 const Newsletter2 = () => {
   return (

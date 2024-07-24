@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import { close, logo, polygon, menu } from "../assets";
 import { navLinks } from "../constants";
 import { useEffect } from "react";
-import FadeIn from "./FadeIn";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);

@@ -9,7 +9,7 @@ interface LandingThumbnailProps {
     navigateTo: string;
 }
 
-const LandingThumbnail: React.FC<LandingThumbnailProps> = ({ imageSrc, text, buttonLabel, navigateTo }) => {
+const LandingThumbnail2: React.FC<LandingThumbnailProps> = ({ imageSrc, text, buttonLabel, navigateTo }) => { // Same but color change for slide with hand shake
     const navigate = useNavigate();
     const handleButtonClick = () => {
         if (navigateTo!="/") {
@@ -41,4 +41,4 @@ const LandingThumbnail: React.FC<LandingThumbnailProps> = ({ imageSrc, text, but
     );
 };
 
-export default LandingThumbnail;
+export default LandingThumbnail2;

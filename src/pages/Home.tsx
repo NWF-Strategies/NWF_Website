@@ -16,6 +16,9 @@ import thumbnailImg1 from "../assets/home_carousel01.png";
 /*import WeirdCarousel from "../components/FalseCarousel";
 import { WeirdCarousel2 } from "../components/FalseCarousel2";*/
 import { WeirdCarousel3 } from "../components/FalseCarousel3";
+import SlideIn1 from '../components/HomePageIntroCardSlideIn';
+import SlideIn from '../components/SlideInAnimation';
+import FadeIn from '../components/FadeIn';
 
 const Home = () => {
   const navigate = useNavigate();
@@ -58,7 +61,7 @@ const Home = () => {
 
       { Text Section 1 */}
       <div className='h-fit sm:grid sm:grid-cols-2 gap-x-5 text-white items-center relative my-20 3xl:ml-[20%] 3xl:w-[60%]'>
-        <div className= "relative mx-5 z-10">
+        {/*<div className= "relative mx-5 z-10">
           <div className={`${styles.callout2} ${styles.paragraph3} hidden sm:block`}>
             At New Way Forward Strategies, we believe that Democracy starts with
             accessibility. From local elections to nationwide races, campaigns
@@ -71,23 +74,26 @@ const Home = () => {
             NWF Strategies has won groundbreaking uphill battles, high-profile
             races, and facilitated landmark movements.
           </div>
-        </div>
+        </div>*/}
+        <SlideIn1 />
         <div className={`${styles.marginX} sm:mx-1`}>
           <div className='flex flex-col mx-[8vw] sm:mx-auto'>
-            <p className={styles.heading4}>WHO WE ARE</p>
-            <p className={`py-4 ${styles.heading3}`}>New Way Forward Strategies</p>
-            <p className={styles.heading6}>
-              Shifting politics <span className="text-greenBlue">one people-powered</span>  campaign at a time.
-            </p>
+            <SlideIn direction="right" className = {styles.heading4}>
+              <p className={styles.heading4}>WHO WE ARE</p>
+                <p className={`py-4 ${styles.heading3}`}>New Way Forward Strategies</p>
+                <p className={styles.heading6}>
+                Shifting politics <span className="text-greenBlue">one people-powered</span>  campaign at a time.
+              </p>
 
-            <img src={whoweare} className='max-w-[550px]' />
-            <ExampleButton
-              onClick={() => {
-                navigate("/about");
-                scrollToTop();
-              }}
-              children='About Us'
-            />
+              <img src={whoweare} className='max-w-[550px]' />
+              <ExampleButton
+                onClick={() => {
+                  navigate("/about");
+                  scrollToTop();
+                }}
+                children='About Us'
+              />
+            </SlideIn>
           </div>
         </div>
       </div>
@@ -117,31 +123,33 @@ const Home = () => {
       </div>
 
       {/* Text Section 2 */}
-      <div className={`${styles.marginX} h-fit flex flex-row text-white justify-center items-center my-20`} >
-        {/* Non-Mobile */}
-        <ul className='hidden sm:block lg:mx-[80px] md:mx-[30px] sm:mx-[20px] w-fit'>
-          {solutions_tags.map((item) => (
-            <li className='flex flex-row justify-start items-center w-full'>
-              <img src={item.img} className='scale-100 mr-8' />
-              <p className={`${styles.paragraph}`}>{item.title}</p>
-            </li>
-          ))}
-        </ul>
-        <div className={`${styles.callout2} mission-card 3xl:ml-26 3xl:w-[42%]`}>
-          <p className={styles.heading4}>SOLUTIONS</p>
-          <p className={styles.heading3}>Our Services</p>
-          <p className={styles.paragraph}>
-            We combine traditional outreach strategy with innovative technology.
-          </p>
-          <ExampleButton
-            onClick={() => {
-              navigate("/solutions");
-              scrollToTop();
-            }}
-            children='Explore Our Services'
-          />
+      <FadeIn duration ={500} delay={500}>
+        <div className={`${styles.marginX} h-fit flex flex-row text-white justify-center items-center my-20`} >
+          {/* Non-Mobile */}
+          <ul className='hidden sm:block lg:mx-[80px] md:mx-[30px] sm:mx-[20px] w-fit'>
+            {solutions_tags.map((item) => (
+              <li className='flex flex-row justify-start items-center w-full'>
+                <img src={item.img} className='scale-100 mr-8' />
+                <p className={`${styles.paragraph}`}>{item.title}</p>
+              </li>
+            ))}
+          </ul>
+          <div className={`${styles.callout2} mission-card 3xl:ml-26 3xl:w-[42%]`}>
+            <p className={styles.heading4}>SOLUTIONS</p>
+            <p className={styles.heading3}>Our Services</p>
+            <p className={styles.paragraph}>
+              We combine traditional outreach strategy with innovative technology.
+            </p>
+            <ExampleButton
+              onClick={() => {
+                navigate("/solutions");
+                scrollToTop();
+              }}
+              children='Explore Our Services'
+            />
+          </div>
         </div>
-      </div>
+      </FadeIn>
       {/* Mobile */}
       <div className={`${styles.marginX} items-center sm:hidden`}>
         {landing_solutions.map((role, index) => (
@@ -157,8 +165,9 @@ const Home = () => {
       {/* <GenericCarousel slides={candidate_case_studies} /> 
       
       */}
-
-      <JoinUs />
+      <SlideIn direction = "right"> 
+        <JoinUs /> 
+      </SlideIn>
       <div className='mb-12'>
         <Newsletter />
       </div>

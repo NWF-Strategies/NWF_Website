@@ -11,6 +11,7 @@ export default {
         dimWhite: "rgba(255, 255, 255, 0.7)",
         dimBlue: "rgba(9, 151, 124, 0.1)",
         greenBlue: "#43BCCD",
+        fadedGreenBlue: "#d7f1f4",
         brownish: "#e09c46",
         secondaryButton: "#42BCCD",
       },
@@ -42,9 +43,7 @@ export default {
 };
 // richard li
 // TODO:
-// expanding underline under the 4 thingies 
-// implement the 4 thingies ^
-
-// animations
+// implement the 4 thingies ^ w/ an  expanding underline
+// replace generic carousel swipe with fade
 
 // email agent

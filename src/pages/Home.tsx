@@ -130,8 +130,11 @@ const Home = () => {
             {solutions_tags.map((item) => (
               <li key={item.title} className='flex flex-row justify-start items-center w-full transition-colors duration-400 hover:bg-amber-500 pb-3 pt-3 pr-24 lg:pr-22 xl:pr-20 groupQ cursor-should-hover'>
                 <img src={item.img} className='scale-100 mr-10 flex-shrink-0' />
-                <p className={`${styles.paragraph}  groupQ-hover:font-black `}>
+                <p className={`${styles.paragraph}  groupQ-hover:font-black`}>
                     <span className='line-clamp-2 2xl:line-clamp-1 relative transition-all duration-300 transform -translate-x-5 groupQ-hover:translate-x-0 whitespace-pre xl:whitespace-nowrap'>{item.title}</span>
+                    <span className='absolute underline groupQ-hover:decoration-white/100 underline-offset-0 decoration-dotted groupQ-hover:decoration-solid decoration-1 decoration-white/25 text-transparent text-center transform -translate-x-5 mt-[-1rem] groupQ-hover:translate-x-0 transition-all duration-600 ease-in-out'>
+                    -/
+                    </span>
                 </p>
                 <svg
                   xmlns="http://www.w3.org/2000/svg" 

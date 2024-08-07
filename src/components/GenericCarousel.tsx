@@ -2,11 +2,11 @@ import React, { ReactNode } from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 
-interface GenericCarouselProps {
+interface GenericCarouselProps { //everything is good except it needs to fade on next slide instead of sliding
   slides: ReactNode[];
 }
 
-export const GenericCarousel: React.FC<GenericCarouselProps> = ({ slides }) => { //not so generic; heavily customized carousel now
+export const GenericCarousel: React.FC<GenericCarouselProps> = ({ slides }) => {
   const renderArrow = (direction: 'prev' | 'next') => (
     clickHandler: () => void,
     hasPrev: boolean,

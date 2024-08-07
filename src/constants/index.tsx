@@ -126,19 +126,19 @@ export const socialMedia = [
 export const solutions_tags = [
   {
     img: sms_Fill,
-    title: "Strategy & Consulting",
+    title: "Strategy &\nConsulting",
   },
   {
     img: person,
-    title: "Research & Development",
+    title: "Research &\nDevelopment",
   },
   {
     img: vibration,
-    title: "Software & Data",
+    title: "Software &\nData",
   },
   {
     img: research,
-    title: "Operations & Deployment",
+    title: "Operations &\nDeployment",
   },
 ];
 

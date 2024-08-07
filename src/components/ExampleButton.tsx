@@ -8,7 +8,7 @@ interface ButtonProps {
 
 const Button: React.FC<ButtonProps> = ({ children, onClick }) => {
   return (
-    <div className={` ${styles.button}`}>
+    <div className={` ${styles.button} cursor-should-hover`}>
       <button onClick={onClick}>{children}</button>
     </div>
   );

@@ -316,4 +316,32 @@ body{
   0% { opacity: 0; }
   100% { opacity: 1; }
 }
+.groupQ .line-clamp-2 {
+  animation: textanimateReverse .3s ease-in-out forwards;
+}
 
+.groupQ:hover .line-clamp-2 {
+  animation: textanimate .3s ease-in-out forwards;
+}
+
+@keyframes textanimate {
+  0% {  
+    text-shadow: 0px 0px 0px rgba(255, 255, 255, 0);
+    letter-spacing: 0px;
+  }
+  100% {
+    text-shadow: 0px 0.5px 0.5px rgba(255, 255, 255, 1);
+    letter-spacing: 0.5px;
+  }
+}
+
+@keyframes textanimateReverse {
+  0% {
+    text-shadow: 0px 0.5px 0.5px rgba(255, 255, 255, 1);
+    letter-spacing: 0.5px;
+  }
+  100% {  
+    text-shadow: 0px 0px 0px rgba(255, 255, 255, 0);
+    letter-spacing: 0px;
+  }
+}

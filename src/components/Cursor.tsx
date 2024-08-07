@@ -22,7 +22,8 @@ const Cursor: React.FC = () => {
         target.tagName === 'INPUT' ||
         target.tagName === 'BUTTON' ||
         target.tagName === 'TEXTAREA' ||
-        target.tagName === 'A'
+        target.tagName === 'A' ||
+        target.classList.contains('cursor-should-hover')
       ) {
         setHovered(true);
       }
@@ -34,7 +35,8 @@ const Cursor: React.FC = () => {
         target.tagName === 'INPUT' ||
         target.tagName === 'BUTTON' ||
         target.tagName === 'TEXTAREA' ||
-        target.tagName === 'A'
+        target.tagName === 'A'||
+        target.classList.contains('cursor-should-hover')
       ) {
         setHovered(false);
       }

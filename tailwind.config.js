@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+const plugin = require('tailwindcss/plugin')
+
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
@@ -39,11 +41,20 @@ export default {
         '3xl': '2300px',
     },
   },
-  plugins: [],
+  plugins: [
+    plugin(({ addVariant }) => {
+      addVariant('groupQ-hover', ':merge(.groupQ):hover &')
+    })
+  ],
 };
-// richard li
 // TODO:
-// implement the 4 thingies ^ w/ an  expanding underline
-// replace generic carousel swipe with fade
 
+// will
+// replace generic carousel swipe with fade
+// fix stats stuck at 0
+
+// richard
+// add the slides to the 4 thingies
+
+// low priority
 // email agent

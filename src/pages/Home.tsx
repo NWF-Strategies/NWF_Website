@@ -125,12 +125,27 @@ const Home = () => {
       {/* Text Section 2 */}
       <FadeIn duration ={500} delay={500}>
         <div className={`${styles.marginX} h-fit flex flex-row text-white justify-center items-center my-20`} >
-          {/* Non-Mobile */}
-          <ul className='hidden sm:block lg:mx-[80px] md:mx-[30px] sm:mx-[20px] w-fit'>
+          {/* Non-Mobile, non-small screen */}
+          <ul className='hidden md:block lg:mx-[80px] md:mx-[30px] sm:mx-[20px] w-fit'>
             {solutions_tags.map((item) => (
-              <li className='flex flex-row justify-start items-center w-full'>
-                <img src={item.img} className='scale-100 mr-8' />
-                <p className={`${styles.paragraph}`}>{item.title}</p>
+              <li key={item.title} className='flex flex-row justify-start items-center w-full transition-colors duration-400 hover:bg-amber-500 pb-3 pt-3 pr-24 lg:pr-22 xl:pr-20 groupQ cursor-should-hover'>
+                <img src={item.img} className='scale-100 mr-10 flex-shrink-0' />
+                <p className={`${styles.paragraph}  groupQ-hover:font-black `}>
+                    <span className='line-clamp-2 2xl:line-clamp-1 relative transition-all duration-300 transform -translate-x-5 groupQ-hover:translate-x-0 whitespace-pre xl:whitespace-nowrap'>{item.title}</span>
+                </p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg" 
+                  fill="white" 
+                  viewBox="0 0 24 24" 
+                  stroke="none" 
+                  className={`hidden lg:block w-8 h-8 pl-2 ml-2 relative flex-shrink-0`}
+                >
+                  <path 
+                    strokeLinecap="round" 
+                    strokeLinejoin="round" 
+                    d="m8.25 4.5 7.5 7.5-7.5 7.5" 
+                  />
+                </svg>
               </li>
             ))}
           </ul>

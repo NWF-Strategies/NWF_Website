@@ -6,7 +6,7 @@ import FadeIn from "./FadeIn";
 
 const Footer = () => (
   <section
-    className={`flex-col px-10 border-t-2 border-white !bg-grey py-4 mt-20`}
+    className={`flex-col px-10 border-t-2 border-white !bg-grey py-4 mt-20 3xl:mt-24`}
   >
     
     <SlideIn direction="bottom">

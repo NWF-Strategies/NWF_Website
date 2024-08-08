@@ -79,6 +79,7 @@ export const GenericCarousel: React.FC<GenericCarouselProps> = ({ slides }) => {
       showStatus={false}
       dynamicHeight={false}
       swipeable={false}
+      showThumbs={false}
       renderArrowPrev={renderArrow('prev')}
       renderArrowNext={renderArrow('next')}
       renderIndicator={renderIndicator}

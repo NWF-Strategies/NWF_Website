@@ -142,6 +142,29 @@ export const solutions_tags = [
   },
 ];
 
+export const interactive_solutions_tags = [
+  {
+    img: sms_Fill,
+    title: "Strategy &\nConsulting",
+    blurb: "Great campaigns begin at the drawing board. We provide end-to-end support to formulate efficient, effective strategies and timelines to support campaigns from launch to election."
+  },
+  {
+    img: person,
+    title: "Research &\nDevelopment",
+    blurb: "Research hones effective campaign messaging and widespread voter outreach. From donor and opposition research to targeted voter universes, compile rigorous documentation to inform your campaigning decisions."
+  },
+  {
+    img: vibration,
+    title: "Software &\nData",
+    blurb: "Deploy cutting-edge machine learning models to predict voter behavior and leverage comprehensive dashboards to manage day-to-day campaign operations."
+  },
+  {
+    img: research,
+    title: "Operations &\nDeployment",
+    blurb: "Mobilize hundreds of volunteers to canvass and contact millions of voters. Execute and deploy voter contact strategies effortlessly."
+  },
+];
+
 export const clients = [{}];
 
 export const solutions_notes = [

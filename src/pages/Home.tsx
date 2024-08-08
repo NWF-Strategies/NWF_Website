@@ -19,6 +19,7 @@ import { WeirdCarousel3 } from "../components/FalseCarousel3";
 import SlideIn1 from '../components/HomePageIntroCardSlideIn';
 import SlideIn from '../components/SlideInAnimation';
 import FadeIn from '../components/FadeIn';
+import OurSolutions from '../components/OurSolutions';
 
 const Home = () => {
   const navigate = useNavigate();
@@ -121,18 +122,21 @@ const Home = () => {
         </div>*/}
         <WeirdCarousel3 />
       </div>
-
+      
       {/* Text Section 2 */}
-      <FadeIn duration ={500} delay={500}>
+      {/* Non-Mobile, non-small screen */}
+      <div className="hidden sm:block">
+        <OurSolutions />
+      </div>
+      {/*<FadeIn duration ={500} delay={500}>
         <div className={`${styles.marginX} h-fit flex flex-row text-white justify-center items-center my-20`} >
-          {/* Non-Mobile, non-small screen */}
           <ul className='hidden md:block lg:mx-[80px] md:mx-[30px] sm:mx-[20px] w-fit'>
             {solutions_tags.map((item) => (
               <li key={item.title} className='flex flex-row justify-start items-center w-full transition-colors duration-400 hover:bg-amber-500 pb-3 pt-3 pr-24 lg:pr-22 xl:pr-20 groupQ cursor-should-hover'>
                 <img src={item.img} className='scale-100 mr-10 flex-shrink-0' />
                 <p className={`${styles.paragraph}  groupQ-hover:font-black`}>
                     <span className='line-clamp-2 2xl:line-clamp-1 relative transition-all duration-300 transform -translate-x-5 groupQ-hover:translate-x-0 whitespace-pre xl:whitespace-nowrap'>{item.title}</span>
-                    <span className='hidden lg:block absolute underline groupQ-hover:decoration-white/100 underline-offset-0 decoration-dotted groupQ-hover:decoration-solid decoration-1 decoration-white/25 text-transparent text-center transform -translate-x-5 mt-[-1rem] groupQ-hover:translate-x-0 transition-all duration-600 ease-in-out'>
+                    <span className='hidden lg:block absolute underline groupQ-hover:decoration-white/100 underline-offset-0 decoration-dotted groupQ-hover:decoration-solid decoration-1 decoration-white/25 text-transparent text-center transform -translate-x-5 mt-[-25px] groupQ-hover:translate-x-0 transition-all duration-600 ease-in-out'>
                     -/
                     </span>
                 </p>
@@ -167,7 +171,7 @@ const Home = () => {
             />
           </div>
         </div>
-      </FadeIn>
+      </FadeIn> */}
       {/* Mobile */}
       <div className={`${styles.marginX} items-center sm:hidden`}>
         {landing_solutions.map((role, index) => (

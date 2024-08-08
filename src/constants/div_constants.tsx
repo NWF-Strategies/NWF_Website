@@ -31,7 +31,7 @@ export const JoinUsContent = () => {
   }
 
   return (
-    <div className="2xl:w-[66%] 2xl:ml-[5%]">
+    <div className="3xl:w-[66%] 2xl:mx-[5%]">
       <p className={styles.heading4}>CAREER</p>
       <p className={styles.heading3}>Join Us</p>
       <p className={styles.paragraph}>

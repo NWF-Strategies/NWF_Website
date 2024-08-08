@@ -11,7 +11,7 @@ const styles = {
     "font-poppins font-normal text-primary md:text-[18px] text-[15px] leading-[33px] xs:leading-[35.8px]",
 
   paragraph4:
-    "font-poppins font-normal text-primary 3xl:text-[32px] 3xl:leading-[42px] xl:text-[26px] xl:leading-[38px] md:text-[15px] text-[13px] leading-[25px] xs:leading-[30px]",
+    "font-poppins font-normal text-primary 3xl:text-[28px] 3xl:leading-[40px] xl:text-[26px] xl:leading-[38px] md:text-[15px] text-[13px] leading-[25px] xs:leading-[30px]",
 
   paragraph5:
     "font-poppins font-normal text-primary 3xl:text-[23px] 3xl:leading-[40px] text-[22px] leading-[32px]",

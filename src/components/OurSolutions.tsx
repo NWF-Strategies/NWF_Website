@@ -39,7 +39,7 @@ const OurSolutions: React.FC = () => {
                   {item.title}
                 </span>
                 <span className='hidden lg:block absolute underline groupQ-hover:decoration-white/100 underline-offset-0 decoration-dotted groupQ-hover:decoration-solid decoration-1 
-                decoration-white/25 text-transparent text-center transform -translate-x-5 mt-[-18px] xl:mt-[-23px] groupQ-hover:translate-x-0 transition-all duration-600 ease-in-out'>
+                decoration-white/25 text-transparent text-center transform -translate-x-5 mt-[-18px] xl:mt-[-20px] 2xl:mt-[-23px] 3xl:mt-[-25px] groupQ-hover:translate-x-0 transition-all duration-600 ease-in-out'>
                   -/
                 </span>
               </p>
@@ -59,7 +59,7 @@ const OurSolutions: React.FC = () => {
             </li>
           ))}
         </ul>
-        <div className={`${styles.callout2} mission-card ml-14 w-[50%] 3xl:ml-26 3xl:w-[42%]`}>
+        <div className={`${styles.callout2} mission-card ml-14 w-[50%] 3xl:ml-26 3xl:w-[42%] transition-opacity duration-200 ease-in-out`}>
           <p className={`${styles.heading4} pb-3`}>SOLUTIONS</p>
           {hoveredSolution === null ? (
             <p className={`${styles.heading3} pb-3`}>Our Services</p>

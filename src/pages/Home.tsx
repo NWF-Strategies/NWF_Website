@@ -7,7 +7,6 @@ import {
   /*logos2,*/
   landing_solutions,
 } from "../constants/";
-import { solutions_tags } from "../constants/";
 import styles from "../style";
 import whoweare from "../assets/whoweare.png";
 import TwoPieceFormat from "../components/TwoPieceFormat";
@@ -18,7 +17,8 @@ import { WeirdCarousel2 } from "../components/FalseCarousel2";*/
 import { WeirdCarousel3 } from "../components/FalseCarousel3";
 import SlideIn1 from '../components/HomePageIntroCardSlideIn';
 import SlideIn from '../components/SlideInAnimation';
-import FadeIn from '../components/FadeIn';
+/*import FadeIn from '../components/FadeIn';
+import { solutions_tags } from "../constants/";*/
 import OurSolutions from '../components/OurSolutions';
 
 const Home = () => {

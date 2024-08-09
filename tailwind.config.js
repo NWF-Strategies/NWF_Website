@@ -54,8 +54,7 @@ export default {
 // fix stats stuck at 0
 
 // richard
-// add the slides to the 4 thingies
-// should they be underlined
+//
 
 // low priority
 // email agent

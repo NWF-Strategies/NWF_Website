@@ -48,7 +48,8 @@ const OurSolutions: React.FC = () => {
                 fill="white"
                 viewBox="0 0 24 24"
                 stroke="none"
-                className={`hidden lg:block w-8 h-8 pl-2 ml-2 relative flex-shrink-0`}
+                className={`hidden w-0`}
+                /*className={`hidden lg:block w-8 h-8 pl-2 ml-2 relative flex-shrink-0`}*/
               >
                 <path
                   strokeLinecap="round"
@@ -59,7 +60,7 @@ const OurSolutions: React.FC = () => {
             </li>
           ))}
         </ul>
-        <div className={`${styles.callout2} mission-card ml-14 w-[50%] 3xl:ml-26 3xl:w-[42%] transition-opacity duration-200 ease-in-out`}>
+        <div className={`${styles.callout2} mission-card ml-0 w-[50%] 3xl:ml-26 3xl:w-[42%] transition-opacity duration-200 ease-in-out`}>
           <p className={`${styles.heading4} pb-3`}>SOLUTIONS</p>
           {hoveredSolution === null ? (
             <p className={`${styles.heading3} pb-3`}>Our Services</p>

@@ -146,12 +146,12 @@ export const interactive_solutions_tags = [
   {
     img: sms_Fill,
     title: "Strategy &\nConsulting",
-    blurb: "Great campaigns begin at the drawing board. We provide end-to-end support to formulate efficient, effective strategies and timelines to support campaigns from launch to election."
+    blurb: "Formulate efficient, effective strategies for your campaign, from launch to election."
   },
   {
     img: person,
     title: "Research &\nDevelopment",
-    blurb: "Research hones effective campaign messaging and widespread voter outreach. From donor and opposition research to targeted voter universes, compile rigorous documentation to inform your campaigning decisions."
+    blurb: "Leverage and compile in-depth research and comprehensive documentatio,n from donor and opposition research to carefully curated voter universes."
   },
   {
     img: vibration,

@@ -345,3 +345,7 @@ body{
     letter-spacing: 0px;
   }
 }
+
+.control-dots {
+  z-index: 10 !important;
+}

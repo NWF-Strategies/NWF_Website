@@ -1,20 +1,22 @@
 import React, { ReactNode } from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Carousel } from "react-responsive-carousel";
+import Carousel from "react-responsive-carousel/lib/js/components/Carousel/index";
 
-interface GenericCarouselProps { //everything is good except it needs to fade on next slide instead of sliding
+interface GenericCarouselProps { // ive created a tentative fade solution using src/react-responsive-carousel.d.ts. 
   slides: ReactNode[];
 }
 
 export const GenericCarousel: React.FC<GenericCarouselProps> = ({ slides }) => {
-  const renderArrow = (direction: 'prev' | 'next') => (
-    clickHandler: () => void,
-    hasPrev: boolean,
-    label: string
-  ) => {
-    if ((direction === 'prev' && !hasPrev) || (direction === 'next' && !hasPrev)) {
-      return null;
-    }
+
+    const renderArrow = (direction: 'prev' | 'next') => (
+      clickHandler: () => void,
+      hasPrev: boolean,
+      label: string
+    ) => {
+      if ((direction === 'prev' && !hasPrev) || (direction === 'next' && !hasPrev)) {
+        return null;
+      }
+
 
     return (
       <button
@@ -23,7 +25,7 @@ export const GenericCarousel: React.FC<GenericCarouselProps> = ({ slides }) => {
         title={label}
         className={`absolute top-1/2 -translate-y-1/2 ${
           direction === 'prev' ? 'left-4' : 'right-4'
-        } bg-none bg-opacity-50 hover:bg-opacity-100 rounded-full p-2 transition-all duration-300 z-10`}
+        } bg-none bg-opacity-50 hover:bg-opacity-100 rounded-full p-2 transition-all duration-300 z-[9999]`}
       >
         <svg 
           xmlns="http://www.w3.org/2000/svg" 
@@ -84,6 +86,7 @@ export const GenericCarousel: React.FC<GenericCarouselProps> = ({ slides }) => {
       renderArrowNext={renderArrow('next')}
       renderIndicator={renderIndicator}
       className="custom-carousel"
+      animationHandler="fade"
     >
       {slides.map((slideContent, index) => (
         <div key={index}>{slideContent}</div>

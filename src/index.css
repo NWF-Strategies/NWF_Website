@@ -349,3 +349,7 @@ body{
 .control-dots {
   z-index: 10 !important;
 }
+
+.carousel .slider-wrapper.axis-horizontal .slider{
+  z-index: 9 !important;
+}

@@ -31,19 +31,21 @@ export const WeirdCarousel3: React.FC<WeirdCarousel3Props> = () => {
   };
 
   return (
-    <Slider
-      className="banner-container slick-track justify-center"
-      {...settings}
-    >
-      {logos2.map((logo, index) => (
-        <div key={index} className="flex justify-center items-center my-2 banner-item">
-          <img
-            src={logo}
-            alt={`Logo ${index + 1}`}
-            className="h-[9vw] min-h-[75px] mx-20 2xl:max-h-[205px] max-h-[175px] w-auto"
-          />
-        </div>
-      ))}
-    </Slider>
+    <div className="w-full hidden sm:block">
+      <Slider
+        className="banner-container slick-track justify-center"
+        {...settings}
+      >
+        {logos2.map((logo, index) => (
+          <div key={index} className="flex justify-center items-center my-2 banner-item">
+            <img
+              src={logo}
+              alt={`Logo ${index + 1}`}
+              className="h-[9vw] min-h-[75px] mx-20 2xl:max-h-[205px] max-h-[175px] w-auto"
+            />
+          </div>
+        ))}
+      </Slider>
+    </div>
   );
 };

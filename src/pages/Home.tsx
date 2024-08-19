@@ -3,8 +3,9 @@ import { GenericCarousel } from "../components/GenericCarousel";
 import { useNavigate } from "react-router-dom";
 import {
   homepage_stats,
+  mobile_homepage_stats,
   landing_thumbnails,
-  /*logos2,*/
+  logos2,
   landing_solutions,
 } from "../constants/";
 import styles from "../style";
@@ -100,8 +101,8 @@ const Home = () => {
       </div>
               
       {/* Firm Statistics Section */}
-      <div className='flex flex-col justify-center items-center my-8 bg-grey pb-12'>
-        <div className='flex flex-col lg:flex-row items-center flex-nowrap overflow-hidden whitespace-nowrap'>
+      <div className='w-full flex flex-col justify-center items-center my-8 bg-grey pb-12'>
+        <div className='invisible sm:visible h-0 sm:h-auto flex flex-col lg:flex-row items-center flex-nowrap overflow-hidden whitespace-nowrap'> {/*computer*/}
           {homepage_stats.map((content) => (
             <div className='items-center text-center py-10 mx-10'>
               <p>{content.counter}</p>
@@ -109,7 +110,15 @@ const Home = () => {
             </div>
           ))}
         </div>
-        {/*<div className='grid grid-cols-2 sm:grid-cols-4'>
+        <div className='visible sm:invisible h-auto sm:h-0 flex flex-col lg:flex-row items-center flex-nowrap overflow-hidden whitespace-nowrap'> {/*mobile*/}
+          {mobile_homepage_stats.map((content) => (
+            <div className='items-center text-center py-10 mx-10 font-poppins font-[1000] bold text-[#43BCCD] sm:leading-[5rem] md:text-[60px] sm:text-[45px] text-[50px] font-color:white'>
+              <p>{content.number}</p>
+              <p className={`${styles.paragraph}`}>{content.text}</p>
+            </div>
+          ))} 
+    </div>
+        {/*<div className='grid grid-cols-2 sm:grid-cols-4'> 
           {logos2.map((logo, index) => (
             <div key={index} className='flex justify-center items-center my-2'>
               <img
@@ -120,7 +129,21 @@ const Home = () => {
             </div>
           ))}
         </div>*/}
+
+        {/* our clients */}
+        <div className="block sm:hidden w-full p-0 grid grid-cols-2">{/* mobile */}
+          {logos2.map((logo, index) => (
+              <div key={index} className='flex justify-center items-center my-2'>
+                <img
+                  src={logo}
+                  alt={`Logo ${index + 1}`}
+                  className='h-[9vw] min-h-[75px] px-1'
+                />
+              </div>
+            ))}
+        </div>
         <WeirdCarousel3 />
+
       </div>
       
       {/* Text Section 2 */}

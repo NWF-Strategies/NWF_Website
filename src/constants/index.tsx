@@ -356,6 +356,21 @@ export const homepage_stats = [
   },
 ];
 
+export const mobile_homepage_stats = [
+  {
+    number: "15+ states",
+    text: "impacted.",
+  },
+  {
+    number: "75%",
+    text: "election success rate.",
+  },
+  {
+    number: "20+ million+",
+    text: "reached.",
+  },
+];
+
 export const career_categories = [
   {
     imgSrc: careers_category01,

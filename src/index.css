@@ -3,6 +3,20 @@
 @tailwind components;
 @tailwind utilities;
 
+body, *{
+  cursor: none !important;
+}
+body{
+  background-color: #19191A!important;
+  overflow-x: hidden !important;
+}
+@media (max-width: 650px) { {/*mobile screen width fix*/}
+  html, body {
+    overflow-x: hidden;
+    max-width: 100vw;
+  }
+}
+
 :root {
   --black-gradient: linear-gradient(
     144.39deg,
@@ -285,13 +299,6 @@
   height: calc(90%); /* Adjust height to account for padding */
   border-radius: 40px; /* Match the border-radius of the mission-card */
   z-index: -1; /* Behind the mission-card */
-}
-body, *{
-  cursor: none !important;
-}
-body{
-  background-color: #19191A!important;
-  overflow-x: hidden !important;
 }
 .banner-container {
   width: 100%; 

@@ -58,8 +58,13 @@ const Counter = ({ endValue, delta, suffix, decimalPlaces }: any) => {
       }
     };
     initialResize(); 
+    const timeout = setTimeout(() => {
+      initialResize();
+    }, 1000); // 1-second delay
+  
     window.addEventListener("resize", handleResize2);
     return () => {
+      clearTimeout(timeout);
       window.removeEventListener("resize", handleResize2);
     };
   }, []);

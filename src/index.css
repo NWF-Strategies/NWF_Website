@@ -10,15 +10,14 @@ body{
   background-color: #19191A!important;
   overflow-x: hidden !important;
 }
-@media (max-width: 650px) { /*mobile screen width fix*/
+/*@media (max-width: 650px) { //mobile screen width fix
   html, body {
-    overflow-x: hidden;
     max-width: 100vw;
     max-height: auto;
     -webkit-overflow-scrolling: touch;
     overflow-y: scroll;
   }
-}
+}*/
 
 :root {
   --black-gradient: linear-gradient(

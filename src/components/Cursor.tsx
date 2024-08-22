@@ -3,17 +3,13 @@ import React, { useState, useEffect } from 'react';
 const Cursor: React.FC = () => {
   const [hovered, setHovered] = useState(false);
   const [clicked, setClicked] = useState(false);
+  const [position, setPosition] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
     const cursor = document.querySelector('.cursorcircle') as HTMLElement;
 
     const moveCursor = (e: MouseEvent) => {
-      const mouseY = e.clientY;
-      const mouseX = e.clientX;
-
-      if (cursor) {
-        cursor.style.transform = `translate(-50%, -50%) translate3d(${mouseX}px, ${mouseY}px, 0)`;
-      }
+      setPosition({ x: e.clientX, y: e.clientY });
     };
 
     const handleMouseEnter = (e: Event) => {
@@ -42,18 +38,27 @@ const Cursor: React.FC = () => {
       }
     };
 
-
     const handleClick = () => {
       setClicked(true);
       setTimeout(() => {
         setClicked(false);
-      }, 380); // Adjust the delay as needed
+      }, 380);
     };
     
     window.addEventListener('mousemove', moveCursor);
     document.body.addEventListener('mouseenter', handleMouseEnter, true);
     document.body.addEventListener('mouseleave', handleMouseLeave, true);
     document.body.addEventListener('mousedown', handleClick, true);
+
+    // Center cursor and trigger click on page load just in case
+    const centerCursor = () => {
+      const centerX = window.innerWidth / 2;
+      const centerY = window.innerHeight / 2;
+      setPosition({ x: centerX, y: centerY });
+      handleClick();
+    };
+
+    centerCursor();
 
     return () => {
       window.removeEventListener('mousemove', moveCursor);
@@ -73,7 +78,7 @@ const Cursor: React.FC = () => {
     position: 'fixed',
     top: '0',
     left: '0',
-    transform: 'translate(-50%, -50%)', 
+    transform: `translate(-50%, -50%) translate3d(${position.x}px, ${position.y}px, 0)`,
     pointerEvents: 'none',
     zIndex: 9999,
     transition: 'width 0.2s ease, height 0.2s ease, border-color 0.2s ease, opacity 0.2s ease, border-width 0.2s ease',

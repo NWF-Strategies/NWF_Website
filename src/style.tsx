@@ -41,10 +41,10 @@ const styles = {
 
   landingbutton:
     //"bg-none  hover:bg-white border border-white text-white hover:text-gray-500 w-fit py-1 px-4 font-poppins font-light mt-5",
-    "bg-none hover:bg-opacity-25 hover:bg-greenBlue border-2 border-greenBlue text-greenBlue w-fit rounded-md py-2 px-5 font-poppins font-light mt-5 md:text-md 2xl:text-3xl 2xl:p-5",
+    "bg-none hover:bg-opacity-25 hover:bg-greenBlue border-2 border-greenBlue text-greenBlue w-fit rounded-md py-2 px-5 font-poppins font-light mt-5 md:text-md 2xl:text-3xl 2xl:p-5 cursor-should-hover",
   
   landingbutton2:
-    "bg-none hover:bg-opacity-25 hover:bg-brownish border-2 border-brownish text-brownish w-fit rounded-md py-2 px-5 font-poppins font-light mt-5 md:text-md 2xl:text-3xl 2xl:p-5",
+    "bg-none hover:bg-opacity-25 hover:bg-brownish border-2 border-brownish text-brownish w-fit rounded-md py-2 px-5 font-poppins font-light mt-5 md:text-md 2xl:text-3xl 2xl:p-5 cursor-should-hover",
 
   form: "bg-black-gradient appearance-none border-2 border-secondary rounded w-full py-2 px-4 text-white leading-tight focus:outline-none focus:bg-white",
 

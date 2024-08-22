@@ -6,7 +6,7 @@ const Cursor: React.FC = () => {
   const [position, setPosition] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
-    const cursor = document.querySelector('.cursorcircle') as HTMLElement;
+    //const cursor = document.querySelector('.cursorcircle') as HTMLElement;
 
     const moveCursor = (e: MouseEvent) => {
       setPosition({ x: e.clientX, y: e.clientY });

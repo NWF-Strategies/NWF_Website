@@ -10,12 +10,12 @@ body{
   background-color: #19191A!important;
   overflow-x: hidden !important;
 }
-@media (max-width: 650px) { 
+/*@media (max-width: 650px) { 
   html, body {
     overflow-x: hidden;
     overflow-y: scroll !important;
   }
-}
+}*/
 
 :root {
   --black-gradient: linear-gradient(

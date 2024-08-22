@@ -87,7 +87,7 @@ const Home = () => {
                 Shifting politics <span className="text-greenBlue">one people-powered</span>  campaign at a time.
               </p>
 
-              <img src={whoweare} className='max-w-[550px]' />
+              <img src={whoweare} className='max-w-[72vw] sm:max-w-[265px] md:max-w-[330px] lg:max-w-[480px] xl:max-w-[550px]' />
               <ExampleButton
                 onClick={() => {
                   navigate("/about");

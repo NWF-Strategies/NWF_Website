@@ -11,7 +11,7 @@ const Newsletter = () => {
             Contact Us
           </h3>
           <p className='text-white font-poppins lg:text-[30px] md:text-[25px] sm:text-[20px] font-semibold leading-widest tracking-normal w-full'>
-            Innovative campaign solution, at all levels. Leave us a message and
+            Innovative campaign solutions, at all levels. Leave us a message and
             get in touch
           </p>
           <img src={map} className='w-[655px] h-[377px] object-contain' />

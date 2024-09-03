@@ -14,7 +14,7 @@ const Newsletter2 = () => {
         </div>
         <div className='flex flex-col justify-center items-start md:w-[45%] 3xl:ml-40'>
           <p className='text-white font-poppins lg:text-[30px] md:text-[25px] sm:text-[20px] font-semibold leading-widest tracking-normal w-full mt-20 3xl:mb-10 lg:mb-5'>
-            Innovative campaign solution, at all levels. Leave us a message 
+            Innovative campaign solutions, at all levels. Leave us a message 
             and get in touch
           </p>
           <img src={map} className='w-[655px] h-[377px] object-contain' />

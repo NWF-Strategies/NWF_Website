@@ -9,7 +9,7 @@ interface LandingThumbnailProps {
     navigateTo: string;
 }
 
-const LandingThumbnail2: React.FC<LandingThumbnailProps> = ({ imageSrc, text, buttonLabel, navigateTo }) => { // Same but color change for slide with hand shake
+const LandingThumbnail2: React.FC<LandingThumbnailProps> = ({ imageSrc, text, buttonLabel, navigateTo }) => { // Same but color change for slide with hand shake // nope i made it back to blue
     const navigate = useNavigate();
     const handleButtonClick = () => {
         if (navigateTo!="/") {
@@ -32,7 +32,7 @@ const LandingThumbnail2: React.FC<LandingThumbnailProps> = ({ imageSrc, text, bu
                     <p className={`${styles.heading7}  text-white font-medium`}>
                         {text}
                     </p>
-                    <button className={styles.landingbutton2} type='button' onClick={handleButtonClick}>
+                    <button className={styles.landingbutton} type='button' onClick={handleButtonClick}> 
                         {buttonLabel}
                     </button>
                 </div>

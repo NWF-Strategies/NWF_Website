@@ -33,7 +33,7 @@ const Career = () => {
           <p className={styles.heading4}>CORE STAFF</p>
           <p className={styles.heading3}>Officer Departments</p>
           <p className={styles.paragraph}>
-            Power the New Way Forward of campaigning with us. From software
+            Lead the New Way Forward of campaigning with us. From software
             engineers and researchers to campaign managers and canvassers, we
             have a team for you.
             <br></br>

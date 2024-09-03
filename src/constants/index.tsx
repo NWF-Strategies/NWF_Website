@@ -151,7 +151,7 @@ export const interactive_solutions_tags = [
   {
     img: person,
     title: "Research &\nDevelopment",
-    blurb: "Leverage and compile in-depth research and comprehensive documentatio,n from donor and opposition research to carefully curated voter universes."
+    blurb: "Leverage and compile in-depth research and comprehensive documentation, from donor and opposition research to carefully curated voter universes."
   },
   {
     img: vibration,
@@ -230,8 +230,8 @@ export const landing_thumbnails = [
         campaigns of tomorrow
       </p>
     }
-    buttonLabel="The New Way Forward"
-    navigateTo="/"
+    buttonLabel="About New Way Forward"
+    navigateTo="/about"
   />,
   <LandingThumbnail
     imageSrc={thumbnailImg2}
@@ -242,14 +242,14 @@ export const landing_thumbnails = [
         campaigns with cutting edge software.
       </p>
     }
-    buttonLabel="Our Impact"
-    navigateTo="/solutions"
+    buttonLabel="Our Work"
+    navigateTo="/solutions" //new case studies page
   />,
   <LandingThumbnail2
     imageSrc={thumbnailImg3}
     text={
       <p>
-        <span className='text-[#e09c46]'>Power the new way forward</span> of
+        Lead the <span className='text-secondary'>new way forward</span> of
         campaigning with us
       </p>
     }
@@ -351,7 +351,7 @@ export const homepage_stats = [
     text: "election success rate.",
   },
   {
-    counter: <Counter endValue={20} delta={1} suffix="+   million" decimalPlaces="0"/>,
+    counter: <Counter endValue={50} delta={1} suffix="+   million" decimalPlaces="0"/>,
     text: "reached.",
   },
 ];
@@ -366,7 +366,7 @@ export const mobile_homepage_stats = [
     text: "election success rate.",
   },
   {
-    number: "20+ million+",
+    number: "50+ million+",
     text: "reached.",
   },
 ];

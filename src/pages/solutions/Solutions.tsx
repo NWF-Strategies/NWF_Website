@@ -1,7 +1,7 @@
-import { solutions_tags, solutions_notes } from "../constants";
-import { Newsletter } from "../components";
-import { gear } from "../assets";
-import styles from "../style";
+import { solutions_tags, solutions_notes } from "../../constants";
+import { Newsletter } from "../../components";
+import { gear } from "../../assets";
+import styles from "../../style";
 const Solutions = () => {
   return (
     <div>

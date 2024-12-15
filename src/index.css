@@ -360,3 +360,17 @@ body{
 .carousel .slider-wrapper.axis-horizontal .slider{
   z-index: 9 !important;
 }
+
+.custom-carousel .slide {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 350ms ease-in-out;
+}
+
+.custom-carousel .slide.selected {
+  position: relative;
+  visibility: visible;
+  opacity: 1;
+  z-index: 2;
+}

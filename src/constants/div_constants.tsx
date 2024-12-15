@@ -55,47 +55,70 @@ export const landing_carousel = [
   //home_carousel03,
 ];
 
-export const peltola_text = (
+/*<CaseStudyButton 
+      onClick={() => {
+        window.location.href = '/solutions/kenyan-mcduffie-2022';
+      }}
+    >
+      View Case Study McDuffie
+    </CaseStudyButton>*/
+    export const peltola_text = (
+      <div>
+        <p className={styles.heading4}>CASE STUDY</p><br />
+        <p className={styles.heading3}>Mary Peltola</p><br />
+        <p className={styles.paragraph}>
+          How fish and freedom flipped a 50-year Republican stronghold against
+          former governor Sarah Palin to seat <a href="/solutions/mary-peltola-2022" className="text-greenBlue underline">the first Alaskan Native in Congress.</a>
+        </p>
+        <br />
+        {/*<a href="/solutions/mary-peltola-2022" className={`${styles.button} cursor-pointer no-underline inline-block`}>
+          View Case Study
+        </a>*/}
+      </div>
+    );
+    
+    export const ventura_text = (
+      <div>
+        <p className={styles.heading4}>CASE STUDY</p><br />
+        <p className={styles.heading3}>Rachel Ventura</p><br />
+        <p className={styles.paragraph}>
+        <a href="/solutions/rachel-ventura-2022" className="text-greenBlue underline" >How a former school board member</a> beat out an incumbent while outraised
+          18-to-1 to win the Illinois State Senate seat.
+        </p>
+        <br />
+        {/*<a href="/solutions/rachel-ventura-2022" className={`${styles.button} cursor-pointer no-underline inline-block`}>
+          View Case Study
+        </a>*/}
+      </div>
+    );
+    
+    export const mcduffie_text = (
+      <div>
+        <p className={styles.heading4}>CASE STUDY</p><br />
+        <p className={styles.heading3}>Kenyan R. McDuffie</p><br />
+        <p className={styles.paragraph}>
+        How an incumbent Ward 5 councilmember <a href="/solutions/kenyan-mcduffie-2022" className="text-greenBlue underline">won a citywide at-large seat</a> by building a winning coalition in DC's majority-Black wards.
+        </p>
+        <br />
+        {/*<a href="/solutions/kenyan-mcduffie-2022" className={`${styles.button} cursor-pointer no-underline inline-block`}>
+          View Case Study
+        </a>*/}
+      </div>
+    );
+/*export const kumar_text = () => (
   <>
-    <p className={styles.heading4}>CASE STUDY</p>
-    <p className={styles.heading3}>Mary Peltola</p>
-    <p className={styles.paragraph}>
-      How fish and freedom flipped a 50-year Republican stronghold against
-      former governor Sarah Palin to seat the first Alaskan Native in Congress.
-    </p>
-    {/* <div className="w-50">
-      <img src={peltola_logo} className='px-20 ' />
-    </div> */}
-  </>
-);
-
-export const ventura_text = (
-  <>
-    <p className={styles.heading4}>CASE STUDY</p>
-    <p className={styles.heading3}>Rachel Ventura</p>
-    <p className={styles.paragraph}>
-      How a former school board member beat out an incumbent while outraised
-      18-to-1 to win the Illinois State Senate seat.
-    </p>
-    {/* <div className="w-50">
-      <img src={ventura_logo} className='px-20' />
-    </div> */}
-  </>
-);
-export const kumar_text = (
-  <>
-    <p className={styles.heading4}>CASE STUDY</p>
-    <p className={styles.heading3}>Rishi Kumar</p>
+    <p className={styles.heading4}>CASE STUDY</p><br />
+    <p className={styles.heading3}>Rishi Kumar</p><br />
     <p className={styles.paragraph}>
       Holding a 30-year incumbent below 50% during the California primaries in a
       field dense with competition.
     </p>
-    {/* <div className="w-50">
+    <div className="w-50">
       <img src={kumar_logo} className='px-20' />
-    </div> */}
+    </div>
   </>
-);
-
+);*/
+ 
 export const strategyContent = (
   <>
     <p className={styles.heading4}>STRATEGY</p>

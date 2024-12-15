@@ -1,5 +1,15 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import { NotFound, Solutions, About, Careers, ContactUs, Home } from "./pages/";
+import { 
+  NotFound, 
+  Solutions, 
+  About, 
+  Careers, 
+  ContactUs, 
+  Home,
+  PeltolaCaseStudy,
+  VenturaCaseStudy,
+  McDuffieCaseStudy 
+} from "./pages/";
 import { Navbar, Footer } from "./components";
 import Cursor from './components/Cursor';
 
@@ -22,6 +32,9 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/solutions' element={<Solutions />} />
+          <Route path='/solutions/mary-peltola-2022' element={<PeltolaCaseStudy />} />
+          <Route path='/solutions/rachel-ventura-2022' element={<VenturaCaseStudy />} />
+          <Route path='/solutions/kenyan-mcduffie-2022' element={<McDuffieCaseStudy />} />
           <Route path='/about' element={<About />} />
           <Route path='/careers' element={<Careers />} />
           <Route path='/contactus' element={<ContactUs />} />

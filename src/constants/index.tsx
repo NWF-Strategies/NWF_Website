@@ -18,7 +18,7 @@ import {
   careers_category03,
 } from "../assets";
 
-import { dataContent, kumar_text, landing_sol1, landing_sol2, landing_sol3, landing_sol4, peltola_text, researchContent, softwareContent, strategyContent, ventura_text } from "./div_constants";
+import { dataContent, landing_sol1, landing_sol2, landing_sol3, landing_sol4, peltola_text, researchContent, softwareContent, strategyContent, ventura_text, mcduffie_text } from "./div_constants";
 
 
 import ventura_logo from "../assets/logo_ventura.png";
@@ -32,6 +32,7 @@ import kansas_logo from "../assets/logo_kansas.png";
 import peltola from "../assets/home_peltola.png";
 import ventura from "../assets/home_ventura.png";
 import kumar from "../assets/home_kumar.png";
+import mcduffie from "../assets/home_mcduffie.png";
 
 // need to add these to assets folder; prev imgs still not high res yet
 import careers_role01 from "../assets/careers_role01.png";
@@ -262,9 +263,9 @@ export const landing_thumbnails = [
 export const logos1 = [peltola_logo, ventura_logo, kumar_logo];
 export const logos2 = [summer_logo, mcduffie_logo, bush_logo , ventura_logo, kansas_logo, peltola_logo]; 
 
-export const candidate_photos = [peltola, ventura, kumar];
+export const candidate_photos = [peltola, ventura, mcduffie, kumar ];
 
-export const candidate_texts = [peltola_text, ventura_text, kumar_text];
+export const candidate_texts = [peltola_text, ventura_text, mcduffie_text];
 
 export const roles = [
   {
@@ -312,6 +313,12 @@ export const landing_solutions = [
   },
 ];
 
+  /*<CandidateSlide
+    imageSrc={candidate_photos[2]}
+    imageAlt='Kumar image'
+    content={candidate_texts[2]}
+  />,*/
+  
 export const candidate_case_studies = [
   <CandidateSlide
     imageSrc={candidate_photos[0]}
@@ -320,12 +327,12 @@ export const candidate_case_studies = [
   />,
   <CandidateSlide
     imageSrc={candidate_photos[1]}
-    imageAlt='Peltola image'
+    imageAlt='Ventura image'
     content={candidate_texts[1]}
   />,
   <CandidateSlide
     imageSrc={candidate_photos[2]}
-    imageAlt='Peltola image'
+    imageAlt='McDuffie image'
     content={candidate_texts[2]}
   />,
 ];

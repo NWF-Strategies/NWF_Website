@@ -1,5 +1,6 @@
 import { Newsletter, ExampleButton, JoinUs } from "../components";
 import { GenericCarousel } from "../components/GenericCarousel";
+import { CaseStudyCarousel } from "../components/CaseStudyCarousel";
 import { useNavigate } from "react-router-dom";
 import {
   homepage_stats,
@@ -21,6 +22,7 @@ import SlideIn from '../components/SlideInAnimation';
 /*import FadeIn from '../components/FadeIn';
 import { solutions_tags } from "../constants/";*/
 import OurSolutions from '../components/OurSolutions';
+import { candidate_case_studies } from "../constants/";
 
 const Home = () => {
   const navigate = useNavigate();
@@ -149,53 +151,11 @@ const Home = () => {
       {/* Text Section 2 */}
       {/* Non-Mobile, non-small screen */}
       <div className="hidden sm:block">
+        <br />
         <OurSolutions />
       </div>
-      {/*<FadeIn duration ={500} delay={500}>
-        <div className={`${styles.marginX} h-fit flex flex-row text-white justify-center items-center my-20`} >
-          <ul className='hidden md:block lg:mx-[80px] md:mx-[30px] sm:mx-[20px] w-fit'>
-            {solutions_tags.map((item) => (
-              <li key={item.title} className='flex flex-row justify-start items-center w-full transition-colors duration-400 hover:bg-amber-500 pb-3 pt-3 pr-24 lg:pr-22 xl:pr-20 groupQ cursor-should-hover'>
-                <img src={item.img} className='scale-100 mr-10 flex-shrink-0' />
-                <p className={`${styles.paragraph}  groupQ-hover:font-black`}>
-                    <span className='line-clamp-2 2xl:line-clamp-1 relative transition-all duration-300 transform -translate-x-5 groupQ-hover:translate-x-0 whitespace-pre xl:whitespace-nowrap'>{item.title}</span>
-                    <span className='hidden lg:block absolute underline groupQ-hover:decoration-white/100 underline-offset-0 decoration-dotted groupQ-hover:decoration-solid decoration-1 decoration-white/25 text-transparent text-center transform -translate-x-5 mt-[-25px] groupQ-hover:translate-x-0 transition-all duration-600 ease-in-out'>
-                    -/
-                    </span>
-                </p>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg" 
-                  fill="white" 
-                  viewBox="0 0 24 24" 
-                  stroke="none" 
-                  className={`hidden lg:block w-8 h-8 pl-2 ml-2 relative flex-shrink-0`}
-                >
-                  <path 
-                    strokeLinecap="round" 
-                    strokeLinejoin="round" 
-                    d="m8.25 4.5 7.5 7.5-7.5 7.5" 
-                  />
-                </svg>
-              </li>
-            ))}
-          </ul>
-          <div className={`${styles.callout2} mission-card 3xl:ml-26 3xl:w-[42%]`}>
-            <p className={styles.heading4}>SOLUTIONS</p>
-            <p className={styles.heading3}>Our Services</p>
-            <p className={styles.paragraph}>
-              We combine traditional outreach strategy with innovative technology.
-            </p>
-            <ExampleButton
-              onClick={() => {
-                navigate("/solutions");
-                scrollToTop();
-              }}
-              children='Explore Our Services'
-            />
-          </div>
-        </div>
-      </FadeIn> */}
-      {/* Mobile */}
+      
+      {/* Mobile */}  
       <div className={`${styles.marginX} items-center sm:hidden`}>
         {landing_solutions.map((role, index) => (
           <TwoPieceFormat
@@ -206,16 +166,20 @@ const Home = () => {
           />
         ))}
       </div>
-
-      {/* <GenericCarousel slides={candidate_case_studies} /> 
       
-      */}
+      <div className='w-full flex flex-col sm:flex-row justify-center items-center mb-32 mt-24 bg-grey'>
+        <div className='m-10 pr-20 sm:pr-12 xl:pr-4 3xl:ml-[2.5%] 3xl:w-[64%] 3xl:mt-20 '>
+          <CaseStudyCarousel slides={candidate_case_studies} />
+        </div>
+      </div>
+
       <SlideIn direction = "right"> 
         <JoinUs /> 
       </SlideIn>
       <div className='mb-12'>
         <Newsletter />
       </div>
+      <br />
     </>
   );
 };

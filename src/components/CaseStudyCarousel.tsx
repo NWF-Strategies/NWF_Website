@@ -89,7 +89,7 @@ export const CaseStudyCarousel: React.FC<CaseStudyCarouselProps> = ({ slides }) 
     animationHandler="fade"
     >
     {slides.map((slideContent, index) => (
-        <div key={index} className = "px-36 leading-tight pb-16 pt-16">{slideContent}</div>
+        <div key={index} className = "px-36 leading-tight pb-16 pt-8">{slideContent}</div>
     ))}
     </Carousel>
   );

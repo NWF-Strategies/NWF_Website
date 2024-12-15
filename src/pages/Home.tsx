@@ -167,7 +167,7 @@ const Home = () => {
         ))}
       </div>
       
-      <div className='w-full flex flex-col sm:flex-row justify-center items-center mb-32 mt-24 bg-grey'>
+      <div className=' w-full hidden sm:flex sm:flex-row justify-center items-center mb-32 mt-24 bg-grey'>
         <div className='m-10 pr-20 sm:pr-12 xl:pr-4 3xl:ml-[2.5%] 3xl:w-[64%] 3xl:mt-20 '>
           <CaseStudyCarousel slides={candidate_case_studies} />
         </div>

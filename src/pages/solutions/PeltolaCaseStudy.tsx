@@ -1,26 +1,26 @@
 import { Newsletter } from "../../components";
-import peltola_logo from "../../assets/logo_peltola.png";
+import peltola_home from "../../assets/home_peltola.png";
 import { Link } from "react-router-dom";
 
 
 const PeltolaCaseStudy = () => {
   return (
     <>
-        <div className="max-w-[1200px] mx-auto px-4 pt-28">
+        <div className="max-w-[1100px] 2xl:max-w-[1200px] mx-auto px-4 pt-28">
             <Link to="/solutions" className="text-white text-xl flex items-center">
                 <span className="pr-2 pb-1 text-2xl">←</span>
                 Solutions
             </Link>
         </div>
 
-        <div className="max-w-[1200px] mx-auto px-4 relative">  
+        <div className="max-w-[1100px] 2xl:max-w-[1200px] mx-auto px-4 relative">  
             <h1 className="text-5xl lg:text-6xl text-white font-bold mb-6 pt-20">
                 U.S. Rep. Mary Peltola (AK-AL) <br/><br/>
             </h1>
 
-            <img src={peltola_logo} alt="Peltola Logo" className="hidden 2xl:block w-36" style={{ position: 'absolute', left: 'calc(70% + 32px)', top: '335px' }} />
-            <div className="hidden 2xl:block sticky w-[460px] border border-gray-400 p-6 list-disc" 
-                style={{ position: 'absolute', left: 'calc(70% + 32px)', top: '440px' }}>
+            <img src={peltola_home} alt="Mary Peltola" className="hidden ml-[-4rem] xl:ml-0 lg:block w-[360px] 2xl:w-[460px]" style={{ position: 'absolute', left: 'calc(70%)', top: '215px' }} />
+            <div className="hidden ml-[-4rem] xl:ml-0 lg:block w-[360px] 2xl:block sticky w-[360px] 2xl:w-[460px] border border-gray-400 p-6 list-disc top-[630px] 2xl:top-[740px]" 
+                style={{ position: 'absolute', left: 'calc(70%)'}}>
                 <h3 className="text-lg font-bold text-white mt-4 mb-4">Key Items</h3>
                 <ul className="text-lg space-y-5 text-gray-300 list-disc pl-6">
                     <li className="list-item">First Democrat in over 50 years to represent Alaska</li>
@@ -31,7 +31,7 @@ const PeltolaCaseStudy = () => {
             </div>
         </div>
 
-        <div className="max-w-[1200px] mx-auto px-4 lg:pr-[400px] relative">  
+        <div className="max-w-[1100px] 2xl:max-w-[1200px] mx-auto px-4 lg:pr-[400px] relative">  
             <div className="text-lg lg:text-xl text-white mb-16 max-w-3xl">
             One month before the special election for Alaska's at-large congressional district, NWF Strategies was enlisted to rebuild the campaign of Mary Peltola, a former state representative. This election presented unique challenges, given the historically Republican-leaning electorate. Our expertise in voter targeting strategies, data-driven approaches, and real-time data analysis played a decisive role in achieving a historic victory.
             </div>

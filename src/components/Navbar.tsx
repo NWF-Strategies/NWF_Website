@@ -45,7 +45,7 @@ const Navbar = () => {
   }, []);
 
   return (
-      <nav className='fade-in w-full flex py-6 z-50 justify-between items-center navbar border-white border-b-[1px] pr-10 bg-[#27272a] bg-opacity-60 sticky top-0'>
+      <nav className='fade-in w-full flex py-4 z-50 justify-between items-center navbar border-white border-b-[1px] pr-10 bg-[#27272a] bg-opacity-60 sticky top-0'>
         <Link to={"/"} onClick={scrollToTop}>
           <img src={polygon} alt='nwf' className='w-[124px] h-[32px] mr-5' />
         </Link>

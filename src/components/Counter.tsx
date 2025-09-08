@@ -6,7 +6,7 @@ const Counter = ({ endValue, delta, suffix, decimalPlaces }: any) => {
   const [isVisible, setIsVisible] = useState(false);
   const counterRef = useRef(null);
   const [isAnimationDone, setIsAnimationDone] = useState(false);
-  const timegap = Math.min(100, 100 * delta);
+  const timegap = Math.min(10, 500 / endValue);
   const [size, setSize] = useState("50px"); // Default size
   const [key, setKey] = useState(0); // Key to force remount
   const renderSuffix = () => {

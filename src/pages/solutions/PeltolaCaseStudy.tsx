@@ -1,9 +1,14 @@
 import { Newsletter } from "../../components";
 import peltola_home from "../../assets/home_peltola.png";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 
 
 const PeltolaCaseStudy = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
         <div className="max-w-[1100px] 2xl:max-w-[1200px] mx-auto px-4 pt-28">

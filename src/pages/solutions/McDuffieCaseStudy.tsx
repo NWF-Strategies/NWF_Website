@@ -2,9 +2,14 @@ import { Newsletter } from "../../components";
 import mcduffie_home from "../../assets/home_mcduffie.png";
 import mcduffie_graph from "../../assets/McDuffieVotesByWard.png"
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 
 
 const McDuffieCaseStudy = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
         <div className="max-w-[1100px] 2xl:max-w-[1200px] mx-auto px-4 pt-28">

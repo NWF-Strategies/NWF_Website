@@ -28,6 +28,7 @@ import peltola_logo from "../assets/logo_peltola.png";
 import kumar_logo from "../assets/logo_kumar.png";
 import bush_logo from "../assets/logo_bush.png";
 import kansas_logo from "../assets/logo_kansas.png";
+import zohran_logo from "../assets/zohran_logo.png";
 
 import peltola from "../assets/home_peltola.png";
 import ventura from "../assets/home_ventura.png";
@@ -42,11 +43,8 @@ import careers_role04 from "../assets/careers_role04.png";
 
 import thumbnailImg1 from "../assets/home_carousel01.png";
 import thumbnailImg2 from "../assets/home_carousel02.png";
-//import thumbnailImg3 from "../assets/home_carousel03.png";
-import thumbnailImg3 from "../assets/home_carousel03b.png";
 
 import LandingThumbnail from "../components/LandingThumbnail";
-import LandingThumbnail2 from "../components/LandingThumbnail2";
 import CandidateSlide from "../components/CandidateSlide";
 import Counter from "../components/Counter";
 
@@ -64,8 +62,10 @@ export const navLinks = [
     title: "Careers",
   },
   {
-    id: "contactus",
-    title: "Contact Us",
+    id: "https://calendly.com/jonathanli19975",
+    title: "Get Started",
+    external: true,
+    button: true,
   },
 ];
 
@@ -146,23 +146,27 @@ export const solutions_tags = [
 export const interactive_solutions_tags = [
   {
     img: sms_Fill,
-    title: "Strategy &\nConsulting",
-    blurb: "Formulate efficient, effective strategies for your campaign, from launch to election."
+    title: "Fundraising",
+    blurb: "Great campaigns begin at the drawing board. We provide end-to-end support to formulate efficient, effective strategies and timelines to support campaigns from launch to election.",
+    shortBlurb: "Formulate efficient, effective strategies for your campaign, from launch to election."
   },
   {
     img: person,
-    title: "Research &\nDevelopment",
-    blurb: "Leverage and compile in-depth research and comprehensive documentation, from donor and opposition research to carefully curated voter universes."
+    title: "Strategy & Research",
+    blurb: "Research hones effective campaign messaging and widespread voter outreach. From donor and opposition research to targeted voter universes, compile rigorous documentation to inform your campaigning decisions.",
+    shortBlurb: "Leverage and compile in-depth research and comprehensive documentation, from donor and opposition research to carefully curated voter universes."
   },
   {
     img: vibration,
-    title: "Software &\nData",
-    blurb: "Deploy cutting-edge machine learning models to predict voter behavior and leverage comprehensive dashboards to manage day-to-day campaign operations."
+    title: "Software & Data",
+    blurb: "Deploy cutting-edge machine learning models to predict voter behavior and leverage comprehensive dashboards to manage day-to-day campaign operations.",
+    shortBlurb: "Deploy cutting-edge machine learning models to predict voter behavior and leverage comprehensive dashboards to manage day-to-day campaign operations."
   },
   {
     img: research,
-    title: "Operations &\nDeployment",
-    blurb: "Mobilize hundreds of volunteers to canvass and contact millions of voters. Execute and deploy voter contact strategies effortlessly."
+    title: "Operations & Mobilization",
+    blurb: "Mobilize hundreds of volunteers to canvass and contact millions of voters. Execute and deploy voter contact strategies effortlessly.",
+    shortBlurb: "Mobilize hundreds of volunteers to canvass and contact millions of voters. Execute and deploy voter contact strategies effortlessly."
   },
 ];
 
@@ -227,41 +231,36 @@ export const landing_thumbnails = [
     imageSrc={thumbnailImg1}
     text={
       <p>
-        <span className='text-secondary'>Innovating today</span> for the
+                     <span className="text-cyan-400">Innovating today</span> for the
         campaigns of tomorrow
       </p>
     }
-    buttonLabel="About New Way Forward"
-    navigateTo="/about"
+    secondaryButton="the New Way Forward"
+    secondaryNavigate="/about"
   />,
   <LandingThumbnail
     imageSrc={thumbnailImg2}
     text={
       <p>
         Learn how we've{" "}
-        <span className='text-secondary'>driven people-powered</span>{" "}
+                       <span className="text-cyan-400">driven people-powered</span>{" "}
         campaigns with cutting edge software.
       </p>
     }
-    buttonLabel="Our Work"
-    navigateTo="/solutions" //new case studies page
-  />,
-  <LandingThumbnail2
-    imageSrc={thumbnailImg3}
-    text={
-      <p>
-        Lead the <span className='text-secondary'>new way forward</span> of
-        campaigning with us
-      </p>
-    }
-    buttonLabel="Join Us"
-    navigateTo="/careers"
+    secondaryButton="Getting Started"
+    secondaryNavigate="https://calendly.com/jonathanli19975"
   />,
 ];
 
 
 export const logos1 = [peltola_logo, ventura_logo, kumar_logo];
-export const logos2 = [summer_logo, mcduffie_logo, bush_logo , ventura_logo, kansas_logo, peltola_logo]; 
+import rishi_kumar from "../assets/rishi_kumar.png";
+import tony_thurmond from "../assets/tony_thurmond.png";
+import mississippi_dems from "../assets/mississippi_dems.png";
+import delia_ramirez_logo from "../assets/delia_ramirez_logo.png";
+import ak_dems from "../assets/ak_dems.png";
+
+export const logos2 = [summer_logo, mcduffie_logo, bush_logo, ventura_logo, kansas_logo, peltola_logo, rishi_kumar, tony_thurmond, mississippi_dems, delia_ramirez_logo, zohran_logo, ak_dems]; 
 
 export const candidate_photos = [peltola, ventura, mcduffie, kumar ];
 
@@ -337,44 +336,32 @@ export const candidate_case_studies = [
   />,
 ];
 export const homepage_stats = [
-  /*{
-    number: "10+ states",
-    text: "impacted.",
-  },
   {
-    number: "75%",
-    text: "election success rate.",
-  },
-  {
-    number: "7.5 million+",
+    counter: <Counter endValue={100} delta={2} suffix=" million+" decimalPlaces="0"/>,
     text: "reached.",
-  },*/
+  },
   {
-    counter: <Counter endValue={15} delta={1} suffix="+ states" decimalPlaces="0"/>,
+    counter: <Counter endValue={30} delta={1} suffix=" million+" decimalPlaces="0"/>,
+    text: "raised.",
+  },
+  {
+    counter: <Counter endValue={25} delta={1} suffix="+ states" decimalPlaces="0"/>,
     text: "impacted.",
-  },
-  {
-    counter: <Counter endValue={75} delta={5} suffix="%" decimalPlaces="0"/>,
-    text: "election success rate.",
-  },
-  {
-    counter: <Counter endValue={50} delta={1} suffix="+   million" decimalPlaces="0"/>,
-    text: "reached.",
   },
 ];
 
 export const mobile_homepage_stats = [
   {
-    number: "15+ states",
-    text: "impacted.",
-  },
-  {
-    number: "75%",
-    text: "election success rate.",
-  },
-  {
-    number: "50+ million+",
+    number: "100 million+",
     text: "reached.",
+  },
+  {
+    number: "$30 million+",
+    text: "raised.",
+  },
+  {
+    number: "25+ states",
+    text: "impacted.",
   },
 ];
 

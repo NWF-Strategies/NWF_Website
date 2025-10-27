@@ -10,8 +10,8 @@ const PeltolaCaseStudy = () => {
   }, []);
 
   return (
-    <>
-        <div className="max-w-[1100px] 2xl:max-w-[1200px] mx-auto px-4 pt-28">
+    <div className = "doublepillgradient">
+        <div className="max-w-[1100px] 2xl:max-w-[1200px] mx-auto px-4 pt-28 doublepillgradient">
             <Link to="/solutions" className="text-white text-xl flex items-center">
                 <span className="pr-2 pb-1 text-2xl">←</span>
                 Solutions
@@ -77,7 +77,7 @@ const PeltolaCaseStudy = () => {
         </div>
       <Newsletter />
       <br /><br />
-    </>
+    </div>
   );
 };
 

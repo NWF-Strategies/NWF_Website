@@ -1,6 +1,8 @@
 import {
   linkedin,
-  indeed,
+  linkedin_blue,
+  mail2,
+  mail2_blue,
   person,
   research,
   sms_Fill,
@@ -42,7 +44,8 @@ import careers_role03 from "../assets/careers_role03.png";
 import careers_role04 from "../assets/careers_role04.png";
 
 import thumbnailImg1 from "../assets/home_carousel01.png";
-import thumbnailImg2 from "../assets/home_carousel02.png";
+import thumbnailImg2 from "../assets/home_carousel02_high_contrast.png";
+import thumbnailImg3 from "../assets/careers_background_sharpened_dark.png";
 
 import LandingThumbnail from "../components/LandingThumbnail";
 import CandidateSlide from "../components/CandidateSlide";
@@ -62,8 +65,13 @@ export const navLinks = [
     title: "Careers",
   },
   {
-    id: "https://calendly.com/jonathanli19975",
-    title: "Get Started",
+    id: "contactus",
+    title: "Contact Us",
+  },
+  {
+    id: "bookcall",
+    title: "Book an Intro Call",
+    url: "calendar.app.google/JLvGBnHtjfQcufP49",
     external: true,
     button: true,
   },
@@ -112,19 +120,41 @@ export const footerLinks = [
 ];
 
 export const socialMedia = [
+  /*{
+    id: "social-media-1",
+    icon: indeed,
+    link: "https://www.indeed.com/cmp/Nwf-Strategies/jobs",
+  },*/
+  {
+    id: "social-media-1",
+    icon: mail2,
+    link: "mailto:info@nwfstrategies.com",
+  },
   {
     id: "social-media-4",
     icon: linkedin,
     link: "https://www.linkedin.com/company/nwf-strategies/mycompany/",
   },
-  {
+];
+
+export const socialMedia_blue = [
+  /*{
     id: "social-media-1",
     icon: indeed,
     link: "https://www.indeed.com/cmp/Nwf-Strategies/jobs",
+  },*/
+  {
+    id: "social-media-1",
+    icon: mail2_blue,
+    link: "mailto:info@nwfstrategies.com",
+  },
+  {
+    id: "social-media-4",
+    icon: linkedin_blue,
+    link: "https://www.linkedin.com/company/nwf-strategies/mycompany/",
   },
 ];
-
-export const solutions_tags = [
+export const solutions_tags = [ //xasr
   {
     img: sms_Fill,
     title: "Strategy &\nConsulting",
@@ -143,63 +173,64 @@ export const solutions_tags = [
   },
 ];
 
-export const interactive_solutions_tags = [
+export const interactive_solutions_tags = [ //xasr
   {
     img: sms_Fill,
     title: "Fundraising",
-    blurb: "Great campaigns begin at the drawing board. We provide end-to-end support to formulate efficient, effective strategies and timelines to support campaigns from launch to election.",
+    blurb: "Turn sub-$100k quarters into $1 million wins with a high-speed fundraising system. We build and execute aggressive finance plans, revamp digital strategy, and tap proprietary donor networks to fuel your campaign fast.",
     shortBlurb: "Formulate efficient, effective strategies for your campaign, from launch to election."
   },
   {
     img: person,
-    title: "Strategy & Research",
-    blurb: "Research hones effective campaign messaging and widespread voter outreach. From donor and opposition research to targeted voter universes, compile rigorous documentation to inform your campaigning decisions.",
+    title: "Research",
+    blurb: "Win the campaign before it begins with a data-driven strategy. We craft your core messaging, track your opponent’s moves, and maintain live research databases so you’re always equipped to respond with precision and confidence.",
     shortBlurb: "Leverage and compile in-depth research and comprehensive documentation, from donor and opposition research to carefully curated voter universes."
   },
   {
     img: vibration,
-    title: "Software & Data",
-    blurb: "Deploy cutting-edge machine learning models to predict voter behavior and leverage comprehensive dashboards to manage day-to-day campaign operations.",
+    title: "Data",
+    blurb: "Our dashboards visualize key metrics—from field results to supporter IDs—filterable by district, county, or precinct. Powered by proprietary ML models, we decode voter sentiment and behavior to boost conversion rates where it matters.",
     shortBlurb: "Deploy cutting-edge machine learning models to predict voter behavior and leverage comprehensive dashboards to manage day-to-day campaign operations."
   },
   {
     img: research,
-    title: "Operations & Mobilization",
-    blurb: "Mobilize hundreds of volunteers to canvass and contact millions of voters. Execute and deploy voter contact strategies effortlessly.",
+    title: "Voter Contact",
+    blurb: "We deploy a professional field program capable of 300,000 calls per day. You get a live dashboard to track KPIs and progress in real time, with full transparency as we deliver your message and identify supporters.",
     shortBlurb: "Mobilize hundreds of volunteers to canvass and contact millions of voters. Execute and deploy voter contact strategies effortlessly."
   },
 ];
 
 export const clients = [{}];
 
-export const solutions_notes = [
+export const solutions_notes = [ 
   {
     img: strategy,
     icon: sms_colored,
-    title: "Strategy & Consulting",
-    description:
-      "Great campaigns begin at the drawing board. We provide end-to-end support to formulate efficient, effective strategies and timelines to support campaigns from launch to election.",
-  },
+    title: "Fundraising",
+    //description:"Great campaigns begin at the drawing board. We provide end-to-end support to formulate efficient, effective strategies and timelines to support campaigns from launch to election.",
+    description: "Turn sub-$100k quarters into $1 million wins with a high-speed fundraising system. We build and execute aggressive finance plans, revamp digital strategy, and tap proprietary donor networks to fuel your campaign fast."
+
+    },
   {
     img: research_dev,
     icon: person_colored,
-    title: "Research & Development",
-    description:
-      "Research hones effective campaign messaging and widespread voter outreach. From donor and opposition research to targeted voter universes, compile rigorous documentation to inform your campaigning decisions.",
+    title: "Research",
+    //description:"Research hones effective campaign messaging and widespread voter outreach. From donor and opposition research to targeted voter universes, compile rigorous documentation to inform your campaigning decisions.",
+    description: "Win the campaign before it begins with a data-driven strategy. We craft your core messaging, track your opponent’s moves, and maintain live research databases so you’re always equipped to respond with precision and confidence."
   },
   {
     img: software_data,
     icon: vibration_colored,
-    title: "Software & Data",
-    description:
-      "Deploy cutting-edge machine learning models to predict voter behavior and leverage comprehensive dashboards to manage day-to-day campaign operations.",
+    title: "Data",
+    //description:"Deploy cutting-edge machine learning models to predict voter behavior and leverage comprehensive dashboards to manage day-to-day campaign operations.",
+    description: "Our dashboards visualize key metrics—from field results to supporter IDs—filterable by district, county, or precinct. Powered by proprietary ML models, we decode voter sentiment and behavior to boost conversion rates where it matters."
   },
   {
     img: operation,
     icon: research_colored,
-    title: "Operations & Deployment",
-    description:
-      "Mobilize hundreds of volunteers to canvass and contact millions of voters. Execute and deploy voter contact strategies effortlessly.",
+    title: "Voter Contact",
+    //description:"Mobilize hundreds of volunteers to canvass and contact millions of voters. Execute and deploy voter contact strategies effortlessly.",
+    description: "We deploy a professional field program capable of 300,000 calls per day. You get a live dashboard to track KPIs and progress in real time, with full transparency as we deliver your message and identify supporters."
   },
 ];
 
@@ -236,7 +267,7 @@ export const landing_thumbnails = [
       </p>
     }
     secondaryButton="the New Way Forward"
-    secondaryNavigate="/about"
+    secondaryNavigate="calendar.app.google/JLvGBnHtjfQcufP49"
   />,
   <LandingThumbnail
     imageSrc={thumbnailImg2}
@@ -248,7 +279,19 @@ export const landing_thumbnails = [
       </p>
     }
     secondaryButton="Getting Started"
-    secondaryNavigate="https://calendly.com/jonathanli19975"
+    secondaryNavigate="/solutions" 
+  />,
+  <LandingThumbnail
+    imageSrc={thumbnailImg3}
+    text={
+      <p>
+        Lead the{" "}
+                       <span className="text-cyan-400">new way forward</span>{" "}
+        of campaigning with us
+      </p>
+    }
+    secondaryButton="Join Us"
+    secondaryNavigate="/careers"
   />,
 ];
 
@@ -341,7 +384,7 @@ export const homepage_stats = [
     text: "reached.",
   },
   {
-    counter: <Counter endValue={30} delta={1} suffix=" million+" decimalPlaces="0"/>,
+    counter: <Counter endValue={30} delta={1} prefix="$" suffix=" million+" decimalPlaces="0"/>,
     text: "raised.",
   },
   {

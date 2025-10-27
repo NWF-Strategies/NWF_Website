@@ -1,16 +1,21 @@
 import TwoPieceFormat from "./TwoPieceFormat";
-import coverPhoto from "../assets/home_careers.png";
+import joinUsPhoto from "../assets/join_us_photo.png";
 import { JoinUsContent } from "../constants/div_constants";
+import SlideIn from './SlideInAnimation';
 //import { research } from "../assets";
 const JoinUs = () => {
   return (
-    <div className='flex flex-col sm:flex-row justify-between items-center w-full m-10 pr-20 sm:pr-12 xl:pr-4 3xl:ml-[19.5%] 3xl:w-[78%] 3xl:mt-20 '>
-      <TwoPieceFormat
-        imageSrc={coverPhoto}
-        imageAlt='Join us image'
-        content={<JoinUsContent />}
-      />
-    </div>
+      <SlideIn direction = "right" delay ={200}> 
+        <div className='py-32 bg-gray-100 w-full'>
+          <div className='max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center my-10 '>
+            <TwoPieceFormat
+              imageSrc={joinUsPhoto}
+              imageAlt='Join us image'
+              content={<JoinUsContent />}
+            />
+          </div>
+        </div>
+      </SlideIn>
   );
 };
 

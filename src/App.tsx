@@ -7,7 +7,8 @@ import {
   Home,
   PeltolaCaseStudy,
   VenturaCaseStudy,
-  McDuffieCaseStudy
+  McDuffieCaseStudy,
+  ContactUs,
 } from "./pages/";
 import ZohranCaseStudy from "./pages/solutions/ZohranCaseStudy";
 import SummerLeeCaseStudy from "./pages/solutions/SummerLeeCaseStudy";
@@ -26,7 +27,8 @@ function App() {
   // );
 
   return (
-    <div className='doublepillgradient'>
+    <div>
+    {/*<div className='doublepillgradient'>*/}
       <Router>
         <Navbar />
 
@@ -36,10 +38,11 @@ function App() {
           <Route path='/solutions/mary-peltola-2022' element={<PeltolaCaseStudy />} />
           <Route path='/solutions/rachel-ventura-2022' element={<VenturaCaseStudy />} />
           <Route path='/solutions/kenyan-mcduffie-2022' element={<McDuffieCaseStudy />} />
-          <Route path='/solutions/zohran' element={<ZohranCaseStudy />} />
-          <Route path='/solutions/summer-lee' element={<SummerLeeCaseStudy />} />
+          <Route path='/solutions/zohran-mamdani-2025' element={<ZohranCaseStudy />} />
+          <Route path='/solutions/summer-lee-2024' element={<SummerLeeCaseStudy />} />
           <Route path='/about' element={<About />} />
           <Route path='/careers' element={<Careers />} />
+          <Route path='/contactus' element={<ContactUs />} />
           <Route path='*' element={<NotFound />} />
         </Routes>
 

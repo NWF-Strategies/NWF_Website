@@ -9,6 +9,7 @@ import indeed from "./indeed.svg";
 import facebook from "./facebook.svg";
 import polygon from "./polygon.svg";
 import person from "./person.svg";
+import new_logo from "./new_logo.svg";
 import research from "./research.svg";
 import vibration from "./vibration.svg";
 import sms_Fill from "./sms_FILL.svg";
@@ -25,12 +26,18 @@ import research_colored from "./research_colored.svg";
 import map from "./map.png";
 import mission from "./mission.svg";
 import mail from "./mail.svg";
+import mail2 from "./mail2.svg";
+import mail2_blue from "./mail2_blue.svg";
+import linkedin_blue from "./linkedin_blue.svg";
 import careers_category01 from "./careers_category01.png";
 import careers_category02 from "./careers_category02.png";
 import careers_category03 from "./careers_category03.png";
 
 export {
   mail,
+  mail2,
+  mail2_blue,
+  linkedin_blue,
   mission,
   map,
   sms_colored,
@@ -60,4 +67,5 @@ export {
   careers_category01,
   careers_category02,
   careers_category03,
+  new_logo
 };

@@ -4,6 +4,8 @@ const Cursor: React.FC = () => {
   const [hovered, setHovered] = useState(false);
   const [clicked, setClicked] = useState(false);
   const [position, setPosition] = useState({ x: 0, y: 0 });
+  const isMobile = window.matchMedia('(pointer: coarse)').matches;
+  const [showCursor, setShowCursor] = useState(isMobile ? false : true);
 
   useEffect(() => {
     //const cursor = document.querySelector('.cursorcircle') as HTMLElement;
@@ -39,9 +41,11 @@ const Cursor: React.FC = () => {
     };
 
     const handleClick = () => {
+      setShowCursor(true);
       setClicked(true);
       setTimeout(() => {
         setClicked(false);
+        if (isMobile) setShowCursor(false);
       }, 380);
     };
     
@@ -82,6 +86,12 @@ const Cursor: React.FC = () => {
     pointerEvents: 'none',
     zIndex: 9999,
     transition: 'width 0.2s ease, height 0.2s ease, border-color 0.2s ease, opacity 0.2s ease, border-width 0.2s ease',
+    visibility: 
+      isMobile
+        ? showCursor 
+          ? 'visible' 
+          : 'hidden'
+        : 'visible',
   };
 
   return (

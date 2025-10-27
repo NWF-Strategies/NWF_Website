@@ -4,17 +4,17 @@ import FadeIn from './FadeIn'
 
 const Newsletter = () => {
   return (
-    <FadeIn duration = {500} delay = {500}>
-      <div className='flex flex-col sm:flex-row justify-between items-center px-16 w-full 3xl:ml-[18%] 3xl:w-[64%] 3xl:mt-20'>
-        <div className='flex flex-col justify-center items-start md:w-[45%]'>
-          <h3 className='text-[#43BCCD] text-[20px] font-poppins font-semibold tracking-tight leading-widest w-full'>
-            Contact Us
+    <FadeIn duration = {400} delay = {400}>
+      <div className='flex flex-col sm:flex-row pl-4 justify-between items-center max-w-7xl mx-auto pr-8'>
+        <div className='flex flex-col justify-center items-start md:w-[50%]'>
+          <h3 className='font-poppins font-semibold	xs:text-20px text-[#43BCCD] tracking-[0.15px] mb-2'>
+            CONTACT US
           </h3>
-          <p className='text-white font-poppins lg:text-[30px] md:text-[25px] sm:text-[20px] font-semibold leading-widest tracking-normal w-full'>
+          <p className='text-white font-poppins md:text-[25px] sm:text-[20px] font-normal leading-widest tracking-normal mb-6'>
             Innovative campaign solutions, at all levels. Leave us a message and
-            get in touch
+            get in touch!
           </p>
-          <img src={map} className='w-[655px] h-[377px] object-contain' />
+          <img src={map} className='w-[655px] h-[377px] ml-4 px-4 object-contain' />
         </div>
         <Form />
       </div>

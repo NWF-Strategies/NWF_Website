@@ -44,7 +44,6 @@ body{
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  text-fill-color: transparent;
 }
 
 .bg-blue-gradient {
@@ -169,6 +168,35 @@ body{
     #000000;
   background-attachment: fixed; 
   background-size:cover;
+}
+.singlepillorangegradient {
+  background-color: #000000; 
+  background-image: radial-gradient(
+    ellipse 64% 39% at center,
+    rgba(255, 111, 0, 1) 0%,
+    rgba(255, 111, 0, 0.0) 100%
+  );
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.doublepillorangegradient {
+  background-color: #000000;
+  background-image:
+    radial-gradient(
+      ellipse 45% 20% at 95% 23%,
+      rgb(255, 123, 22) 35%,
+      rgba(255, 111, 0, 0.0) 100%
+    ),
+    radial-gradient(
+      ellipse 60% 19% at 5% 86%,
+      rgb(255, 123, 22) 25%,
+      rgba(255, 111, 0, 0.0) 100%
+    );
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: local;
 }
 
 .timeline-container {

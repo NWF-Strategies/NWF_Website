@@ -11,7 +11,7 @@ const VenturaCaseStudy = () => {
   }, []);
 
   return (
-    <>
+    <div className = "doublepillgradient">
         <div className="max-w-[1100px] 2xl:max-w-[1200px] mx-auto px-4 pt-28">
             <Link to="/solutions" className="text-white text-xl flex items-center">
                 <span className="pr-2 pb-1 text-2xl">←</span>
@@ -24,7 +24,6 @@ const VenturaCaseStudy = () => {
             State Sen. Rachel Ventura (IL-43)
             <br/><br/>
             </h1>
-
             <img src={ventura2_home} alt="Rachel Ventura" className="hidden ml-[-4rem] xl:ml-0 lg:block w-[360px] 2xl:w-[460px]" style={{ position: 'absolute', left: 'calc(70%)', top: '215px' }} />
             <div className="hidden ml-[-4rem] xl:ml-0 lg:block w-[360px] 2xl:block sticky w-[360px] 2xl:w-[460px] border border-gray-400 p-6 list-disc top-[630px] 2xl:top-[740px]" 
                 style={{ position: 'absolute', left: 'calc(70%)'}}>
@@ -63,7 +62,7 @@ const VenturaCaseStudy = () => {
         </div>
       <Newsletter />
       <br /><br />
-    </>
+    </div>
   );
 };
 

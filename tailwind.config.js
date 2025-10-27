@@ -23,6 +23,9 @@ export default {
       borderWidth: {
         '1': '1px',
       },
+      scale:{
+        '103': '1.03',
+      },
     },
     screens: {
       // xxs: "300px",
@@ -47,14 +50,3 @@ export default {
     })
   ],
 };
-// TODO:
-
-// will
-// replace generic carousel swipe with fade
-// fix stats stuck at 0
-
-// richard
-//
-
-// low priority
-// email agent

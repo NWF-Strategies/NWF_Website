@@ -56,15 +56,15 @@ const SlideIn: React.FC<SlideInProps> = ({
     }
   };
 
-  return (
-    <div 
-      ref={containerRef} 
-      className={className}
-      style={getSlideStyles()}
-    >
-      {children}
-    </div>
-  );
+  return React.cloneElement(children as React.ReactElement, {
+  ref: containerRef,
+  className: `${(children as React.ReactElement).props.className || ''} ${className}`,
+  style: {
+    ...(children as React.ReactElement).props.style,
+    ...getSlideStyles(),
+  },
+});
+
 };
 
 export default SlideIn;

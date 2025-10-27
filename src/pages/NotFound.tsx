@@ -16,7 +16,13 @@ const NotFound = () => {
           <p className={`${styles.paragraph2}`}>
             we can't seem to find the page you are looking for
           </p>
-          <ExampleButton onClick={() => navigate("/")} children='Back Home' />
+            <ExampleButton
+              children="Back Home"
+              onClick={() => {
+                navigate("/");
+                window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+              }}
+            />
         </div>
         <img src={error404} className='max-w-[550px]' />
       </div>

@@ -1,10 +1,6 @@
 import { Newsletter } from "../../components";
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
-import strategy from "../../assets/strategy.png";
-import research_dev from "../../assets/research_dev.png";
-import software_data from "../../assets/software_data.png";
-import operation from "../../assets/operation.png";
 import OurSolutions from '../../components/OurSolutions';
 import FeaturedCaseStudies, {studiesData} from "../../components/FeaturedCaseStudies"; 
 
@@ -43,7 +39,7 @@ const Solutions = () => {
         </div>
       </div>*/}
       {/* Dark Background Section */}
-      <div className='pb-8 singlepillorangegradient'>
+      <div className='pb-8'>
         <CaseStudiesSection />
       </div>    
       <br /><br /><br /><br />
@@ -56,47 +52,6 @@ const Solutions = () => {
 export default Solutions;
 
 // Local components
-type ServiceItemProps = {
-  imageSrc: string;
-  title: string;
-  description: string;
-};
-
-const ServiceItem: React.FC<ServiceItemProps> = ({ imageSrc, title, description }) => {
-  const [open, setOpen] = useState<boolean>(false);
-  
-  return (
-    <div className='flex flex-col items-start text-left'>
-      {/* Illustration - no background, just the image */}
-      <div className='w-full mb-4 flex justify-start items-center h-40'>
-        <img src={imageSrc} alt={title} className='max-w-full max-h-full object-contain' />
-      </div>
-      
-      {/* Title */}
-      <h3 className='text-lg font-poppins font-semibold text-black mb-2 text-left'>{title}</h3>
-      
-      {/* Read more link */}
-      <button 
-        className='text-black hover:text-gray-700 mb-3 flex items-center text-sm font-lato justify-start'
-        onClick={() => setOpen(!open)}
-      >
-        Read more {open ? '▲' : '▼'}
-      </button>
-      
-      {/* Collapsible description */}
-      <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-[200px] opacity-100" : "max-h-0 opacity-0"}`}>
-        <div className='bg-white bg-opacity-80 p-3 rounded-lg backdrop-blur-sm'>
-          <p className='text-sm font-lato text-black leading-relaxed mb-0 text-left'>{description}</p>
-        </div>
-      </div>
-      
-      {/* View a case study button */}
-      <button className='border border-black text-black hover:bg-black hover:text-white px-3 py-2 rounded text-sm font-lato transition-colors self-start mt-3'>
-        View a case study
-      </button>
-    </div>
-  );
-};
 
 {/*const SolutionsGrid: React.FC = () => {
   const solutionsData = [
@@ -137,21 +92,32 @@ const ServiceItem: React.FC<ServiceItemProps> = ({ imageSrc, title, description 
 };*/}
 
 const CaseStudiesSection: React.FC = () => { 
-  const { ventura, mcduffie } = studiesData;
+  const { ventura, mcduffie, kansas, alaska, bush } = studiesData;
   return (
-    <div id='case-studies-section' className='w-full py-16'>
-      <div className='max-w-7xl mx-auto px-6'>
-        <FeaturedCaseStudies />
-        {/* Additional Case Studies - Compact List Format */}
-        <div id = "additional-case-studies" className='border-t mt-16 border-gray-600 pt-28'>
-          <h3 className='text-2xl font-poppins font-bold text-white mb-8'>Additional Case Studies</h3>
-          <div className='space-y-6'>
-            <AdditionalCaseStudyItem study={ventura} />
-            <AdditionalCaseStudyItem study={mcduffie} />
+    <>
+      {/* Featured Case Studies with gradient */}
+      <div id='case-studies-section' className='w-full py-16 singlepillorangegradient'>
+        <div className='max-w-7xl mx-auto px-6'>
+          <FeaturedCaseStudies />
+        </div>
+      </div>
+      
+      {/* Additional Case Studies without gradient */}
+      <div className='w-full py-16 bg-black'>
+        <div className='max-w-7xl mx-auto px-6'>
+          <div id = "additional-case-studies" className='border-t border-gray-600 pt-28'>
+            <h3 className='text-2xl font-poppins font-bold text-white mb-8'>Additional Case Studies</h3>
+            <div className='space-y-6'>
+              <AdditionalCaseStudyItem study={kansas} />
+              <AdditionalCaseStudyItem study={alaska} />
+              <AdditionalCaseStudyItem study={bush} />
+              <AdditionalCaseStudyItem study={ventura} />
+              <AdditionalCaseStudyItem study={mcduffie} />
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

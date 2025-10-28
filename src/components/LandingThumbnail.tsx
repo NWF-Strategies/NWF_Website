@@ -1,6 +1,5 @@
 import React, { ReactElement } from 'react';
 import styles from '../style';
-import { useNavigate } from 'react-router-dom';
 import OrangeButton from './OrangeButton';
 
 interface LandingThumbnailProps {
@@ -16,23 +15,9 @@ const LandingThumbnail: React.FC<LandingThumbnailProps> = ({
   secondaryButton,
   secondaryNavigate,
 }) => {
-  const navigate = useNavigate();
-
-  const handleExternalOrScroll = (to?: string) => {
-    if (!to) return;
-    if (to.startsWith('http')) {
-      window.open(to, '_blank');
-    } else if (to !== '/') {
-      navigate(to);
-      window.scrollTo(0, 0);
-    } else {
-      window.scrollTo(0, 700);
-    }
-  };
-
   return (
     <>
-      <div className="items-start w-full h-screen">
+      <div className="items-start w-full h-screen -mt-[52px] sm:-mt-[64px]">
         <div className="h-full">
           <img
             src={imageSrc}
@@ -41,7 +26,7 @@ const LandingThumbnail: React.FC<LandingThumbnailProps> = ({
           />
         </div>
       </div>
-      <div className="absolute inset-y-0 z-20 flex justify-center items-center text-center px-[25px] mt-20">
+      <div className="absolute inset-y-0 z-20 flex justify-center items-center text-center px-[25px]">
         <div className="flex flex-col rounded-none gap-[1rem] px-[4rem] text-center items-center md:text-left md:items-start">
           <p className={`${styles.heading7} text-white font-medium`}>{text}</p>
           <div className="flex flex-col sm:flex-row gap-4 items-center sm:items-start">

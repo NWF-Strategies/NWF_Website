@@ -11,11 +11,11 @@ const About = () => {
   return (
     <div className='doublepillorangegradient'>
       <div className='relative h-fit pt-[100px] flex flex-col items-center z-10 bg-gray-100'>
-        <div className='w-[90%] mt-2 flex flex-col justify-center items-center pl-[10%] lg:pr-[200px] md:pr-[200px] sm:pr-[50px] z-10 mb-[120px]'>
-            <h1 className="text-[#43BCCD] font-lato text-[28px] tracking-tighter font-semibold mb-3">
+        <div className='w-[90%] max-w-[900px] mt-2 flex flex-col justify-center items-center z-10 mb-[120px]'>
+            <h1 className="text-[#43BCCD] font-lato text-[26px] tracking-tighter font-semibold mb-3">
                 OUR MISSION
             </h1>
-            <p className={`text-black font-poppins px-8 lg:text-[24px] md:text-[20px] sm:text-[15px] tracking-wide font-normal leading-normal`}>
+            <p className={`text-black font-poppins px-12 md:px-16 lg:px-20 lg:text-[20px] md:text-[17px] sm:text-[13px] tracking-wide font-normal leading-normal text-center`}>
                 At New Way Forward Strategies, we believe that Democracy starts with <span className="relative inline-block overflow-visible font-[900]"
               style={{
                 WebkitTextStroke: "0.8px black",
@@ -63,7 +63,7 @@ const About = () => {
         <div className="w-[90%] mx-16 pr-16 lg:pr-0 lg:w-2/5 lg:ml-48">
           <h1 className = {`${styles.paragraph2} !text-[24px]`}>WHAT WE DO</h1>
           <div className="bg-white h-[1px] w-80 mb-10"/>
-          <p className = {`${styles.paragraph2} !text-[24px]`}>
+          <p className = {`${styles.paragraph2} !text-[20px]`}>
             We strive to
             <span className="font-[900]"
               style={{
@@ -81,7 +81,7 @@ const About = () => {
             </span>in campaign strategy and technology.
           </p>
           <div className="h-3"/>
-          <p className = {`${styles.paragraph2} !text-[24px]`}>
+          <p className = {`${styles.paragraph2} !text-[20px]`}>
             By
             <span className="font-[900]"
               style={{
@@ -96,20 +96,20 @@ const About = () => {
       <div className="ml-6 sm:ml-16 py-32 relative items-center">
         <div className='flex flex-col-reverse md:flex-row justify-center leading-relaxed items-center md:mb-20 pt-32 pb-7 h-fit  2xl:ml-[17%] 2xl:w-[70%] xl:ml-4'>
           <div className='my-5 w-[80%]'>
-            <h2 className='text-white font-poppins text-[47px] font-normal tracking-tight leading-loose mb-5'>Our History</h2>
-            <p className="leading-[25px] font-poppins font-normal text-primary text-[20px] xl:text-[23px] mb-4 leading-relaxed"><span className='font-semibold'>We're doers before consultants.</span> Out of Silicon Valley, we started as a group of individuals who wanted to make a change. With diverse, first-hand knowledge in effective campaigning, we recognized early on that key inefficiencies permeate the political sphere, inflating costs and threatening our Democracy's accessibility. </p>
-            <p className="leading-[25px] font-poppins font-normal text-primary text-[20px] xl:text-[23px] mb-4 leading-relaxed">For us, the New Way Forward for campaigning meant pushing the boundaries of traditional campaigning by pioneering implementations of data-driven technologies to power traditional outreach methodologies. </p>
-            <p className="leading-[25px] font-poppins font-normal text-primary text-[20px] xl:text-[23px] mb-4 leading-relaxed">Our team consists of leaders selected from a multitude of backgrounds, from quantitative research and technology companies to campaign strategy and field operation consultancies. By leveraging technology with our political experience, we support aspiring change-makers in their journey to generate positive impact in the United States. </p>
-            <p className="leading-[25px] font-poppins font-normal text-primary text-[20px] xl:text-[23px] mb-4 leading-relaxed">Today, we're developing tools to ensure campaigning is more accessible than ever. Fueled by our evaluative analysis of decades of strategical campaigning, we have developed cost-efficient, customizeable strategies to provide candidates the necessary resources to run highly-effective, people-powered campaigns.  </p>
-            <p className="leading-[25px] font-poppins font-normal text-primary text-[20px] xl:text-[23px] mb-4 leading-relaxed">From high-quality outreach to machine-learning-powered targeting, each cent contributed to the New Way Forward will be reflected in your campaign's success. </p>
+            <h2 className='text-white font-poppins text-[44px] font-normal tracking-tight leading-loose mb-5'>Our History</h2>
+            <p className="leading-[25px] font-poppins font-normal text-primary text-[17px] xl:text-[19px] mb-4 leading-relaxed"><span className='font-semibold'>We're doers before consultants.</span> Out of Silicon Valley, we started as a group of individuals who wanted to make a change. With diverse, first-hand knowledge in effective campaigning, we recognized early on that key inefficiencies permeate the political sphere, inflating costs and threatening our Democracy's accessibility. </p>
+            <p className="leading-[25px] font-poppins font-normal text-primary text-[17px] xl:text-[19px] mb-4 leading-relaxed">For us, the New Way Forward for campaigning meant pushing the boundaries of traditional campaigning by pioneering implementations of data-driven technologies to power traditional outreach methodologies. </p>
+            <p className="leading-[25px] font-poppins font-normal text-primary text-[17px] xl:text-[19px] mb-4 leading-relaxed">Our team consists of leaders selected from a multitude of backgrounds, from quantitative research and technology companies to campaign strategy and field operation consultancies. By leveraging technology with our political experience, we support aspiring change-makers in their journey to generate positive impact in the United States. </p>
+            <p className="leading-[25px] font-poppins font-normal text-primary text-[17px] xl:text-[19px] mb-4 leading-relaxed">Today, we're developing tools to ensure campaigning is more accessible than ever. Fueled by our evaluative analysis of decades of strategical campaigning, we have developed cost-efficient, customizeable strategies to provide candidates the necessary resources to run highly-effective, people-powered campaigns.  </p>
+            <p className="leading-[25px] font-poppins font-normal text-primary text-[17px] xl:text-[19px] mb-4 leading-relaxed">From high-quality outreach to machine-learning-powered targeting, each cent contributed to the New Way Forward will be reflected in your campaign's success. </p>
           </div>
           <div className='hidden md:block pl-4 xl:pl-28'>
-            <h3 className='text-[#43BCCD] ml-[-10px] sm:my-5 font-poppins text-[23px] !font-bold leading-normal tracking-widest'>Company History</h3>
+            <h3 className='text-[#43BCCD] ml-[-10px] sm:my-5 font-poppins text-[21px] !font-bold leading-normal tracking-widest'>Company History</h3>
               <div className="timeline-container h-full">
                   {mission_tags.map((event) => (
                       <div className="timeline-event">
-                          <h3 className='text-white font-bold mb-1 text-[24px]'>{event.date}</h3>
-                          <p className='text-white text-[20px]'>{event.description}</p>
+                          <h3 className='text-white font-bold mb-1 text-[22px]'>{event.date}</h3>
+                          <p className='text-white text-[18px]'>{event.description}</p>
                       </div>
                   ))}
               </div>

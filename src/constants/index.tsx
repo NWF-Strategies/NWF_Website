@@ -66,13 +66,7 @@ export const navLinks = [
   },
   {
     id: "contactus",
-    title: "Contact Us",
-  },
-  {
-    id: "bookcall",
     title: "Book an Intro Call",
-    url: "calendar.app.google/JLvGBnHtjfQcufP49",
-    external: true,
     button: true,
   },
 ];

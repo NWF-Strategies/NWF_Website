@@ -61,7 +61,7 @@ const OrangeButton: React.FC<OrangeButtonProps> = ({
           />
         </svg>
       </div>
-      <span className="relative z-10 mx-[3.25rem] font-bold text-lg mr-12">
+      <span className="relative z-10 mx-[3.25rem] font-normal text-lg mr-12">
         {label}
       </span>
     </div>
@@ -74,7 +74,7 @@ const OrangeButton: React.FC<OrangeButtonProps> = ({
           href={to}
           target="_blank"
           rel="noopener noreferrer"
-          className="group relative inline-flex font-poppins font-bold hover:!text-white transition-colors duration-300"
+          className="group relative inline-flex font-poppins font-normal hover:!text-white transition-colors duration-300"
           style={{ color: textcolor }}
         >
           {ButtonContent}
@@ -82,7 +82,7 @@ const OrangeButton: React.FC<OrangeButtonProps> = ({
       ) : (
         <button
           onClick={handleInternalClick}
-          className="group relative inline-flex font-poppins font-bold hover:!text-white transition-colors duration-300"
+          className="group relative inline-flex font-poppins font-normal hover:!text-white transition-colors duration-300"
           style={{ color: textcolor }}
         >
           {ButtonContent}

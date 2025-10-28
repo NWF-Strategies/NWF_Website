@@ -7,6 +7,9 @@ import home_ventura from "../assets/home_ventura.png";
 import home_mcduffie from "../assets/home_mcduffie.png";
 import summer_logo from "../assets/logo_summer.png";
 import zohran_logo from "../assets/zohran_logo.png";
+import bush_logo from "../assets/logo_bush.png";
+import kansas_logo from "../assets/logo_kansas.png";
+import ak_dems_logo from "../assets/ak_dems.png";
 import mary_peltola_casestudy from "../assets/mary_peltola_casestudy.jpg";
 import summer_lee_photo from "../assets/summer_lee.png";
 import zohran_speaking_photo from "../assets/zohran_speaking.png";
@@ -45,7 +48,7 @@ export const studiesData: Record<string, Study> = {
     photo: zohran_speaking_photo,
     typeOfStudy: "Fundraising",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipiscing elit. Dolor sit amet consectetur adipiscing elit quisque faucibus.",
+      "How a grassroots-first fundraising strategy raised $16.8M, powering a historic primary win against a former Governor.",
     to: "/solutions/zohran-mamdani-2025",
   },
   summer: {
@@ -55,7 +58,7 @@ export const studiesData: Record<string, Study> = {
     photo: summer_lee_photo,
     typeOfStudy: "Fundraising",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipiscing elit. Dolor sit amet consectetur adipiscing elit quisque faucibus.",
+      "How a full-scale finance operation built $1M quarters, turning a fundraising challenge into a clear financial advantage.",
     to: "/solutions/summer-lee-2024",
   },
   ventura: {
@@ -77,6 +80,36 @@ export const studiesData: Record<string, Study> = {
     description:
       "How an independent Ward 5 councilmember won a citywide at-large seat by building a winning coalition in DC's majority-Black wards.",
     to: "/solutions/kenyan-mcduffie-2022",
+  },
+  kansas: {
+    name: "Kansas Democratic Party",
+    fullName: "Kansas Democratic Party (KDP)",
+    logo: kansas_logo,
+    photo: home_mcduffie, // placeholder - reuse existing photo
+    typeOfStudy: "Operations + Technology",
+    description:
+      "How a comprehensive transformation of candidate support infrastructure revolutionized recruitment and training statewide.",
+    to: "/solutions/kansas-democratic-party-2024",
+  },
+  alaska: {
+    name: "Alaska Democratic Party",
+    fullName: "Alaska Democratic Party (ADP)",
+    logo: ak_dems_logo,
+    photo: mary_peltola_casestudy, // placeholder - reuse existing photo
+    typeOfStudy: "Voter Contact + Data",
+    description:
+      "How a comprehensive digital IE program flipped the State House to Democratic control, making it the only legislative chamber to flip in 2024.",
+    to: "/solutions/alaska-democratic-party-2024",
+  },
+  bush: {
+    name: "Rep. Cori Bush",
+    fullName: "Rep. Cori Bush (MO-01)",
+    logo: bush_logo,
+    photo: home_ventura, // placeholder - reuse existing photo
+    typeOfStudy: "Fundraising",
+    description:
+      "How a full-scale finance operation transformed a debt-ridden campaign into a $3M quarter powerhouse.",
+    to: "/solutions/cori-bush-2024",
   },
 };
 

@@ -40,12 +40,12 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className="fade-in w-full flex py-6 z-50 justify-between items-center navbar border-white border-b-[3px] pr-10 bg-[#27272a] bg-opacity-80 sticky top-0">
+    <nav className="fade-in w-full flex py-4 z-50 justify-between items-center navbar border-white border-b-[1px] pr-10 bg-[#27272a] bg-opacity-80 sticky top-0">
       <Link to={"/"} onClick={scrollToTop}>
         <img
           src={new_logo}
           alt="nwf"
-          className="w-[200px] md:w-[300px] lg:w-[340px] h-[50px] ml-12 pl-4 mr-5 outline-none focus:ring-0 focus:outline-none "
+          className="w-[160px] md:w-[220px] lg:w-[260px] h-[40px] ml-12 pl-4 mr-5 outline-none focus:ring-0 focus:outline-none "
         />
       </Link>
 
@@ -54,31 +54,24 @@ const Navbar = () => {
         {navLinks.map((nav, index) => (
           <li
             key={nav.id}
-            className={`font-poppins font-normal cursor-pointer text-[15px] lg:text-[18px] ${
+            className={`font-poppins font-normal cursor-pointer text-[13px] lg:text-[15px] ${
               index === navLinks.length - 1 ? "mr-0" : "mr-4 lg:mr-10"
             } text-white hover:text-secondary`}
           >
-            {nav.external ? (
-              <a
-                href={nav.url || nav.id}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={nav.button ? "btn-class text-[#43BCCD] font-[500] flex items-center lg:gap-2" : ""}
-              >
-                {nav.title}
-                {nav.button && (
-                  <img
-                    src={calendar}
-                    alt="Calendar"
-                    className="hidden md:inline-block md:w-6 md:h-6 lg:w-[34px] lg:h-[34px]"
-                  />
-                )}
-              </a>
-            ) : (
-              <Link to={`/${nav.id}`} onClick={scrollToTop}>
-                {nav.title}
-              </Link>
-            )}
+            <Link 
+              to={`/${nav.id}`} 
+              onClick={scrollToTop}
+              className={nav.button ? "btn-class text-[#43BCCD] font-[500] flex items-center lg:gap-2" : ""}
+            >
+              {nav.title}
+              {nav.button && (
+                <img
+                  src={calendar}
+                  alt="Calendar"
+                  className="hidden md:inline-block md:w-5 md:h-5 lg:w-[28px] lg:h-[28px]"
+                />
+              )}
+            </Link>
           </li>
         ))}
       </ul>
@@ -105,27 +98,20 @@ const Navbar = () => {
                   index === navLinks.length - 1 ? "mr-0" : "mb-4"
                 } text-white`}
               >
-                {nav.external ? (
-                  <a
-                    href={nav.url || nav.id}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={nav.button ? "btn-class text-[#43BCCD] font-[500]" : ""}
-                  >
-                    {nav.button ? "Book a Call" : nav.title}{/*hard coded to be more concise on mobile*/}
-                    {nav.button && (
-                      <img
-                        src={calendar}
-                        alt="Calendar"
-                        className="w-6 h-6 ml-2 inline-block"
-                      />
-                    )} 
-                  </a>
-                ) : (
-                  <Link to={`/${nav.id}`} onClick={scrollToTop}>
-                    {nav.title}
-                  </Link>
-                )}
+                <Link 
+                  to={`/${nav.id}`} 
+                  onClick={scrollToTop}
+                  className={nav.button ? "btn-class text-[#43BCCD] font-[500] flex items-center" : ""}
+                >
+                  {nav.button ? "Book a Call" : nav.title}{/*hard coded to be more concise on mobile*/}
+                  {nav.button && (
+                    <img
+                      src={calendar}
+                      alt="Calendar"
+                      className="w-6 h-6 ml-2 inline-block"
+                    />
+                  )} 
+                </Link>
               </li>
             ))}
           </ul>

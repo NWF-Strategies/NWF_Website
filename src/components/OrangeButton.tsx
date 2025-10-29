@@ -35,7 +35,6 @@ const OrangeButton: React.FC<OrangeButtonProps> = ({
     }
   };
 
-  // Shared button content (so we don’t duplicate the markup)
   const ButtonContent = (
     <div className="relative inline-flex items-center">
       <div

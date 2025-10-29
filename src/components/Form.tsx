@@ -56,7 +56,7 @@ const Form: React.FC<FormProps> = ({ className = "", disableMdWidth = false }) =
         <div className='w-full flex justify-start mt-6 items-center'>
           <button
             type='submit'
-            className='flex justify-center items-center px-[21px] py-[8px] bg-[#43BCCD] rounded-full w-[130px] font-semibold text-black text-xl'
+            className='flex hover:text-gray-100 justify-center items-center px-[21px] py-[8px] bg-[#43BCCD] rounded-full w-[130px] font-semibold text-black text-xl'
           >
             Submit
           </button>

@@ -53,7 +53,7 @@ export const CaseStudyCarousel: React.FC<CaseStudyCarouselProps> = ({ slides }) 
   ) => {
     return (
       <li
-        className={`inline-block mx-2 cursor-pointer`}
+        className={`inline-block mx-2 cursor-should-hover cursor-pointer`}
         onClick={clickHandler}
         onKeyDown={clickHandler}
         value={index}

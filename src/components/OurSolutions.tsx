@@ -18,41 +18,43 @@ const ServiceItem: React.FC<ServiceItemProps> = ({ imageSrc, title, description 
   const navigate = useNavigate();
 
   return (
-    <div className='flex flex-col items-start text-left mb-16 mx-1 xl:mx-2'>
-      {/* Illustration */}
-      <div className='w-full mb-8 flex justify-start items-center h-40'>
-        <img src={imageSrc} alt={title} className='max-w-full max-h-full object-contain' />
-      </div>
-      <div className="h-[330px] md:h-[280px] lg:h-[385px] xl:h-[400px] bg-[#3f3d54] backdrop-blur-sm p-4 "> {/*bg-[rgba(24,24,24,0.80)]*/}
-        {/* Title */}
-        <h3 className='text-[1.3rem] font-poppins tracking-normal font-[1000] [-webkit-text-stroke:0.2px_#26C6DA] text-cyan-400 mb-1 text-left'>
-          {title}
-        </h3>
-        <div className='py-3 pr-0 xl:pr-1'>
-          <p className='text-[1.05rem] font-lato text-white leading-normal mb-0 text-left'>
-            {description}
-          </p>
+    <FadeIn delay={300}>
+      <div className='flex flex-col items-start text-left mb-16 mx-1 xl:mx-2'>
+        {/* Illustration */}
+        <div className='w-full mb-8 flex justify-start items-center h-40'>
+          <img src={imageSrc} alt={title} className='max-w-full max-h-full object-contain' />
         </div>
-        <button
-          onClick={() => {
-            navigate("/solutions");
-            window.scrollTo(0, 0);
-          }}
-          className="absolute bottom-5 right-5 group w-10 h-10 rounded-full border-2 border-[#26C6DA] flex items-center justify-center transition-colors hover:bg-[#26C6DA]"
-        >
-          <svg
-            className="w-4 h-4 text-[#26C6DA] group-hover:text-white transition-colors"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2.5"
-            viewBox="0 0 24 24"
+        <div className="h-[330px] md:h-[280px] lg:h-[385px] xl:h-[400px] bg-[#3f3d54] backdrop-blur-sm p-4 "> {/*bg-[rgba(24,24,24,0.80)]*/}
+          {/* Title */}
+          <h3 className='text-[1.3rem] font-poppins tracking-normal font-[1000] [-webkit-text-stroke:0.2px_#26C6DA] text-cyan-400 mb-1 text-left'>
+            {title}
+          </h3>
+          <div className='py-3 pr-0 xl:pr-1'>
+            <p className='text-[1.05rem] font-lato text-white leading-normal mb-0 text-left'>
+              {description}
+            </p>
+          </div>
+          <button
+            onClick={() => {
+              navigate("/solutions");
+              window.scrollTo(0, 0);
+            }}
+            className="absolute bottom-5 right-5 group w-10 h-10 rounded-full border-2 border-[#26C6DA] flex items-center justify-center transition-colors hover:bg-[#26C6DA]"
           >
-            <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
-          </svg>
-        </button>
+            <svg
+              className="w-4 h-4 text-[#26C6DA] group-hover:text-white transition-colors"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2.5"
+              viewBox="0 0 24 24"
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+            </svg>
+          </button>
 
-        </div>
-    </div>
+          </div>
+      </div>
+    </FadeIn>
   );
 };
 

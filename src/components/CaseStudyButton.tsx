@@ -9,7 +9,7 @@ interface CaseStudyButtonProps {
 const CaseStudyButton: React.FC<CaseStudyButtonProps> = ({ children, onClick }) => {
     return (
       <div 
-        className={`${styles.button} cursor-pointer`} 
+        className={`${styles.button} cursor-should-hover cursor-pointer`} 
         style={{ 
             position: 'relative'
         }}

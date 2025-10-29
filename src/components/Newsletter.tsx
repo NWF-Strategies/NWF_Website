@@ -14,7 +14,7 @@ const Newsletter = () => {
             Innovative campaign solutions, at all levels. Leave us a message and
             get in touch!
           </p>
-          <img src={map} className='w-[655px] h-[377px] ml-4 px-4 object-contain' />
+          <img src={map} className='w-[655px] h-[377px] ml-[-6px] px-4 object-contain' />
         </div>
         <Form />
       </div>

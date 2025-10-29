@@ -69,7 +69,7 @@ export const peltola_text = (
       former governor Sarah Palin to seat the first Alaskan Native in Congress.
     </p>
     <br /><br />
-    <a href="/solutions/mary-peltola-2022" className={`${styles.button} cursor-pointer no-underline inline-block`}>
+    <a href="/solutions/mary-peltola-2022" className={`${styles.button} cursor-should-hover  cursor-pointer no-underline inline-block`}>
       View Case Study
     </a>
   </div>
@@ -84,7 +84,7 @@ export const ventura_text = (
       18-to-1 to win the Illinois State Senate seat.
     </p>
     <br /><br />
-    <a href="/solutions/rachel-ventura-2022" className={`${styles.button} cursor-pointer no-underline inline-block`}>
+    <a href="/solutions/rachel-ventura-2022" className={`${styles.button} cursor-should-hover cursor-pointer no-underline inline-block`}>
       View Case Study
     </a>*
   </div>
@@ -98,7 +98,7 @@ export const mcduffie_text = (
     How an independent Ward 5 councilmember won a citywide at-large seat by building a winning coalition in DC's majority-Black wards.
     </p>
     <br /><br />
-    <a href="/solutions/kenyan-mcduffie-2022" className={`${styles.button} cursor-pointer no-underline inline-block`}>
+    <a href="/solutions/kenyan-mcduffie-2022" className={`${styles.button} cursor-should-hover cursor-pointer no-underline inline-block`}>
       View Case Study
     </a>*
   </div>
@@ -121,9 +121,9 @@ export const strategyContent = (
   <>
     <p className={styles.heading4}>STRATEGY</p>
     <p className={styles.heading3}>Strategic Consultants</p>
-    <ol className={styles.paragraph}>
-      <li>Interface 1-on-1 with clientele to support day-to-day operations</li>
-      <li>Lead clientele acquisition efforts</li>
+    <ol className={`${styles.paragraph} xl:!text-xl`}>
+      <li>- Interface 1-on-1 with clientele to support day-to-day operations</li>
+      <li>- Lead clientele acquisition efforts</li>
     </ol>
   </>
 );
@@ -132,12 +132,12 @@ export const researchContent = (
   <>
     <p className={styles.heading4}>RESEARCH</p>
     <p className={styles.heading3}>Research Consultants</p>
-    <ol className={styles.paragraph}>
+    <ol className={`${styles.paragraph} xl:!text-xl`}>
       <li>
-        Analyze and interpret key internal insights to deliver actionable
+        - Analyze and interpret key internal insights to deliver actionable
         strategies
       </li>
-      <li>Coordinate with Strategic Consultants to support clientele</li>
+      <li>- Coordinate with Strategic Consultants to support clientele</li>
     </ol>
   </>
 );
@@ -146,12 +146,12 @@ export const softwareContent = (
   <>
     <p className={styles.heading4}>SOFTWARE</p>
     <p className={styles.heading3}>Software Engineers</p>
-    <ol className={styles.paragraph}>
+    <ol className={`${styles.paragraph} xl:!text-xl`}>
       <li>
-        Design, develop, and deploy application software to support internal and
+        - Design, develop, and deploy application software to support internal and
         external operations
       </li>
-      <li>Test and drive iterations by interfacing with stakeholders</li>
+      <li>- Test and drive iterations by interfacing with stakeholders</li>
     </ol>
   </>
 );
@@ -160,13 +160,13 @@ export const dataContent = (
   <>
     <p className={styles.heading4}>DATA</p>
     <p className={styles.heading3}>Data Scientists</p>
-    <ol className={styles.paragraph}>
+    <ol className={`${styles.paragraph} xl:!text-xl`}>
       <li>
-        Research and develop pioneering implementations of algorithms and tools
+        - Research and develop pioneering implementations of algorithms and tools
         in campaigns, from Logistic Regression all the way to Large Language
         Models.
       </li>
-      <li>Document and present findings</li>
+      <li>- Document and present findings</li>
     </ol>
   </>
 );

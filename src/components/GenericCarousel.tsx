@@ -53,7 +53,7 @@ export const GenericCarousel: React.FC<GenericCarouselProps> = ({ slides }) => {
   ) => {
     return (
       <li
-        className={`inline-block mx-2 my-4 cursor-pointer`}
+        className={`inline-block mx-2 my-4 cursor-should-hover  cursor-pointer`}
         onClick={clickHandler}
         onKeyDown={clickHandler}
         value={index}

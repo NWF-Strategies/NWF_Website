@@ -15,6 +15,8 @@ import summer_lee_photo from "../assets/summer_lee.png";
 import zohran_speaking_photo from "../assets/zohran_speaking.png";
 import { polygon } from "../assets";
 import OrangeButton from "./OrangeButton";
+import SlideIn from "./SlideInAnimation";
+import FadeIn from "./FadeIn";
 
 export type Study = {
   name: string;
@@ -26,10 +28,7 @@ export type Study = {
   to?: string; 
 };
 
-/**
- * Exported data object so other pages (Solutions.tsx) can import
- * the entire studies dataset and decide how/where to render additional studies.
- */
+
 export const studiesData: Record<string, Study> = {
   mary: {
     name: "Mary Peltola",
@@ -122,58 +121,55 @@ const CaseStudyCard: React.FC<CaseStudyCardProps> = ({ study, size }) => {
   const isLarge = size === "large";
 
   return (
-    <Link
-      to={study.to || "#"}
-      className={`block relative rounded-2xl overflow-hidden hover:scale-103 transition-transform duration-300 ${
-        !study.to ? "cursor-default" : ""
-      }`}
-    >
-      <div className="absolute inset-0">
-        <img src={study.photo} alt={study.fullName} className="w-full h-full object-cover" />
-        <div className="absolute inset-0 bg-black bg-opacity-40"></div>
-      </div>
+    <FadeIn duration={400}>
+      <Link
+        to={study.to || "#"}
+        className={`block relative rounded-2xl overflow-hidden hover:scale-103 transition-transform duration-300 ${
+          !study.to ? "cursor-default" : ""
+        }`}
+      >
+        <div className="absolute inset-0">
+          <img src={study.photo} alt={study.fullName} className="w-full h-full object-cover" />
+          <div className="absolute inset-0 bg-black bg-opacity-40"></div>
+        </div>
 
-      <div className={`relative z-10 p-6 flex flex-col justify-between text-white ${isLarge ? "h-[593px]" : "h-[280px]"}`}>
-        <div className="flex justify-between items-start">
-          <img src={study.logo} alt={`${study.name} logo`} className="h-16 w-auto" />
-          <div className="text-right">
-            <p className="text-cyan-400 font-lato text-sm font-semibold">{study.typeOfStudy}</p>
-          </div>
-        </div>
-        <div>
-          {/*<h3 className="text-2xl font-poppins font-bold mb-3">{study.fullName}</h3>*/}
-          <p className="text-[18px] font-lato mb-4 leading-relaxed">{study.description}</p>
-          {/*<div className="inline-flex items-center text-cyan-400 font-lato text-sm">
-            <span className="w-4 h-4 bg-cyan-400 rounded-full mr-2"></span>
-            Read more
-          </div>*/}
-        </div>
-        <div className="relative w-full flex justify-end text-cyan-400 pr-44">
-          <div className="group relative inline-flex items-center text-cyan-400 mb-4">
-            <div className="absolute left-14 sm:left-0 w-10 h-10 rounded-full border-2 border-cyan-400 flex items-center justify-center overflow-hidden transition-all duration-300 ease-out group-hover:w-[184px]">
-              <span className="absolute inset-0 opacity-0 rounded-full transition-all duration-300 ease-out group-hover:opacity-100 bg-cyan-400"></span>
-              <svg
-                className="absolute left-3 z-10 w-4 h-4 text-cyan-400 transition-all duration-300 group-hover:opacity-0"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={3}
-                  d="M9 5l7 7-7 7"
-                />
-              </svg>
+        <div className={`relative z-10 p-6 flex flex-col justify-between text-white ${isLarge ? "h-[593px]" : "h-[280px]"}`}>
+          <div className="flex justify-between items-start">
+            <img src={study.logo} alt={`${study.name} logo`} className="h-16 w-auto" />
+            <div className="text-right">
+              <p className="text-cyan-400 font-lato text-sm font-semibold">{study.typeOfStudy}</p>
             </div>
-            <span className="absolute left-[85px] sm:left-8 ml-4 font-bold text-lg text-cyan-400 transition-colors duration-300 group-hover:text-white min-w-0 whitespace-nowrap">
-              Read more
-            </span>
           </div>
+          <SlideIn direction="bottom" delay={1000}>
+            <p className="text-[18px] font-poppins mb-4 leading-relaxed">{study.description}</p>
+          </SlideIn>
+          <div className="relative w-full flex justify-end text-cyan-400 pr-44">
+            <div className="group relative inline-flex items-center text-cyan-400 mb-4">
+              <div className="absolute left-14 sm:left-0 w-10 h-10 rounded-full border-2 border-cyan-400 flex items-center justify-center overflow-hidden transition-all duration-300 ease-out group-hover:w-[184px]">
+                <span className="absolute inset-0 opacity-0 rounded-full transition-all duration-300 ease-out group-hover:opacity-100 bg-cyan-400"></span>
+                <svg
+                  className="absolute left-3 z-10 w-4 h-4 text-cyan-400 transition-all duration-300 group-hover:opacity-0"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={3}
+                    d="M9 5l7 7-7 7"
+                  />
+                </svg>
+              </div>
+              <span className="absolute left-[85px] sm:left-8 ml-4 font-bold text-lg text-cyan-400 transition-colors duration-300 group-hover:text-white min-w-0 whitespace-nowrap">
+                Read more
+              </span>
+            </div>
+          </div>
+          <h3 className="absolute text-lg font-poppins font-bold bottom-6 sm:left-6">{study.fullName}</h3>
         </div>
-        <h3 className="absolute text-lg font-poppins font-bold bottom-6 sm:left-6">{study.fullName}</h3>
-      </div>
-    </Link>
+      </Link>
+    </FadeIn>
   );
 };
 

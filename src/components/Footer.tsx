@@ -29,7 +29,7 @@ const Footer = () => (
             alt="NWF Strategies" 
             className="object-contain h-10 lg:h-14"
           />
-        </div>
+        </div> 
         <>
           <div className='flex md:mt-0 mt-8 gap-6'>
             {socialMedia.map((social, index) => (
@@ -37,7 +37,7 @@ const Footer = () => (
                 key={social.id}
                 src={social.icon}
                 alt={social.id}
-                className={`w-[66px] h-[66px] object-contain cursor-pointer ${
+                className={`w-[66px] h-[66px] cursor-should-hover object-contain cursor-pointer ${
                   index !== socialMedia.length - 1 ? "mr-6" : "mr-0 pb-2"
                 }`}
                 onClick={() => window.open(social.link)}

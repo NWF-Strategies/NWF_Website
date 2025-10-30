@@ -1,5 +1,4 @@
 import styles from "../style";
-import { useNavigate } from "react-router-dom";
 
 import home_carousel01 from "../assets/home_carousel01.png";
 import home_carousel02 from "../assets/home_carousel02.png";
@@ -21,14 +20,6 @@ export const career_text = (
 );
 
 export const JoinUsContent = () => {
-  const navigate = useNavigate();
-  const handleClick = () => {
-    // Scroll to the top of the page
-    window.scrollTo(0, 0);
-
-    // Navigate to "/solutions" path
-    navigate("/careers");
-  }
 
   return (
     <div className="3xl:w-[66%] 2xl:mx-[5%]">

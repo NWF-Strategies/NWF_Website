@@ -3,6 +3,7 @@ import zohran_photo from "../../assets/zohran_speaking.png";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
 
+
 const ZohranCaseStudy = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -22,7 +23,7 @@ const ZohranCaseStudy = () => {
                 Zohran Mamdani (NY-36) <br/><br/>
             </h1>
 
-            <img src={zohran_photo} alt="Zohran Mamdani" className="hidden ml-[-4rem] xl:ml-0 lg:block w-[360px] 2xl:w-[460px]" style={{ position: 'absolute', left: 'calc(70%)', top: '215px' }} />
+            <img src={zohran_photo} alt="Zohran Mamdani NYC 2025 campaign run by NWF Strategies" className="hidden ml-[-4rem] xl:ml-0 lg:block w-[360px] 2xl:w-[460px]" style={{ position: 'absolute', left: 'calc(70%)', top: '215px' }} />
             <div className="hidden ml-[-4rem] xl:ml-0 lg:block w-[360px] 2xl:block sticky w-[360px] 2xl:w-[460px] border border-gray-400 p-6 list-disc top-[630px] 2xl:top-[740px]" 
                 style={{ position: 'absolute', left: 'calc(70%)'}}>
                 <h3 className="text-lg font-bold text-white mt-4 mb-4">Key Items</h3>
@@ -37,7 +38,7 @@ const ZohranCaseStudy = () => {
 
         <div className="max-w-[1100px] 2xl:max-w-[1200px] mx-auto px-4 lg:pr-[400px] relative">  
             <div className="text-lg lg:text-xl text-white mb-16 max-w-3xl">
-            NWF Strategies partnered with Zohran Mamdani's campaign to help secure his position as a leading progressive voice in the New York State Assembly. Our comprehensive approach combined grassroots organizing with cutting-edge technology to mobilize diverse communities across Queens and build a powerful coalition for change.
+            NWF Strategies partnered with Zohran Mamdani's campaign to win the 2025 NYC mayoral election, running the entire campaign's fundraising. Our comprehensive approach combined grassroots organizing with cutting-edge technology to mobilize diverse communities and secure his historic victory.
             </div>
 
             <h2 className="text-2xl lg:text-3xl text-white font-bold mb-6">Strategy & Field</h2>

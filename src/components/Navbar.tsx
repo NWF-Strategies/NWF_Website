@@ -40,7 +40,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className="fade-in w-full flex py-4 z-50 justify-between items-center navbar border-white border-b-[1px] pr-10 bg-[#27272a] bg-opacity-80 sticky top-0">
+    <nav id = 'navbar' className="fade-in w-full flex py-4 z-50 justify-between items-center navbar border-white border-b-[1px] pr-10 bg-[#27272a] bg-opacity-80 sticky top-0">
       <Link to={"/"} onClick={scrollToTop}>
         <img
           src={new_logo}

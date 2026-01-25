@@ -125,7 +125,7 @@ const OurSolutions: React.FC = () => {
             <p className='text-2xl font-lato [-webkit-text-stroke:0.1px_black]  text-black my-4 text-left'>
               We combine traditional outreach strategy with innovative technology.
             </p>
-            <OrangeButton label="Explore our Case Studies" to="/solutions" />
+            <OrangeButton label="Explore our Case Studies" to="/solutions"scrollToId="case-studies" />
             <br />
           </div>
           <SolutionsGrid />

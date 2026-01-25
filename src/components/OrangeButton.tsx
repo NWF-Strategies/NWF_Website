@@ -19,21 +19,26 @@ const OrangeButton: React.FC<OrangeButtonProps> = ({
   const navigate = useNavigate();
 
   const handleInternalClick = () => {
-    navigate(to);
-    setTimeout(() => {
-      window.scrollTo({ top: 0, left: 0, behavior: "instant" });
-    }, 0);
-    if (scrollToId) {
+    if (window.location.pathname !== to) {
+      navigate(to);
+      setTimeout(() => {
+        window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+      }, 0);
+    }
+    
+     if (scrollToId) {
       setTimeout(() => {
         const el = document.getElementById(scrollToId);
         if (el) {
-          el.scrollIntoView({ behavior: "smooth" });
+          const navbar = document.getElementById('navbar');
+          const navbarHeight = navbar ? navbar.offsetHeight : 0;
+          const top = el.getBoundingClientRect().top + window.pageYOffset - navbarHeight-63;
+          window.scrollTo({ top, left: 0, behavior: "smooth" });
         }
-      }, 200); // delay to ensure DOM is ready
-    }else{
-      
+      }, 200);
     }
   };
+
 
   const ButtonContent = (
     <div className="relative inline-flex items-center">

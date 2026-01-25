@@ -27,7 +27,7 @@ const CaseStudiesSection: React.FC = () => {
     <>
       {/* Featured Case Studies with gradient */}
       <div id='case-studies-section' className='w-full py-16 singlepillorangegradient'>
-        <div className='max-w-7xl mx-auto px-6'>
+        <div className='max-w-7xl mx-auto px-6' id = 'case-studies'>
           <FeaturedCaseStudies />
         </div>
       </div>

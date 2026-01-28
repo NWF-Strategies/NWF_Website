@@ -1,3 +1,9 @@
+# NWF Strategies Website 
+nwfstrategies.com
+website rebrand 2025
+
+<img width="603" height="333" alt="image" src="https://github.com/user-attachments/assets/e29b5cf6-6291-4041-a498-e221f00cfd1a" />
+
 # React + TypeScript + Vite + Tailwindcss
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.

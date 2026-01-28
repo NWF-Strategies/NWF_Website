@@ -25,7 +25,7 @@ export type Study = {
   photo: string;
   typeOfStudy: string;
   description: string;
-  to?: string; 
+  to?: string;
 };
 
 
@@ -94,7 +94,7 @@ export const studiesData: Record<string, Study> = {
     name: "Alaska Democratic Party",
     fullName: "Alaska Democratic Party (ADP)",
     logo: ak_dems_logo,
-    photo: mary_peltola_casestudy, // placeholder - reuse existing photo
+    photo: ak_dems_logo, // Using logo since Mary's photo is already on the page
     typeOfStudy: "Voter Contact + Data",
     description:
       "How a comprehensive digital IE program flipped the State House to Democratic control, making it the only legislative chamber to flip in 2024.",
@@ -124,9 +124,8 @@ const CaseStudyCard: React.FC<CaseStudyCardProps> = ({ study, size }) => {
     <FadeIn duration={400}>
       <Link
         to={study.to || "#"}
-        className={`block relative rounded-2xl overflow-hidden hover:scale-103 transition-transform duration-300 ${
-          !study.to ? "cursor-default" : ""
-        }`}
+        className={`block relative rounded-2xl overflow-hidden hover:scale-103 transition-transform duration-300 ${!study.to ? "cursor-default" : ""
+          }`}
       >
         <div className="absolute inset-0">
           <img src={study.photo} alt={study.fullName} className="w-full h-full object-cover" />
@@ -178,30 +177,30 @@ const CaseStudyCard: React.FC<CaseStudyCardProps> = ({ study, size }) => {
  * Solutions.tsx will import studiesData if it needs to render additional studies (ventura, mcduffie)
  */
 const FeaturedCaseStudies: React.FC = () => {
-  const { mary, zohran, summer } = studiesData;
+  const { mary, alaska, summer } = studiesData;
 
   return (
     <div className="w-full py-0">
       <div className='flex items-center gap-4 mb-12'>
-          <div className='flex'>
-            <img src={polygon} alt='nwf logo' className='w-[80px] h-[40px]' />
-          </div>
-          <h2 className='text-[50px] pb-2 font-lato font-semibold text-white italic'>Case Studies</h2>
+        <div className='flex'>
+          <img src={polygon} alt='nwf logo' className='w-[80px] h-[40px]' />
         </div>
+        <h2 className='text-[50px] pb-2 font-lato font-semibold text-white italic'>Case Studies</h2>
+      </div>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
         <div className="lg:row-span-2">
           <CaseStudyCard study={mary} size="large" />
         </div>
 
         <div className="space-y-8">
-          <CaseStudyCard study={zohran} size="normal" />
-          <CaseStudyCard study={summer} size="normal"/>
+          <CaseStudyCard study={alaska} size="normal" />
+          <CaseStudyCard study={summer} size="normal" />
         </div>
         <div className="mr-0 mx-auto">
-          <OrangeButton label="Explore more Case Studies" to="/solutions" textcolor="white"  scrollToId="additional-case-studies" />
+          <OrangeButton label="Explore more Case Studies" to="/solutions" textcolor="white" scrollToId="additional-case-studies" />
         </div>
       </div>
-      
+
     </div>
   );
 };

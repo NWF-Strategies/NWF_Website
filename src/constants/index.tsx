@@ -30,7 +30,7 @@ import peltola_logo from "../assets/logo_peltola.png";
 import kumar_logo from "../assets/logo_kumar.png";
 import bush_logo from "../assets/logo_bush.png";
 import kansas_logo from "../assets/logo_kansas.png";
-import zohran_logo from "../assets/zohran_logo.png";
+
 
 import peltola from "../assets/home_peltola.png";
 import ventura from "../assets/home_ventura.png";
@@ -196,7 +196,7 @@ export const interactive_solutions_tags = [ //xasr
 
 export const clients = [{}];
 
-export const solutions_notes = [ 
+export const solutions_notes = [
   {
     img: strategy,
     icon: sms_colored,
@@ -204,7 +204,7 @@ export const solutions_notes = [
     //description:"Great campaigns begin at the drawing board. We provide end-to-end support to formulate efficient, effective strategies and timelines to support campaigns from launch to election.",
     description: "Turn sub-$100k quarters into $1 million wins with a high-speed fundraising system. We build and execute aggressive finance plans, revamp digital strategy, and tap proprietary donor networks to fuel your campaign fast."
 
-    },
+  },
   {
     img: research_dev,
     icon: person_colored,
@@ -256,7 +256,7 @@ export const landing_thumbnails = [
     imageSrc={thumbnailImg1}
     text={
       <p>
-                     <span className="text-cyan-400">Innovating today</span> for the
+        <span className="text-cyan-400">Innovating today</span> for the
         campaigns of tomorrow
       </p>
     }
@@ -268,19 +268,19 @@ export const landing_thumbnails = [
     text={
       <p>
         Learn how we've{" "}
-                       <span className="text-cyan-400">driven people-powered</span>{" "}
+        <span className="text-cyan-400">driven people-powered</span>{" "}
         campaigns with cutting edge software.
       </p>
     }
     secondaryButton="Getting Started"
-    secondaryNavigate="/solutions" 
+    secondaryNavigate="/solutions"
   />,
   <LandingThumbnail
     imageSrc={thumbnailImg3}
     text={
       <p>
         Lead the{" "}
-                       <span className="text-cyan-400">new way forward</span>{" "}
+        <span className="text-cyan-400">new way forward</span>{" "}
         of campaigning with us
       </p>
     }
@@ -297,9 +297,9 @@ import mississippi_dems from "../assets/mississippi_dems.png";
 import delia_ramirez_logo from "../assets/delia_ramirez_logo.png";
 import ak_dems from "../assets/ak_dems.png";
 
-export const logos2 = [summer_logo, mcduffie_logo, bush_logo, ventura_logo, kansas_logo, peltola_logo, rishi_kumar, tony_thurmond, mississippi_dems, delia_ramirez_logo, zohran_logo, ak_dems]; 
+export const logos2 = [summer_logo, mcduffie_logo, bush_logo, ventura_logo, kansas_logo, peltola_logo, rishi_kumar, tony_thurmond, mississippi_dems, delia_ramirez_logo, ak_dems];
 
-export const candidate_photos = [peltola, ventura, mcduffie, kumar ];
+export const candidate_photos = [peltola, ventura, mcduffie, kumar];
 
 export const candidate_texts = [peltola_text, ventura_text, mcduffie_text];
 
@@ -349,12 +349,12 @@ export const landing_solutions = [
   },
 ];
 
-  /*<CandidateSlide
-    imageSrc={candidate_photos[2]}
-    imageAlt='Kumar image'
-    content={candidate_texts[2]}
-  />,*/
-  
+/*<CandidateSlide
+  imageSrc={candidate_photos[2]}
+  imageAlt='Kumar image'
+  content={candidate_texts[2]}
+/>,*/
+
 export const candidate_case_studies = [
   <CandidateSlide
     imageSrc={candidate_photos[0]}
@@ -374,15 +374,15 @@ export const candidate_case_studies = [
 ];
 export const homepage_stats = [
   {
-    counter: <Counter endValue={100} delta={2} suffix=" million+" decimalPlaces="0"/>,
+    counter: <Counter endValue={100} delta={2} suffix=" million+" decimalPlaces="0" />,
     text: "reached.",
   },
   {
-    counter: <Counter endValue={30} delta={1} prefix="$" suffix=" million+" decimalPlaces="0"/>,
+    counter: <Counter endValue={30} delta={1} prefix="$" suffix=" million+" decimalPlaces="0" />,
     text: "raised.",
   },
   {
-    counter: <Counter endValue={25} delta={1} suffix="+ states" decimalPlaces="0"/>,
+    counter: <Counter endValue={25} delta={1} suffix="+ states" decimalPlaces="0" />,
     text: "impacted.",
   },
 ];

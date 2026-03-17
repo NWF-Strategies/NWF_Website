@@ -30,6 +30,7 @@ import peltola_logo from "../assets/logo_peltola.png";
 import kumar_logo from "../assets/logo_kumar.png";
 import bush_logo from "../assets/logo_bush.png";
 import kansas_logo from "../assets/logo_kansas.png";
+import zohran_logo from "../assets/zohran_logo.png";
 
 
 import peltola from "../assets/home_peltola.png";
@@ -297,7 +298,7 @@ import mississippi_dems from "../assets/mississippi_dems.png";
 import delia_ramirez_logo from "../assets/delia_ramirez_logo.png";
 import ak_dems from "../assets/ak_dems.png";
 
-export const logos2 = [summer_logo, mcduffie_logo, bush_logo, ventura_logo, kansas_logo, peltola_logo, rishi_kumar, tony_thurmond, mississippi_dems, delia_ramirez_logo, ak_dems];
+export const logos2 = [summer_logo, mcduffie_logo, bush_logo, ventura_logo, kansas_logo, peltola_logo, rishi_kumar, tony_thurmond, mississippi_dems, delia_ramirez_logo, zohran_logo, ak_dems];
 
 export const candidate_photos = [peltola, ventura, mcduffie, kumar];
 

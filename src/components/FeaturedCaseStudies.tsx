@@ -177,7 +177,7 @@ const CaseStudyCard: React.FC<CaseStudyCardProps> = ({ study, size }) => {
  * Solutions.tsx will import studiesData if it needs to render additional studies (ventura, mcduffie)
  */
 const FeaturedCaseStudies: React.FC = () => {
-  const { mary, alaska, summer } = studiesData;
+  const { mary, zohran, summer } = studiesData;
 
   return (
     <div className="w-full py-0">
@@ -193,7 +193,7 @@ const FeaturedCaseStudies: React.FC = () => {
         </div>
 
         <div className="space-y-8">
-          <CaseStudyCard study={alaska} size="normal" />
+          <CaseStudyCard study={zohran} size="normal" />
           <CaseStudyCard study={summer} size="normal" />
         </div>
         <div className="mr-0 mx-auto">

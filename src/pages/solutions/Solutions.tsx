@@ -21,8 +21,8 @@ const Solutions = () => {
 
 export default Solutions;
 
-const CaseStudiesSection: React.FC = () => { 
-  const { ventura, mcduffie, kansas, alaska, bush } = studiesData;
+const CaseStudiesSection: React.FC = () => {
+  const { ventura, mcduffie, kansas, alaska, bush, zohran } = studiesData;
   return (
     <>
       {/* Featured Case Studies with gradient */}

@@ -61,8 +61,8 @@ const About = () => {
       <div className='relative h-fit pt-[200px] pb-[100px] flex flex-col items-start z-10 doublepillgradient leading-snug'
         style={{
           backgroundImage: `url(${whatWeDoBackground})`,
-          backgroundSize: '1600px auto',
-          backgroundPosition: 'center right',
+          backgroundSize: '2300px auto',
+          backgroundPosition: 'top',
           backgroundRepeat: 'no-repeat',
           backgroundAttachment: 'scroll',
         }}>

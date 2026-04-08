@@ -62,8 +62,8 @@ const TrustedLeadersSection: React.FC<TrustedLeadersSectionProps> = ({ showMetri
           </h2>
         </div>
         
-        {/* Logo Grid - 4x3 layout */}
-        <div className="grid grid-cols-3 sm:grid-cols-4 gap-8 items-center justify-items-center max-w-6xl mx-auto">
+        {/* Logo Grid - 5x2 layout */}
+        <div className="grid grid-cols-2 sm:grid-cols-5 gap-8 items-center justify-items-center max-w-6xl mx-auto">
           {logos2.map((logo, index) => {
             // Check if this is the AK Dems logo (assuming it's the last one in the array)
             const isAKDems = logo.includes('ak_dems');

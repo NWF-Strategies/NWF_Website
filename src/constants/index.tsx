@@ -292,13 +292,11 @@ export const landing_thumbnails = [
 
 
 export const logos1 = [peltola_logo, ventura_logo, kumar_logo];
-import rishi_kumar from "../assets/rishi_kumar.png";
-import tony_thurmond from "../assets/tony_thurmond.png";
 import mississippi_dems from "../assets/mississippi_dems.png";
 import delia_ramirez_logo from "../assets/delia_ramirez_logo.png";
 import ak_dems from "../assets/ak_dems.png";
 
-export const logos2 = [summer_logo, mcduffie_logo, bush_logo, ventura_logo, kansas_logo, peltola_logo, rishi_kumar, tony_thurmond, mississippi_dems, delia_ramirez_logo, zohran_logo, ak_dems];
+export const logos2 = [summer_logo, mcduffie_logo, bush_logo, ventura_logo, kansas_logo, peltola_logo, mississippi_dems, delia_ramirez_logo, zohran_logo, ak_dems];
 
 export const candidate_photos = [peltola, ventura, mcduffie, kumar];
 

@@ -4,7 +4,9 @@
       "Bash(dir:*)",
       "Bash(npm run build:*)",
       "Bash(npm run build:ssg:*)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(npx vercel link)",
+      "Bash(npx vercel:*)"
     ]
   }
 }

@@ -1,4 +1,4 @@
-import { Newsletter } from "../../components";
+import { Newsletter, SEO } from "../../components";
 import ak_dems_logo from "../../assets/ak_dems.png";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
@@ -10,6 +10,11 @@ const AlaskaCaseStudy = () => {
 
     return (
         <div className="doublepillgradient">
+            <SEO
+                title="Alaska Democratic Party Case Study"
+                description="How NWF Strategies helped flip Alaska's State House to Democratic control - the only legislative chamber in the country to flip in 2024 - with data-driven targeting."
+                canonical="/solutions/alaska-democratic-party-2024"
+            />
             <div className="max-w-[1100px] 2xl:max-w-[1200px] mx-auto px-4 pt-28">
                 <Link to="/solutions" className="text-white text-xl flex items-center">
                     <span className="pr-2 pb-1 text-2xl">←</span>

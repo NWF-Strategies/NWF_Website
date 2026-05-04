@@ -1,4 +1,4 @@
-import { Newsletter } from "../../components";
+import { Newsletter, SEO } from "../../components";
 import summer_photo from "../../assets/summer_lee.png";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
@@ -10,6 +10,11 @@ const SummerLeeCaseStudy = () => {
 
     return (
         <div className="doublepillgradient">
+            <SEO
+                title="Summer Lee Case Study"
+                description="How NWF Strategies helped Rep. Summer Lee raise over $3 million and outperform the entire PA congressional delegation through aggressive fundraising and digital strategy."
+                canonical="/solutions/summer-lee-2024"
+            />
             <div className="max-w-[1100px] 2xl:max-w-[1200px] mx-auto px-4 pt-28">
                 <Link to="/solutions" className="text-white text-xl flex items-center">
                     <span className="pr-2 pb-1 text-2xl">←</span>

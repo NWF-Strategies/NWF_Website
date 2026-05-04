@@ -1,4 +1,4 @@
-import { Newsletter } from "../../components";
+import { Newsletter, SEO } from "../../components";
 import bush_logo from "../../assets/logo_bush.png";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
@@ -10,6 +10,11 @@ const CoriBushCaseStudy = () => {
 
     return (
         <div className="doublepillgradient">
+            <SEO
+                title="Cori Bush Case Study"
+                description="How NWF Strategies transformed Rep. Cori Bush's campaign from debt to a $3 million quarter, raising over $100,000 per day in the final two weeks."
+                canonical="/solutions/cori-bush-2024"
+            />
             <div className="max-w-[1100px] 2xl:max-w-[1200px] mx-auto px-4 pt-28">
                 <Link to="/solutions" className="text-white text-xl flex items-center">
                     <span className="pr-2 pb-1 text-2xl">←</span>

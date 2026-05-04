@@ -1,13 +1,18 @@
-import { Newsletter } from "../../components";
+import { Newsletter, SEO } from "../../components";
 import React from "react";
 import { Link } from "react-router-dom";
 import OurSolutions from '../../components/OurSolutions';
-import FeaturedCaseStudies, {studiesData} from "../../components/FeaturedCaseStudies"; 
+import FeaturedCaseStudies, {studiesData} from "../../components/FeaturedCaseStudies";
 import SlideIn from "../../components/SlideInAnimation";
 
 const Solutions = () => {
   return (
     <div>
+      <SEO
+        title="Solutions"
+        description="Explore NWF Strategies' campaign solutions: fundraising, digital strategy, data analytics, field operations, and more. See our proven case studies and results."
+        canonical="/solutions"
+      />
       <OurSolutions />
       <div className = 'pb-8'>
         <CaseStudiesSection />

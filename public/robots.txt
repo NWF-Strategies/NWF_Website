@@ -1,0 +1,6 @@
+# robots.txt for NWF Strategies
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://nwfstrategies.com/sitemap.xml

@@ -1,4 +1,4 @@
-import { Newsletter } from "../../components";
+import { Newsletter, SEO } from "../../components";
 import ventura2_home from "../../assets/home_ventura2.png";
 import ventura_graph from "../../assets/VenturaVsPritzker.png"
 import { Link } from "react-router-dom";
@@ -12,6 +12,11 @@ const VenturaCaseStudy = () => {
 
   return (
     <div className="doublepillgradient">
+      <SEO
+        title="Rachel Ventura Case Study"
+        description="How NWF Strategies helped Rachel Ventura overcome a 65-to-1 fundraising disadvantage to win a 15-point victory for Illinois State Senate using data-driven outreach."
+        canonical="/solutions/rachel-ventura-2022"
+      />
       <div className="max-w-[1100px] 2xl:max-w-[1200px] mx-auto px-4 pt-28">
         <Link to="/solutions" className="text-white text-xl flex items-center">
           <span className="pr-2 pb-1 text-2xl">←</span>

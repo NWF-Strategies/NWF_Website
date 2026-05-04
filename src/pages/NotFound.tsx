@@ -1,7 +1,7 @@
 import styles, { layout } from "../style";
 import { useNavigate } from "react-router-dom";
 import error404 from "../assets/error404.svg";
-import { ExampleButton } from "../components";
+import { ExampleButton, SEO } from "../components";
 
 const NotFound = () => {
   const navigate = useNavigate();
@@ -10,6 +10,10 @@ const NotFound = () => {
     <section
       className={`${layout.section} ${styles.paddingX} ${styles.paddingY}`}
     >
+      <SEO
+        title="Page Not Found"
+        description="The page you are looking for could not be found. Return to NWF Strategies homepage."
+      />
       <div className='flex flex-col py-3 sm:flex-row justify-between items-center w-full '>
         <div className='flex flex-col pb-5 justify-center items-start md:w-[45%]'>
           <h1 className={`${styles.heading2}`}>Page Not Found</h1>

@@ -6,10 +6,16 @@ import { roles } from "../constants/";
 import OrangeButton from "../components/OrangeButton";
 import SlideIn from "../components/SlideInAnimation";
 import FadeIn from "../components/FadeIn";
+import { SEO } from "../components";
 
 const Career = () => {
   return (
     <div className="doublepillgradient w-full">
+      <SEO
+        title="Careers"
+        description="Join NWF Strategies and power the New Way Forward of campaigning. Explore opportunities in software engineering, research, campaign management, and more."
+        canonical="/careers"
+      />
       <div className='relative min-h-screen h-auto w-full flex items-start justify-center flex-col z-10 mb-32 md:mb-[300px]'>
         <img src={careers_img} alt='Background img' className='absolute h-full object-cover top-0 w-full brightness-150' />
         <FadeIn delay={0} duration={1200}>

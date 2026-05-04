@@ -1,4 +1,4 @@
-import { Newsletter } from "../../components";
+import { Newsletter, SEO } from "../../components";
 import peltola_home from "../../assets/home_peltola.png";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
@@ -11,6 +11,11 @@ const PeltolaCaseStudy = () => {
 
     return (
         <div className="doublepillgradient">
+            <SEO
+                title="Mary Peltola Case Study"
+                description="How NWF Strategies helped elect the first Democrat in over 50 years to represent Alaska and the first Alaskan Native to serve in Congress using data-driven voter targeting."
+                canonical="/solutions/mary-peltola-2022"
+            />
             <div className="max-w-[1100px] 2xl:max-w-[1200px] mx-auto px-4 pt-28 doublepillgradient">
                 <Link to="/solutions" className="text-white text-xl flex items-center">
                     <span className="pr-2 pb-1 text-2xl">←</span>

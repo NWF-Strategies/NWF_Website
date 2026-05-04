@@ -1,4 +1,4 @@
-import { Newsletter, JoinUs, NewAboutSection, TrustedLeadersSection } from "../components";
+import { Newsletter, JoinUs, NewAboutSection, TrustedLeadersSection, SEO } from "../components";
 import { GenericCarousel } from "../components/GenericCarousel";
 import {
   landing_thumbnails,
@@ -17,6 +17,11 @@ const Home = () => {
 
   return (
     <>
+      <SEO
+        title="NWF Strategies"
+        description="NWF Strategies deploys pioneering technologies and strategies, providing change-makers the tools to operate cutting-edge, winning campaigns. Innovating today for the campaigns of tomorrow."
+        canonical="/"
+      />
       <div className='sm:hidden'>
         <LandingThumbnail
           imageSrc={thumbnailImg1}

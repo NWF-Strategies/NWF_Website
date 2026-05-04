@@ -1,4 +1,4 @@
-import { JoinUs } from '../components'
+import { JoinUs, SEO } from '../components'
 import { mission_tags } from '../constants'
 import scribbleUnderlineBlue from "../assets/scribble_underline_blue.svg";
 import scribbleCircleBlue from "../assets/scribble_circle_blue.svg";
@@ -12,6 +12,11 @@ import FadeIn from '../components/FadeIn';
 const About = () => {
   return (
     <div className='doublepillorangegradient'>
+      <SEO
+        title="About Us"
+        description="At New Way Forward Strategies, we believe Democracy starts with accessibility. Meet our team and learn how we revolutionize campaigns through pioneering technologies and data-driven strategies."
+        canonical="/about"
+      />
       <div className='relative h-fit pt-[100px] flex flex-col items-center z-10 bg-gray-100'>
         <div className='w-[90%] max-w-[900px] mt-2 flex flex-col justify-center items-center z-10 mb-[120px]'>
           <SlideIn direction='top' duration={200}>

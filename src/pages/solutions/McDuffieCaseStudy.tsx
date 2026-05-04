@@ -1,4 +1,4 @@
-import { Newsletter } from "../../components";
+import { Newsletter, SEO } from "../../components";
 import mcduffie_home from "../../assets/home_mcduffie.png";
 import mcduffie_graph from "../../assets/McDuffieVotesByWard.png"
 import { Link } from "react-router-dom";
@@ -12,6 +12,11 @@ const McDuffieCaseStudy = () => {
 
   return (
     <div className="doublepillgradient">
+      <SEO
+        title="Kenyan McDuffie Case Study"
+        description="How NWF Strategies helped Kenyan McDuffie win an at-large D.C. Council seat through targeted voter contact with over 113,000 calls and 331,000 texts."
+        canonical="/solutions/kenyan-mcduffie-2022"
+      />
       <div className="max-w-[1100px] 2xl:max-w-[1200px] mx-auto px-4 pt-28">
         <Link to="/solutions" className="text-white text-xl flex items-center">
           <span className="pr-2 pb-1 text-2xl">←</span>

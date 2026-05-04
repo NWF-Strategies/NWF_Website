@@ -1,14 +1,27 @@
 import React, { useState, useEffect } from 'react';
 
+// SSG guard: check if window is available
+const isSSR = typeof window === 'undefined';
+
 const Cursor: React.FC = () => {
   const [hovered, setHovered] = useState(false);
   const [clicked, setClicked] = useState(false);
   const [position, setPosition] = useState({ x: 0, y: 0 });
-  const isMobile = window.matchMedia('(pointer: coarse)').matches;
-  const [showCursor, setShowCursor] = useState(isMobile ? false : true);
+  const [isMobile, setIsMobile] = useState(false);
+  const [showCursor, setShowCursor] = useState(true);
+
+  // Detect mobile on mount (SSG-safe)
+  useEffect(() => {
+    if (!isSSR) {
+      const mobile = window.matchMedia('(pointer: coarse)').matches;
+      setIsMobile(mobile);
+      setShowCursor(!mobile);
+    }
+  }, []);
 
   useEffect(() => {
-    //const cursor = document.querySelector('.cursorcircle') as HTMLElement;
+    // SSG guard: skip if running on server
+    if (isSSR) return;
 
     const moveCursor = (e: MouseEvent) => {
       setPosition({ x: e.clientX, y: e.clientY });
@@ -48,7 +61,7 @@ const Cursor: React.FC = () => {
         if (isMobile) setShowCursor(false);
       }, 380);
     };
-    
+
     window.addEventListener('mousemove', moveCursor);
     document.body.addEventListener('mouseenter', handleMouseEnter, true);
     document.body.addEventListener('mouseleave', handleMouseLeave, true);
@@ -70,7 +83,7 @@ const Cursor: React.FC = () => {
       document.body.removeEventListener('mouseleave', handleMouseLeave, true);
       document.body.removeEventListener('mousedown', handleClick, true);
     };
-  }, []);
+  }, [isMobile]);
   
   const cursorStyle: React.CSSProperties = {
     width: clicked ? '70px' : (hovered ? '16px' : '26px'),
@@ -93,6 +106,9 @@ const Cursor: React.FC = () => {
           : 'hidden'
         : 'visible',
   };
+
+  // Don't render during SSG
+  if (isSSR) return null;
 
   return (
     <div

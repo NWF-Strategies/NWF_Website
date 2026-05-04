@@ -1,4 +1,4 @@
-import { Newsletter } from "../../components";
+import { Newsletter, SEO } from "../../components";
 import zohran_photo from "../../assets/zohran_speaking.png";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
@@ -11,6 +11,11 @@ const ZohranCaseStudy = () => {
 
     return (
         <div className="doublepillgradient">
+            <SEO
+                title="Zohran Mamdani NYC Case Study"
+                description="How NWF Strategies helped Zohran Mamdani unlock over $7 million in public matching funds with a 96.1% small-donor rate for his historic NYC mayoral campaign."
+                canonical="/solutions/zohran-mamdani-2025"
+            />
             <div className="max-w-[1100px] 2xl:max-w-[1200px] mx-auto px-4 pt-28">
                 <Link to="/solutions" className="text-white text-xl flex items-center">
                     <span className="pr-2 pb-1 text-2xl">←</span>

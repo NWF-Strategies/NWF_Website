@@ -1012,6 +1012,61 @@ const WorkPage = () => (
 );
 
 const CapabilitiesPage = () => {
+  const capabilityDetails = [
+    {
+      question: "What is actually true about the race, the audience, and the argument we need to win?",
+      proofClient: "Kansas Democratic Party",
+      proof:
+        "A statewide support system that turned scattered campaign questions into usable answers at campaign speed.",
+      proofHref: "/solutions/kansas-democratic-party-2024",
+    },
+    {
+      question: "Which voters or donors matter now, and where will the next dollar change the outcome?",
+      proofClient: "Mary Peltola for Congress",
+      proof:
+        "Turnout modeling and branched voter education built for a ranked-choice electorate with little room for error.",
+      proofHref: "/solutions/mary-peltola-2022",
+    },
+    {
+      question: "How do we turn the priority audience into measurable conversations, commitments, and votes?",
+      proofClient: "Alaska Democratic Party",
+      proof:
+        "Localized voter universes and cross-channel programs focused organizing capacity on the districts that could move.",
+      proofHref: "/solutions/alaska-democratic-party-2024",
+    },
+    {
+      question: "How do we build durable revenue without treating call time, events, email, and SMS as separate programs?",
+      proofClient: "Summer Lee for Congress",
+      proof:
+        "A rebuilt finance and digital program grew from $89,989 in Q2 2023 to $1.02 million in Q4 2023.",
+      proofHref: "/solutions/summer-lee-2024",
+    },
+  ];
+
+  const capabilityCombinations = [
+    {
+      number: "01",
+      title: "Find the audience worth moving",
+      mix: "Strategy + data",
+      copy:
+        "Define the persuasion, turnout, or donor universe; identify the messages most likely to work; and establish the baseline the campaign will measure against.",
+    },
+    {
+      number: "02",
+      title: "Turn signal into contact",
+      mix: "Data + activation",
+      copy:
+        "Translate scores and segments into scripts, channel plans, and prioritized outreach—then feed response data back into the next allocation decision.",
+    },
+    {
+      number: "03",
+      title: "Build capacity that compounds",
+      mix: "Fundraising + acquisition",
+      copy:
+        "Coordinate call time, events, donor research, email, and SMS so each new relationship strengthens the next ask instead of disappearing into a silo.",
+    },
+  ];
+
   const servicesSchema = {
     "@context": "https://schema.org",
     "@type": "OfferCatalog",
@@ -1074,29 +1129,83 @@ const CapabilitiesPage = () => {
             </p>
           </div>
 
-          <div className="service-detail-list">
+          <nav className="capabilities-jump" aria-label="Capabilities on this page" data-reveal>
             {services.map((service) => (
-              <article
-                className="service-detail"
-                id={service.title.toLowerCase().replace(/\s*&\s*/g, "-").replace(/\s+/g, "-")}
+              <a
+                href={`#${service.title.toLowerCase().replace(/\s*&\s*/g, "-").replace(/\s+/g, "-")}`}
                 key={service.title}
-                data-reveal
               >
-                <div className="service-detail__topline">
-                  <span>{service.number}</span>
-                  <p>{service.short}</p>
-                </div>
-                <div className="service-detail__body">
-                  <h2>{service.title}</h2>
-                  <div>
-                    <p>{service.description}</p>
-                    <ul>
-                      {service.capabilities.map((capability) => (
-                        <li key={capability}>{capability}</li>
-                      ))}
-                    </ul>
+                <span>{service.number}</span>
+                <strong>{service.title}</strong>
+                <Arrow />
+              </a>
+            ))}
+          </nav>
+
+          <div className="service-detail-list">
+            {services.map((service, index) => {
+              const detail = capabilityDetails[index];
+
+              return (
+                <article
+                  className="service-detail"
+                  id={service.title.toLowerCase().replace(/\s*&\s*/g, "-").replace(/\s+/g, "-")}
+                  key={service.title}
+                  data-reveal
+                >
+                  <div className="service-detail__topline">
+                    <span>{service.number}</span>
+                    <p>{service.short}</p>
                   </div>
+                  <div className="service-detail__body">
+                    <h2>{service.title}</h2>
+                    <div className="service-detail__content">
+                      <p>{service.description}</p>
+                      <div className="service-detail__question">
+                        <span>Built to answer</span>
+                        <strong>{detail.question}</strong>
+                      </div>
+                      <ul aria-label={`${service.title} deliverables`}>
+                        {service.capabilities.map((capability) => (
+                          <li key={capability}>{capability}</li>
+                        ))}
+                      </ul>
+                      <Link className="service-detail__proof" to={detail.proofHref}>
+                        <span>Proof in practice</span>
+                        <div>
+                          <strong>{detail.proofClient}</strong>
+                          <p>{detail.proof}</p>
+                        </div>
+                        <Arrow />
+                      </Link>
+                    </div>
+                  </div>
+                </article>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      <section className="capability-combinations section-pad section-pad--dark">
+        <div className="page-shell">
+          <div className="capability-combinations__heading">
+            <SectionHeading
+              eyebrow="Built around the pressure point"
+              title={<>The right team is a combination, not a menu.</>}
+              copy="Most consequential campaign problems cross functional lines. We assemble the smallest integrated system that can produce a better decision and carry it through execution."
+              light
+            />
+          </div>
+          <div className="capability-combinations__grid">
+            {capabilityCombinations.map((combination) => (
+              <article key={combination.number} data-reveal>
+                <div>
+                  <span>{combination.number}</span>
+                  <small>{combination.mix}</small>
                 </div>
+                <h3>{combination.title}</h3>
+                <p>{combination.copy}</p>
               </article>
             ))}
           </div>

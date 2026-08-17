@@ -28,9 +28,14 @@ import mcduffie_logo from "../assets/logo_mcduffie.png";
 import summer_logo from "../assets/logo_summer.png";
 import peltola_logo from "../assets/logo_peltola.png";
 import kumar_logo from "../assets/logo_kumar.png";
-import bush_logo from "../assets/logo_bush.png";
 import kansas_logo from "../assets/logo_kansas.png";
 import zohran_logo from "../assets/zohran_logo.png";
+import donavan_logo from "../assets/donavan_mckinney_logo.webp";
+import rabb_logo from "../assets/Chris Rabb (100)_20260314195307242104.png";
+import mejia_logo from "../assets/mejia_mejia_nj11_edit.png";
+import claire_valdez_logo from "../assets/claire_valdez.svg";
+import wl_logo from "../assets/wl_logo_teal.avif";
+import abdul_logo from "../assets/abdul_for_us_senate.png";
 
 
 import peltola from "../assets/home_peltola.png";
@@ -190,7 +195,7 @@ export const interactive_solutions_tags = [ //xasr
   {
     img: research,
     title: "Voter Contact",
-    blurb: "We deploy a professional field program capable of 300,000 calls per day. You get a live dashboard to track KPIs and progress in real time, with full transparency as we deliver your message and identify supporters.",
+    blurb: "We build targeted voter-contact programs with disciplined scripts, live reporting, and rapid feedback so each round of outreach improves the next.",
     shortBlurb: "Mobilize hundreds of volunteers to canvass and contact millions of voters. Execute and deploy voter contact strategies effortlessly."
   },
 ];
@@ -225,7 +230,7 @@ export const solutions_notes = [
     icon: research_colored,
     title: "Voter Contact",
     //description:"Mobilize hundreds of volunteers to canvass and contact millions of voters. Execute and deploy voter contact strategies effortlessly.",
-    description: "We deploy a professional field program capable of 300,000 calls per day. You get a live dashboard to track KPIs and progress in real time, with full transparency as we deliver your message and identify supporters."
+    description: "We build targeted voter-contact programs with disciplined scripts, live reporting, and rapid feedback so each round of outreach improves the next."
   },
 ];
 
@@ -296,7 +301,23 @@ import mississippi_dems from "../assets/mississippi_dems.png";
 import delia_ramirez_logo from "../assets/delia_ramirez_logo.png";
 import ak_dems from "../assets/ak_dems.png";
 
-export const logos2 = [summer_logo, mcduffie_logo, bush_logo, ventura_logo, kansas_logo, peltola_logo, mississippi_dems, delia_ramirez_logo, zohran_logo, ak_dems];
+export const logos2 = [
+  zohran_logo,
+  peltola_logo,
+  rabb_logo,
+  mejia_logo,
+  summer_logo,
+  donavan_logo,
+  kansas_logo,
+  mississippi_dems,
+  delia_ramirez_logo,
+  ak_dems,
+  claire_valdez_logo,
+  wl_logo,
+  abdul_logo,
+  mcduffie_logo,
+  ventura_logo,
+];
 
 export const candidate_photos = [peltola, ventura, mcduffie, kumar];
 
@@ -392,7 +413,7 @@ export const mobile_homepage_stats = [
     text: "reached.",
   },
   {
-    number: "$30 million+",
+    number: "$100 million+",
     text: "raised.",
   },
   {

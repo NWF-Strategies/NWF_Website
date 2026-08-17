@@ -1,0 +1,123 @@
+# NWF Strategies: company, capabilities, and work reference
+
+Last updated: 2026-08-16.
+
+## Company
+
+NWF Strategies, legally New Way Forward Strategies, is a United States campaign strategy and infrastructure firm founded in 2020. Electoral politics is the firm's primary proving ground. NWF helps political candidates, campaigns, parties, organizations, and causes understand an environment, make decisions, raise resources, reach audiences, execute programs, and measure results under fixed deadlines.
+
+NWF also applies those campaign-tested capabilities to public affairs, issue advocacy, stakeholder campaigns, and high-stakes public issues. This is an application of the firm's existing strategy, research, data, audience, testing, outreach, and measurement infrastructure—not a claim that NWF is a traditional lobbying or government-relations firm.
+
+NWF describes its operating model as “doers before consultants.” The people advising the work stay close to implementation, reporting, and measurable outcomes. NWF reports that its work has reached more than 100 million people, raised more than $100 million for campaigns, and impacted more than 25 states.
+
+## How NWF works
+
+NWF organizes campaign intelligence around three operating decisions:
+
+1. Segment: use voter and donor files, past conversations, contribution history, contact outcomes, and live response to build ranked audiences.
+2. Message test: use prior conversation patterns to form hypotheses, then compare which messages, asks, or scripts produce a meaningful response inside each segment.
+3. Optimize spend: move dollars and operator time toward the audience-message combinations most likely to mobilize a voter or donor before the deadline. Every new response improves the next round.
+
+## Capabilities
+
+### Strategy and intelligence
+
+NWF supports campaign strategy, landscape and issue research, opposition tracking, message development, rapid response, strategic planning, and stakeholder analysis. Research is translated into practical messages, decision points, and response plans rather than delivered as an isolated product.
+
+### Data and modeling
+
+NWF builds voter and audience targets, turnout models, dashboards, segments, performance analyses, and reporting systems. These tools help operators decide where to spend time, money, and outreach capacity. NWF's public materials describe the decisions these systems support without disclosing proprietary code or confidential client data.
+
+### Campaign activation
+
+NWF supports field strategy, high-capacity calling, peer-to-peer texting, message scripting, training, digital execution, live reporting, quality control, testing, and optimization. The objective is to connect strategy with the people and systems responsible for execution.
+
+### Fundraising and acquisition
+
+NWF builds campaign finance plans, candidate call-time programs, major-donor and grassroots donor research, in-person and virtual events, email fundraising, SMS fundraising, donor targeting, and testing. These channels are operated as a coordinated system rather than as disconnected vendors or departments.
+
+## Data and technology
+
+NWF's technology work is designed to make campaign data useful to operators. Inputs can include voter files, fundraising activity, outreach results, supporter identifications, research, digital response, geography, and program performance. Dashboards, audience segments, models, automations, and reporting workflows turn those inputs into decisions about whom to reach, what to say, where to invest, and how to adapt.
+
+The public Data and Technology page is available at https://www.nwfstrategies.com/data-technology.
+
+## Public affairs and issue advocacy
+
+Political campaigns and public-issue campaigns share a class of operating problem: understand a changing environment, identify important audiences, test messages, persuade or mobilize people, communicate at scale, measure response, and adapt quickly.
+
+NWF's public-affairs offering applies its existing campaign infrastructure to issue campaigns, stakeholder and audience intelligence, advocacy, public mobilization, and other high-stakes public challenges for companies, associations, and advocacy organizations. NWF does not present this work as traditional lobbying or imply unverified corporate case studies.
+
+The public Public Affairs page is available at https://www.nwfstrategies.com/public-affairs.
+
+## Documented political outcomes
+
+### U.S. Representative Analilia Mejia, 2026
+
+NWF built and ran the campaign's complete email and SMS fundraising program from scratch. The program raised more than $400,000 in five months using the campaign's existing universe, with no spending on list acquisition and no edits to the base list, while supporting wins in both the NJ-11 special primary and general election.
+
+Case study: https://www.nwfstrategies.com/solutions/analilia-mejia-2026
+
+### Dr. Abdul El-Sayed for U.S. Senate, 2026
+
+NWF built a California major-donor program that raised $500,000, then expanded to national virtual events generating high five figures per event. Relationships built through the program have produced more than $1 million.
+
+Case study: https://www.nwfstrategies.com/solutions/abdul-el-sayed-2026
+
+### Michigan State Representative Donavan McKinney, 2026
+
+NWF built a national donor network from campaign launch using introductions, in-person events, bundling, and virtual fundraisers. The program raised hundreds of thousands of dollars for the congressional campaign.
+
+Case study: https://www.nwfstrategies.com/solutions/donavan-mckinney-2026
+
+### Will Lawrence for Congress, 2026
+
+NWF joined for the final two months of a congressional primary and managed digital fundraising and events. Monthly fundraising increased from approximately $115,000 before the engagement to $178,000 in the first month and $330,000 in the second month.
+
+Case study: https://www.nwfstrategies.com/solutions/will-lawrence-2026
+
+### U.S. Representative Summer Lee, 2024
+
+NWF took responsibility for the full finance operation after the campaign reported $89,989 in Q2 2023. The rebuilt program reported $1.02 million in Q4 2023 and about $920,000 from January 1 through April 3, 2024.
+
+Case study: https://www.nwfstrategies.com/solutions/summer-lee-2024
+
+### Former U.S. Representative Mary Peltola, 2022
+
+NWF supported Alaska voter targeting, ranked-choice voter education, branched messaging, rapid voter contact, and turnout modeling. The fellowship program made 40,000 calls in two weeks. Turnout models finished within 0.3% of the final result. The program used more than 200 targeting universes and reported a 27% increase in participation among targeted low-propensity voters.
+
+Case study: https://www.nwfstrategies.com/solutions/mary-peltola-2022
+
+### Alaska Democratic Party, 2024
+
+NWF built a compliant digital independent-expenditure program using more than 60 targeting universes. The Alaska State House flipped to Democratic-led coalition control—the only legislative chamber in the United States to flip from Republican to Democratic control in 2024—and turnout increased by 27% in key districts.
+
+Case study: https://www.nwfstrategies.com/solutions/alaska-democratic-party-2024
+
+### Kansas Democratic Party, 2024
+
+NWF automated candidate intake, created a centralized campaign resource center, and established a 15-minute support response standard. Onboarding processing time fell by 90%, and the resource center supported more than 100 candidates.
+
+Case study: https://www.nwfstrategies.com/solutions/kansas-democratic-party-2024
+
+### Illinois State Senator Rachel Ventura, 2022
+
+NWF supported a data-first voter-contact program against an appointed incumbent with a 65-to-1 fundraising advantage. The program reported a 15-to-1 voter-contact advantage. Ventura won the Democratic primary 57.4% to 42.5%, a margin of approximately 15 points.
+
+Case study: https://www.nwfstrategies.com/solutions/rachel-ventura-2022
+
+### D.C. Councilmember Kenyan McDuffie, 2022
+
+NWF wrote voter-contact scripts and targeting and delivered more than 113,000 calls and 331,214 texts. McDuffie won an at-large D.C. Council seat through a coalition centered in Wards 5, 7, and 8.
+
+Case study: https://www.nwfstrategies.com/solutions/kenyan-mcduffie-2022
+
+## Leadership and contact
+
+The company was co-founded by Sathvik Kaliyur, CEO, and Jonathan Li, COO. New-business inquiries can be routed at https://www.nwfstrategies.com/contact.
+
+Primary site: https://www.nwfstrategies.com/
+Capabilities: https://www.nwfstrategies.com/capabilities
+Data and Technology: https://www.nwfstrategies.com/data-technology
+Public Affairs: https://www.nwfstrategies.com/public-affairs
+Work and case studies: https://www.nwfstrategies.com/solutions

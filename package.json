@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "tsc && vite build && react-snap",
     "build:ssg": "tsc && vite build && react-snap",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
@@ -16,20 +16,26 @@
     "include": [
       "/",
       "/solutions",
+      "/capabilities",
+      "/data-technology",
+      "/public-affairs",
+      "/about",
+      "/careers",
+      "/contact",
+      "/solutions/analilia-mejia-2026",
       "/solutions/mary-peltola-2022",
       "/solutions/rachel-ventura-2022",
       "/solutions/kenyan-mcduffie-2022",
       "/solutions/summer-lee-2024",
       "/solutions/kansas-democratic-party-2024",
       "/solutions/alaska-democratic-party-2024",
-      "/solutions/cori-bush-2024",
-      "/about",
-      "/careers",
-      "/contactus"
+      "/solutions/donavan-mckinney-2026",
+      "/solutions/will-lawrence-2026",
+      "/solutions/abdul-el-sayed-2026"
     ],
     "puppeteerArgs": ["--no-sandbox", "--disable-setuid-sandbox"],
     "inlineCss": true,
-    "skipThirdPartyRequests": false
+    "skipThirdPartyRequests": true
   },
   "dependencies": {
     "@splidejs/react-splide": "^0.7.12",

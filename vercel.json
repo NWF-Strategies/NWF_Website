@@ -3,5 +3,27 @@
   "trailingSlash": false,
   "github": {
     "enabled": false
-  }
+  },
+  "redirects": [
+    {
+      "source": "/work",
+      "destination": "/solutions",
+      "permanent": true
+    },
+    {
+      "source": "/services",
+      "destination": "/capabilities",
+      "permanent": true
+    },
+    {
+      "source": "/contactus",
+      "destination": "/contact",
+      "permanent": true
+    },
+    {
+      "source": "/solutions/zohran-mamdani-2025",
+      "destination": "/solutions",
+      "permanent": true
+    }
+  ]
 }

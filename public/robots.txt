@@ -1,6 +1,17 @@
-# robots.txt for NWF Strategies
+# NWF Strategies welcomes search engines and answer engines.
 User-agent: *
 Allow: /
 
-# Sitemap
-Sitemap: https://nwfstrategies.com/sitemap.xml
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+Sitemap: https://www.nwfstrategies.com/sitemap.xml

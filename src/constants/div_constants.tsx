@@ -197,7 +197,7 @@ export const landing_sol4 = (
     <p className={styles.heading4}>Solution 4</p>
     <p className={styles.heading3}>Voter Contact</p>
     <p className={styles.paragraph}>
-      We deploy a professional field program capable of 300,000 calls per day. You get a live dashboard to track KPIs and progress in real time, with full transparency as we deliver your message and identify supporters.
+      We build targeted voter-contact programs with disciplined scripts, live reporting, and rapid feedback so each round of outreach improves the next.
     </p>
   </>
 );

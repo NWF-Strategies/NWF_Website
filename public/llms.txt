@@ -1,0 +1,42 @@
+# NWF Strategies
+
+> NWF Strategies (New Way Forward Strategies) builds and operates the strategy, data, fundraising, research, audience, and outreach infrastructure behind high-stakes campaigns.
+
+Electoral politics is NWF's primary proving ground. The firm supports candidates, campaigns, political parties, organizations, and causes across the United States, and applies the same campaign-tested capabilities to public affairs, issue advocacy, and stakeholder campaigns.
+
+Last updated: 2026-08-16.
+
+Core capabilities include campaign strategy, fundraising, research and narrative, political data and modeling, audience intelligence, dashboards, digital programs, voter contact, field strategy, high-capacity calling, peer-to-peer texting, testing, measurement, and rapid feedback systems.
+
+Key company facts reported by NWF:
+- Founded in 2020.
+- More than 100 million people reached through campaign programs.
+- More than $100 million raised for campaigns.
+- Work has impacted more than 25 states.
+- Voter and donor outreach programs use segmentation, message testing, live response, and feedback to improve resource allocation.
+
+## Primary pages
+
+- [Home](https://www.nwfstrategies.com/): NWF's positioning, selected results, operating model, and routes into political and public-affairs work.
+- [Work and case studies](https://www.nwfstrategies.com/solutions): Documented political campaign challenges, NWF's scope, execution, and outcomes.
+- [Capabilities](https://www.nwfstrategies.com/capabilities): Strategy and intelligence, data and modeling, campaign activation, and fundraising and acquisition.
+- [Data and Technology](https://www.nwfstrategies.com/data-technology): How NWF turns signals and data into decisions, deployment, measurement, and feedback.
+- [Public Affairs](https://www.nwfstrategies.com/public-affairs): Campaign-tested infrastructure applied to issue advocacy, stakeholder intelligence, and public mobilization.
+- [About](https://www.nwfstrategies.com/about): Company origin, operating philosophy, values, and team.
+- [Careers](https://www.nwfstrategies.com/careers): Roles across fundraising, research, data, technology, digital, organizing, and voter contact.
+- [Contact](https://www.nwfstrategies.com/contact): How to start a new-business conversation.
+
+## Documented political work
+
+- [Analilia Mejia, 2026](https://www.nwfstrategies.com/solutions/analilia-mejia-2026): More than $400,000 raised through digital in five months with no list acquisition or base-list edits.
+- [Abdul El-Sayed, 2026](https://www.nwfstrategies.com/solutions/abdul-el-sayed-2026): A $500,000 California major-donor program and more than $1 million produced by relationships built through the program.
+- [Donavan McKinney, 2026](https://www.nwfstrategies.com/solutions/donavan-mckinney-2026): A national donor network built through introductions, events, bundling, and virtual fundraisers.
+- [Will Lawrence, 2026](https://www.nwfstrategies.com/solutions/will-lawrence-2026): Monthly fundraising grew from approximately $115,000 to $330,000 in two months.
+- [Summer Lee, 2024](https://www.nwfstrategies.com/solutions/summer-lee-2024): Receipts grew from $89,989 in Q2 2023 to $1.02 million in Q4, followed by about $920,000 from January 1 through April 3, 2024.
+- [Mary Peltola, 2022](https://www.nwfstrategies.com/solutions/mary-peltola-2022): Voter targeting, turnout modeling, ranked-choice education, and rapid voter contact supporting Alaska's first Democratic House win in roughly 50 years.
+- [Alaska Democratic Party, 2024](https://www.nwfstrategies.com/solutions/alaska-democratic-party-2024): Data-driven independent-expenditure work supporting the only legislative chamber flip of 2024.
+- [Kansas Democratic Party, 2024](https://www.nwfstrategies.com/solutions/kansas-democratic-party-2024): Automated statewide candidate support and 90% faster onboarding.
+- [Rachel Ventura, 2022](https://www.nwfstrategies.com/solutions/rachel-ventura-2022): A data-first voter-contact program in a primary won by approximately 15 points.
+- [Kenyan McDuffie, 2022](https://www.nwfstrategies.com/solutions/kenyan-mcduffie-2022): Targeting, scripts, 113,000+ calls, and 331,000+ texts supporting a citywide coalition.
+
+For a fuller plain-text company, capability, and case-study reference, see [llms-full.txt](https://www.nwfstrategies.com/llms-full.txt).

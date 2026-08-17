@@ -82,7 +82,7 @@ const SolutionsGrid: React.FC = () => {
       imageSrc: operation,
       title: "Voter Contact",
       //description: "Mobilize hundreds of volunteers to canvass and contact millions of voters. Execute and deploy voter contact strategies effortlessly."
-      description: "We deploy a professional field program capable of 300,000 calls per day. You get a live dashboard to track KPIs and progress in real time, with full transparency as we deliver your message and identify supporters."
+      description: "We build targeted voter-contact programs with disciplined scripts, live reporting, and rapid feedback so each round of outreach improves the next."
     }
   ];
   

@@ -1,0 +1,16 @@
+{
+  "name": "NWF Strategies",
+  "short_name": "NWF",
+  "description": "Political campaigns, built to win.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#071c1d",
+  "theme_color": "#071c1d",
+  "icons": [
+    {
+      "src": "/NWF.png",
+      "sizes": "any",
+      "type": "image/png"
+    }
+  ]
+}

@@ -33,7 +33,7 @@ jobs:
         run: |
           mkdir -p .vercel/output/static
           cp -r dist/* .vercel/output/static/
-          echo '{"version": 3}' > .vercel/output/config.json
+          cp vercel-output-config.json .vercel/output/config.json
 
       - name: Install Vercel CLI
         run: npm install -g vercel

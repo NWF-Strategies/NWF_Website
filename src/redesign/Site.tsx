@@ -812,7 +812,7 @@ const HomePage = () => {
         </div>
       </section>
 
-      <section className="home-services section-pad section-pad--dark">
+      <section className="home-services section-pad section-pad--dark" id="home-capabilities">
         <div className="page-shell">
           <div className="home-services__intro">
             <SectionHeading
@@ -821,6 +821,32 @@ const HomePage = () => {
               copy="Strategy gets sharper when research, data, fundraising, and activation learn from the same work."
               light
             />
+            <div
+              className="home-services__system-map"
+              aria-label="Strategy, data, activation, and fundraising connected through one operating picture"
+              data-reveal
+            >
+              <div className="home-services__system-ring" aria-hidden="true" />
+              <Link className="home-services__system-core" to="/capabilities">
+                <span>One operating picture</span>
+                <strong>
+                  Decide.
+                  <br />
+                  Deploy.
+                  <br />
+                  Learn.
+                </strong>
+                <small>Explore the system <Arrow /></small>
+              </Link>
+              <ol>
+                {services.map((service) => (
+                  <li key={service.number}>
+                    <span>{service.number}</span>
+                    <strong>{service.title}</strong>
+                  </li>
+                ))}
+              </ol>
+            </div>
           </div>
           <div className="service-list">
             {services.map((service) => (
@@ -1115,29 +1141,55 @@ const CapabilitiesPage = () => {
         </div>
       </section>
 
-      <section className="services-detail section-pad">
+      <section className="services-detail section-pad" id="capabilities-overview">
         <div className="page-shell">
           <div className="services-detail__intro" data-reveal>
-            <p>
-              A campaign does not experience research, data, fundraising, and
-              activation as separate departments. Neither should the strategy.
-            </p>
-            <p>
-              NWF assembles the right combination of people, systems, and execution
-              around the decision or constraint that matters most—whether the work
-              is electoral, issue-based, or advocacy-led.
-            </p>
+            <div className="services-detail__intro-heading">
+              <Eyebrow>One operating model</Eyebrow>
+              <h2>
+                Four disciplines.
+                <br />
+                <em>One accountable system.</em>
+              </h2>
+            </div>
+            <div className="services-detail__intro-copy">
+              <p>
+                A campaign does not experience research, data, fundraising, and
+                activation as separate departments. Neither should the strategy.
+              </p>
+              <p>
+                NWF assembles the right combination of people, systems, and execution
+                around the decision or constraint that matters most—whether the work
+                is electoral, issue-based, or advocacy-led.
+              </p>
+              <ol className="services-detail__loop" aria-label="NWF operating loop">
+                {["Signal", "Decide", "Deploy", "Learn"].map((step, index) => (
+                  <li key={step}>
+                    <span>0{index + 1}</span>
+                    <strong>{step}</strong>
+                  </li>
+                ))}
+              </ol>
+            </div>
           </div>
 
-          <nav className="capabilities-jump" aria-label="Capabilities on this page" data-reveal>
+          <nav
+            className="capabilities-jump"
+            id="capabilities-jump"
+            aria-label="Capabilities on this page"
+            data-reveal
+          >
             {services.map((service) => (
               <a
                 href={`#${service.title.toLowerCase().replace(/\s*&\s*/g, "-").replace(/\s+/g, "-")}`}
                 key={service.title}
               >
                 <span>{service.number}</span>
-                <strong>{service.title}</strong>
                 <Arrow />
+                <div>
+                  <strong>{service.title}</strong>
+                  <small>{service.short}</small>
+                </div>
               </a>
             ))}
           </nav>
